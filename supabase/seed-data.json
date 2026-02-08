@@ -1,0 +1,706 @@
+{
+    "trainTypes": [
+        {
+            "name": "ICE 1",
+            "class_name": "BR401",
+            "description": "First-generation German high-speed train (DB Class 401)"
+        },
+        {
+            "name": "ICE 2",
+            "class_name": "BR402",
+            "description": "Second-generation German high-speed train (DB Class 402)"
+        },
+        {
+            "name": "ICE 3",
+            "class_name": "BR403",
+            "description": "High-speed EMU family including Velaro variants (DB Class 403/406/407)"
+        },
+        {
+            "name": "ICE 3M",
+            "class_name": "BR406",
+            "description": "Multisystem version of ICE 3 for international routes (DB Class 406)"
+        },
+        {
+            "name": "ICE 3MS",
+            "class_name": "BR407",
+            "description": "Siemens Velaro MS for DB EMU (DB Class 407)"
+        },
+        {
+            "name": "ICE 3 Neo",
+            "class_name": "BR408",
+            "description": "Siemens Velaro D high-speed EMU (DB Class 408)"
+        },
+        {
+            "name": "ICE 4",
+            "class_name": "BR412",
+            "description": "Latest generation high-capacity high-speed train (DB Class 412)"
+        },
+        {
+            "name": "ICE T",
+            "class_name": "BR411/415",
+            "description": "Tilting high-speed train for curvy routes (DB Class 411/415)"
+        },
+        {
+            "name": "ICE TD",
+            "class_name": "BR605",
+            "description": "Diesel-powered high-speed train (DB Class 605)"
+        }
+    ],
+    "trainoperators": [
+        {
+            "name": "DB Fernverkehr",
+            "countryCode": "DE"
+        },
+        {
+            "name": "DB Regio",
+            "countryCode": "DE"
+        },
+        {
+            "name": "NS International",
+            "countryCode": "NL"
+        },
+        {
+            "name": "SNCF",
+            "countryCode": "FR"
+        },
+        {
+            "name": "Eurostar",
+            "countryCode": "GB"
+        }
+    ],
+    "stations": [
+        {
+            "name": "Amsterdam Centraal",
+            "countryCode": "NL",
+            "stationCode": "AMS",
+            "longitude": 4.9003,
+            "latitude": 52.3780
+        },
+        {
+            "name": "Berlin Hauptbahnhof",
+            "countryCode": "DE",
+            "stationCode": "BHF",
+            "longitude": 13.3695,
+            "latitude": 52.5251
+        },
+        {
+            "name": "München Hauptbahnhof",
+            "countryCode": "DE",
+            "stationCode": "MUC",
+            "longitude": 11.5586,
+            "latitude": 48.1402
+        },
+        {
+            "name": "Frankfurt (Main) Hauptbahnhof",
+            "countryCode": "DE",
+            "stationCode": "FRA",
+            "longitude": 8.6638,
+            "latitude": 50.1071
+        },
+        {
+            "name": "Köln Hauptbahnhof",
+            "countryCode": "DE",
+            "stationCode": "CGN",
+            "longitude": 6.9583,
+            "latitude": 50.9430
+        },
+        {
+            "name": "Hamburg Hauptbahnhof",
+            "countryCode": "DE",
+            "stationCode": "HAM",
+            "longitude": 10.0067,
+            "latitude": 53.5527
+        },
+        {
+            "name": "Stuttgart Hauptbahnhof",
+            "countryCode": "DE",
+            "stationCode": "STR",
+            "longitude": 9.1829,
+            "latitude": 48.7839
+        },
+        {
+            "name": "Düsseldorf Hauptbahnhof",
+            "countryCode": "DE",
+            "stationCode": "DUS",
+            "longitude": 6.7936,
+            "latitude": 51.2194
+        },
+        {
+            "name": "Hannover Hauptbahnhof",
+            "countryCode": "DE",
+            "stationCode": "HAJ",
+            "longitude": 9.7410,
+            "latitude": 52.3779
+        },
+        {
+            "name": "Nürnberg Hauptbahnhof",
+            "countryCode": "DE",
+            "stationCode": "NUE",
+            "longitude": 11.0820,
+            "latitude": 49.4456
+        },
+        {
+            "name": "London St Pancras",
+            "countryCode": "GB",
+            "stationCode": "STP",
+            "longitude": -0.1262,
+            "latitude": 51.5319
+        },
+        {
+            "name": "Paris Gare du Nord",
+            "countryCode": "FR",
+            "stationCode": "GDN",
+            "longitude": 2.3555,
+            "latitude": 48.8809
+        },
+        {
+            "name": "Utrecht Centraal",
+            "countryCode": "NL",
+            "stationCode": "UTC",
+            "longitude": 5.1100,
+            "latitude": 52.0889
+        }
+    ],
+    "trains": [
+        {
+            "number": "8001",
+            "altNumber": "408 001",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8002",
+            "altNumber": "408 002",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8003",
+            "altNumber": "408 003",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8004",
+            "altNumber": "408 004",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8005",
+            "altNumber": "408 005",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8006",
+            "altNumber": "408 006",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8007",
+            "altNumber": "408 007",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8008",
+            "altNumber": "408 008",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8009",
+            "altNumber": "408 009",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8010",
+            "altNumber": "408 010",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8011",
+            "altNumber": "408 011",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8012",
+            "altNumber": "408 012",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8013",
+            "altNumber": "408 013",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8014",
+            "altNumber": "408 014",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8015",
+            "altNumber": "408 015",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8016",
+            "altNumber": "408 016",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8017",
+            "altNumber": "408 017",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8018",
+            "altNumber": "408 018",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8019",
+            "altNumber": "408 019",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8020",
+            "altNumber": "408 020",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8021",
+            "altNumber": "408 021",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8022",
+            "altNumber": "408 022",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8023",
+            "altNumber": "408 023",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8024",
+            "altNumber": "408 024",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8025",
+            "altNumber": "408 025",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8026",
+            "altNumber": "408 026",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8027",
+            "altNumber": "408 027",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8028",
+            "altNumber": "408 028",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8029",
+            "altNumber": "408 029",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8030",
+            "altNumber": "408 030",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8031",
+            "altNumber": "408 031",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8032",
+            "altNumber": "408 032",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8033",
+            "altNumber": "408 033",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8034",
+            "altNumber": "408 034",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8035",
+            "altNumber": "408 035",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8036",
+            "altNumber": "408 036",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8037",
+            "altNumber": "408 037",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8038",
+            "altNumber": "408 038",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8039",
+            "altNumber": "408 039",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8040",
+            "altNumber": "408 040",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8041",
+            "altNumber": "408 041",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8042",
+            "altNumber": "408 042",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8043",
+            "altNumber": "408 043",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8044",
+            "altNumber": "408 044",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8045",
+            "altNumber": "408 045",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8046",
+            "altNumber": "408 046",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8047",
+            "altNumber": "408 047",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8048",
+            "altNumber": "408 048",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8049",
+            "altNumber": "408 049",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8050",
+            "altNumber": "408 050",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8051",
+            "altNumber": "408 051",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8052",
+            "altNumber": "408 052",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8053",
+            "altNumber": "408 053",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8054",
+            "altNumber": "408 054",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8055",
+            "altNumber": "408 055",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8056",
+            "altNumber": "408 056",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8057",
+            "altNumber": "408 057",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8058",
+            "altNumber": "408 058",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8059",
+            "altNumber": "408 059",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8060",
+            "altNumber": "408 060",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8061",
+            "altNumber": "408 061",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8062",
+            "altNumber": "408 062",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8063",
+            "altNumber": "408 063",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8064",
+            "altNumber": "408 064",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8065",
+            "altNumber": "408 065",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8066",
+            "altNumber": "408 066",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8067",
+            "altNumber": "408 067",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8068",
+            "altNumber": "408 068",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8069",
+            "altNumber": "408 069",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8070",
+            "altNumber": "408 070",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8071",
+            "altNumber": "408 071",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8072",
+            "altNumber": "408 072",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8073",
+            "altNumber": "408 073",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8074",
+            "altNumber": "408 074",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8075",
+            "altNumber": "408 075",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8076",
+            "altNumber": "408 076",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8077",
+            "altNumber": "408 077",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8078",
+            "altNumber": "408 078",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8079",
+            "altNumber": "408 079",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8080",
+            "altNumber": "408 080",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8081",
+            "altNumber": "408 081",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8082",
+            "altNumber": "408 082",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8083",
+            "altNumber": "408 083",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8084",
+            "altNumber": "408 084",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8085",
+            "altNumber": "408 085",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8086",
+            "altNumber": "408 086",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8087",
+            "altNumber": "408 087",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8088",
+            "altNumber": "408 088",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8089",
+            "altNumber": "408 089",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "8090",
+            "altNumber": "408 090",
+            "trainType": "BR408",
+            "operator": "DB Fernverkehr"
+        }
+    ]
+}
