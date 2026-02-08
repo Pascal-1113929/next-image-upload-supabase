@@ -32,7 +32,7 @@ const Modal: React.FC<ModalProps> = ({
                 "
                 />
                 <Dialog.Content
-                    className="fixed drop-shadow-md border border-neutral-700 top-[50%] left-[50%] max-h-full h-full md:h-auto md:max-[85vh] w-full md:w-[90vw] md:max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-md bg-neutral-800 p-[25px] focus:outline-none"
+                    className="fixed drop-shadow-md border border-neutral-700 top-[50%] left-[50%] max-h-full h-full md:h-auto md:max-h-[90vh] w-full md:w-[90vw] md:max-w-[650px] translate-x-[-50%] translate-y-[-50%] rounded-md bg-neutral-800 p-[25px] focus:outline-none"
                 >
                     <Dialog.Title
                         className="
@@ -59,7 +59,7 @@ const Modal: React.FC<ModalProps> = ({
                     </div>
                     <Dialog.Close asChild>
                         <button
-                        className="
+                            className="
                         text-neutral-400
                         hover:text-white
                         absolute
@@ -74,7 +74,7 @@ const Modal: React.FC<ModalProps> = ({
                         focus:outline-none
                         "
                         >
-                            <IoMdClose/>
+                            <IoMdClose />
                         </button>
                     </Dialog.Close>
                 </Dialog.Content>
