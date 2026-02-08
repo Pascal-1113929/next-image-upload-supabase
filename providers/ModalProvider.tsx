@@ -3,11 +3,13 @@
 import { useEffect, useState } from "react";
 
 import AuthModal from "@/components/modals/AuthModal";
+import PhotoUploadModal from "@/components/modals/PhotoUploadModal";
+
 interface ModalProviderProps {
-    
+
 }
 
-const ModalProvider: React.FC<ModalProviderProps> = ({}) => {
+const ModalProvider: React.FC<ModalProviderProps> = ({ }) => {
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
@@ -21,6 +23,7 @@ const ModalProvider: React.FC<ModalProviderProps> = ({}) => {
     return (
         <>
             <AuthModal />
+            <PhotoUploadModal />
         </>
     );
 }

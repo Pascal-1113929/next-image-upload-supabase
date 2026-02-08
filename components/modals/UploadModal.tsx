@@ -10,7 +10,7 @@ import Input from "../Input";
 import Button from "../Button";
 import toast from "react-hot-toast";
 import { useUser } from "@/hooks/useUser";
-import { useSupabaseClient } from "@supabase/auth-helpers-react";
+import { supabaseClient } from "@/lib/supabase";
 import { useRouter } from "next/navigation";
 import CheckBox from "../CheckBox";
 import SearchSelect from "../SearchSelect";
@@ -22,8 +22,6 @@ const UploadModal = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     const { user } = useUser();
-
-    const supabaseClient = useSupabaseClient();
 
     const [albumData, setAlbumData] = useState<{ id: string; name: string }[]>([]);
 
@@ -76,7 +74,7 @@ const UploadModal = () => {
         }
 
         fetchAlbums();
-    }, [supabaseClient]);
+    }, []);
 
     const onSubmit: SubmitHandler<FieldValues> = async (values) => {
         try {
