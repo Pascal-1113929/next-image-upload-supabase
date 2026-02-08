@@ -29,9 +29,7 @@ interface TrainImageDetail {
         name: string;
         country_code: string | null;
     } | null;
-    user: {
-        display_name: string | null;
-    } | null;
+    user_id: string;
     created_at: string;
 }
 
@@ -68,9 +66,6 @@ export default function PhotoDetailPage() {
             train_stations (
               name,
               country_code
-            ),
-            profiles (
-              display_name
             )
           `)
                     .eq("id", params.id)
@@ -92,9 +87,6 @@ export default function PhotoDetailPage() {
                     ...data,
                     station: Array.isArray(data.train_stations) && data.train_stations.length > 0
                         ? data.train_stations[0]
-                        : null,
-                    user: Array.isArray(data.profiles) && data.profiles.length > 0
-                        ? data.profiles[0]
                         : null,
                 };
 
@@ -212,17 +204,6 @@ export default function PhotoDetailPage() {
                                     </div>
                                 </div>
 
-                                {photo.user?.display_name && (
-                                    <div>
-                                        <div className="font-semibold text-zinc-700 dark:text-zinc-300">
-                                            Uploaded by
-                                        </div>
-                                        <div className="text-zinc-600 dark:text-zinc-400">
-                                            👤 {photo.user.display_name}
-                                        </div>
-                                    </div>
-                                )}
-
                                 <div>
                                     <div className="font-semibold text-zinc-700 dark:text-zinc-300">
                                         Uploaded
@@ -283,6 +264,34 @@ export default function PhotoDetailPage() {
                                             {photo.original_metadata.location.longitude.toFixed(6)}
                                         </span>
                                     </div>
+                                )}
+                                {photo.original_metadata?.location && (
+                                    <div className="pt-2">
+                                        <div className="font-semibold text-zinc-700 dark:text-zinc-300">
+                                            Map
+                                        </div>
+                                        <div className="mt-2 aspect-video w-full overflow-hidden rounded border border-zinc-200 dark:border-zinc-800">
+                                            <iframe
+                                                title="Photo location"
+                                                className="h-full w-full"
+                                                loading="lazy"
+                                                referrerPolicy="no-referrer-when-downgrade"
+                                                src={`https://www.google.com/maps?q=${photo.original_metadata.location.latitude},${photo.original_metadata.location.longitude}&output=embed`}
+                                            />
+                                        </div>
+                                    </div>
+                                )}
+                                {photo.original_metadata && (
+                                    <details className="rounded border border-zinc-200 dark:border-zinc-800">
+                                        <summary className="cursor-pointer px-3 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300">
+                                            Original Metadata
+                                        </summary>
+                                        <div className="px-3 pb-3">
+                                            <pre className="bg-zinc-100 dark:bg-zinc-800 p-2 rounded text-xs overflow-x-auto">
+                                                {JSON.stringify(photo.original_metadata, null, 2)}
+                                            </pre>
+                                        </div>
+                                    </details>
                                 )}
                             </CardContent>
                         </Card>

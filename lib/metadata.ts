@@ -15,50 +15,48 @@ export interface ImageMetadata {
 export async function extractMetadata(file: File): Promise<ImageMetadata> {
     try {
         const metadata = await exifr.parse(file, {
-            gps: true,
             exif: true,
             iptc: true,
             icc: false,
             jfif: true
         });
 
+        const gps = await exifr.gps(file);
+
+        console.log('Full metadata extracted:', metadata);
+        console.log('GPS extracted via exifr.gps():', gps);
+
         const result: ImageMetadata = {};
 
         // Extract date/time
-        if (metadata?.DateTimeOriginal) {
-            result.takenAt = new Date(metadata.DateTimeOriginal);
-        } else if (metadata?.DateTime) {
-            result.takenAt = new Date(metadata.DateTime);
-        } else if (metadata?.CreateDate) {
-            result.takenAt = new Date(metadata.CreateDate);
+        const date =
+            metadata?.DateTimeOriginal ??
+            metadata?.CreateDate ??
+            metadata?.DateTime;
+
+        if (date) {
+            result.takenAt = new Date(date);
         }
 
-        // Extract GPS coordinates
-        if (metadata?.latitude && metadata?.longitude) {
+        // Extract GPS coordinates (robust for Samsung/Android)
+        if (gps?.latitude != null && gps?.longitude != null) {
             result.location = {
-                latitude: metadata.latitude,
-                longitude: metadata.longitude
+                latitude: gps.latitude,
+                longitude: gps.longitude
             };
         }
 
         // Extract camera info
-        if (metadata?.Make && metadata?.Model) {
-            result.camera = `${metadata.Make} ${metadata.Model}`.trim();
-        } else if (metadata?.Model) {
-            result.camera = metadata.Model;
+        if (metadata?.Make || metadata?.Model) {
+            result.camera = `${metadata?.Make ?? ''} ${metadata?.Model ?? ''}`.trim();
         }
 
         // Extract dimensions
-        if (metadata?.ImageWidth && metadata?.ImageHeight) {
-            result.width = metadata.ImageWidth;
-            result.height = metadata.ImageHeight;
-        } else if (metadata?.ExifImageWidth && metadata?.ExifImageHeight) {
-            result.width = metadata.ExifImageWidth;
-            result.height = metadata.ExifImageHeight;
-        }
+        result.width = metadata?.ExifImageWidth ?? metadata?.ImageWidth ?? undefined;
+        result.height = metadata?.ExifImageHeight ?? metadata?.ImageHeight ?? undefined;
 
         // Extract orientation
-        if (metadata?.Orientation) {
+        if (metadata?.Orientation != null) {
             result.orientation = metadata.Orientation;
         }
 

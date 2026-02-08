@@ -221,6 +221,15 @@ const PhotoUploadModal = () => {
                 return;
             }
 
+            // Verify session is valid before proceeding
+            const { data: { session }, error: sessionError } = await supabaseClient.auth.getSession();
+
+            if (sessionError || !session || !session.user) {
+                console.error("Session error:", sessionError);
+                toast.error("Your session has expired. Please login again.");
+                return;
+            }
+
             // Extract full metadata
             const metadata = await extractMetadata(imageFile);
 
@@ -266,12 +275,13 @@ const PhotoUploadModal = () => {
                         orientation: metadata.orientation,
                         train_number: data.trainNumber || null,
                         operator_id: selectedOperator ? parseInt(selectedOperator) : null,
+                        full_metadata: metadata
                     },
                 });
 
             if (insertError) {
-                console.error(insertError);
-                toast.error("Failed to save image data");
+                console.error("Insert error:", insertError);
+                toast.error("Failed to save image data: " + (insertError.message || "Unknown error"));
                 return;
             }
 

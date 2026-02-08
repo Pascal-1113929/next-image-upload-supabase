@@ -78,7 +78,7 @@ create index if not exists train_images_train_type_id_idx on public.train_images
 
 -- Storage bucket
 insert into storage.buckets (id, name, public)
-values ('train-images', 'train-images', false)
+values ('train-images', 'train-images', true)
 on conflict (id) do nothing;
 
 -- RLS on tables
@@ -236,9 +236,12 @@ for update using (auth.uid() = user_id);
 create policy "train_images_delete_own" on public.train_images
 for delete using (auth.uid() = user_id);
 
--- Storage policies (owner-based)
-create policy "storage_read_own_train_images" on storage.objects
-for select using (bucket_id = 'train-images' and auth.uid() = owner);
+-- Storage policies (public reads, owner writes)
+create policy "storage_read_train_images" on storage.objects
+for select using (bucket_id = 'train-images');
 
 create policy "storage_write_own_train_images" on storage.objects
 for insert with check (bucket_id = 'train-images' and auth.uid() = owner);
+
+create policy "storage_delete_own_train_images" on storage.objects
+for delete using (bucket_id = 'train-images' and auth.uid() = owner);
