@@ -30694,6 +30694,108 @@
     ],
     "trains": [
         {
+            "number": "4001-4002",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4003-4004",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4005-4006",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4007-4008",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4009-4010",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4011-4012",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4013-4014",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4015-4016",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4017-4018",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4019-4020",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4021-4022",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4023-4024",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4025-4026",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4027-4028",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4029-4030",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4031-4032",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4033-4034",
+            "altNumber": "",
+            "trainType": "Class 374",
+            "operator": "Eurostar"
+        },
+        {
             "number": "8001",
             "altNumber": "408 001",
             "trainType": "BR408",
