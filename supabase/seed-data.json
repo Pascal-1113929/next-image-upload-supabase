@@ -6,6 +6,16 @@
             "description": "High-speed train used by Eurostar for international services (BR Class 374)"
         },
         {
+            "name": "TGV PBKA",
+            "class_name": "TGV PBKA",
+            "description": "EUrostar Redesign TGV for international routes (TGV PBKA)"
+        },
+        {
+            "name": "TGV PBA",
+            "class_name": "TGV PBA",
+            "description": "Original TGV design for international routes (TGV PBA)"
+        },
+        {
             "name": "ICE 1",
             "class_name": "BR401",
             "description": "First-generation German high-speed train (DB Class 401)"
@@ -30693,6 +30703,336 @@
         }
     ],
     "trains": [
+        {
+            "number": "4301",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4302",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4303",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4304",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4305",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4306",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4307",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4308",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4309",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4310",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4311",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4312",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4313",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4314",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4315",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4316",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4317",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4318",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4319",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4320",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4321",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4322",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4323",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4324",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4325",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4326",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4327",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4328",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4329",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4330",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4331",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4332",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4333",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4334",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4335",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4336",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4337",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4338",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4339",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4340",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4341",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4342",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4343",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4344",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4345",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4346",
+            "altNumber": "",
+            "trainType": "TGV PBKA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4532",
+            "altNumber": "",
+            "trainType": "TGV PBA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4533",
+            "altNumber": "",
+            "trainType": "TGV PBA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4534",
+            "altNumber": "",
+            "trainType": "TGV PBA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4535",
+            "altNumber": "",
+            "trainType": "TGV PBA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4536",
+            "altNumber": "",
+            "trainType": "TGV PBA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4537",
+            "altNumber": "",
+            "trainType": "TGV PBA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4538",
+            "altNumber": "",
+            "trainType": "TGV PBA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4539",
+            "altNumber": "",
+            "trainType": "TGV PBA",
+            "operator": "Eurostar"
+        },
+        {
+            "number": "4540",
+            "altNumber": "",
+            "trainType": "TGV PBA",
+            "operator": "Eurostar"
+        },
         {
             "number": "4001-4002",
             "altNumber": "",
