@@ -1,6 +1,11 @@
 {
     "trainTypes": [
         {
+            "name": "Siemens Velaro e320",
+            "class_name": "Class 374",
+            "description": "High-speed train used by Eurostar for international services (BR Class 374)"
+        },
+        {
             "name": "ICE 1",
             "class_name": "BR401",
             "description": "First-generation German high-speed train (DB Class 401)"
@@ -31231,1705 +31236,1705 @@
         {
             "number": "9401",
             "altNumber": "9 401",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9402",
             "altNumber": "9 402",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9403",
             "altNumber": "9 403",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9404",
             "altNumber": "9 404",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9405",
             "altNumber": "9 405",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9406",
             "altNumber": "9 406",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9407",
             "altNumber": "9 407",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9408",
             "altNumber": "9 408",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9409",
             "altNumber": "9 409",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9410",
             "altNumber": "9 410",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9411",
             "altNumber": "9 411",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9412",
             "altNumber": "9 412",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9413",
             "altNumber": "9 413",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9414",
             "altNumber": "9 414",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9415",
             "altNumber": "9 415",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9416",
             "altNumber": "9 416",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9417",
             "altNumber": "9 417",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9418",
             "altNumber": "9 418",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9419",
             "altNumber": "9 419",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9420",
             "altNumber": "9 420",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9421",
             "altNumber": "9 421",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9422",
             "altNumber": "9 422",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9423",
             "altNumber": "9 423",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9424",
             "altNumber": "9 424",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9425",
             "altNumber": "9 425",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9426",
             "altNumber": "9 426",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9427",
             "altNumber": "9 427",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9428",
             "altNumber": "9 428",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9429",
             "altNumber": "9 429",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9430",
             "altNumber": "9 430",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9431",
             "altNumber": "9 431",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9432",
             "altNumber": "9 432",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9433",
             "altNumber": "9 433",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9434",
             "altNumber": "9 434",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9435",
             "altNumber": "9 435",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9436",
             "altNumber": "9 436",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9437",
             "altNumber": "9 437",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9438",
             "altNumber": "9 438",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9439",
             "altNumber": "9 439",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9440",
             "altNumber": "9 440",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9441",
             "altNumber": "9 441",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9442",
             "altNumber": "9 442",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9443",
             "altNumber": "9 443",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9444",
             "altNumber": "9 444",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9445",
             "altNumber": "9 445",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9446",
             "altNumber": "9 446",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9447",
             "altNumber": "9 447",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9448",
             "altNumber": "9 448",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9449",
             "altNumber": "9 449",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9450",
             "altNumber": "9 450",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9451",
             "altNumber": "9 451",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9452",
             "altNumber": "9 452",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9453",
             "altNumber": "9 453",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9454",
             "altNumber": "9 454",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9455",
             "altNumber": "9 455",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9456",
             "altNumber": "9 456",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9457",
             "altNumber": "9 457",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9458",
             "altNumber": "9 458",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9459",
             "altNumber": "9 459",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9460",
             "altNumber": "9 460",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9461",
             "altNumber": "9 461",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9462",
             "altNumber": "9 462",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9463",
             "altNumber": "9 463",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9464",
             "altNumber": "9 464",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9465",
             "altNumber": "9 465",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9466",
             "altNumber": "9 466",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9467",
             "altNumber": "9 467",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9468",
             "altNumber": "9 468",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9469",
             "altNumber": "9 469",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9470",
             "altNumber": "9 470",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9471",
             "altNumber": "9 471",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9472",
             "altNumber": "9 472",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9473",
             "altNumber": "9 473",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9474",
             "altNumber": "9 474",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9475",
             "altNumber": "9 475",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9476",
             "altNumber": "9 476",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9477",
             "altNumber": "9 477",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9478",
             "altNumber": "9 478",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9479",
             "altNumber": "9 479",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9480",
             "altNumber": "9 480",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9481",
             "altNumber": "9 481",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8601",
             "altNumber": "8 601",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8602",
             "altNumber": "8 602",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8603",
             "altNumber": "8 603",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8604",
             "altNumber": "8 604",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8605",
             "altNumber": "8 605",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8606",
             "altNumber": "8 606",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8607",
             "altNumber": "8 607",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8608",
             "altNumber": "8 608",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8609",
             "altNumber": "8 609",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8610",
             "altNumber": "8 610",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8611",
             "altNumber": "8 611",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8612",
             "altNumber": "8 612",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8613",
             "altNumber": "8 613",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8614",
             "altNumber": "8 614",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8615",
             "altNumber": "8 615",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8616",
             "altNumber": "8 616",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8617",
             "altNumber": "8 617",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8618",
             "altNumber": "8 618",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8619",
             "altNumber": "8 619",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8620",
             "altNumber": "8 620",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8621",
             "altNumber": "8 621",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8622",
             "altNumber": "8 622",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8623",
             "altNumber": "8 623",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8624",
             "altNumber": "8 624",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8625",
             "altNumber": "8 625",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8626",
             "altNumber": "8 626",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8627",
             "altNumber": "8 627",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8628",
             "altNumber": "8 628",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8629",
             "altNumber": "8 629",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8630",
             "altNumber": "8 630",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8631",
             "altNumber": "8 631",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8632",
             "altNumber": "8 632",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8633",
             "altNumber": "8 633",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8634",
             "altNumber": "8 634",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8635",
             "altNumber": "8 635",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8636",
             "altNumber": "8 636",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8637",
             "altNumber": "8 637",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8638",
             "altNumber": "8 638",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8639",
             "altNumber": "8 639",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8640",
             "altNumber": "8 640",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8641",
             "altNumber": "8 641",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8642",
             "altNumber": "8 642",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8643",
             "altNumber": "8 643",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8644",
             "altNumber": "8 644",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8645",
             "altNumber": "8 645",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8646",
             "altNumber": "8 646",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8647",
             "altNumber": "8 647",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8648",
             "altNumber": "8 648",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8649",
             "altNumber": "8 649",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8650",
             "altNumber": "8 650",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8651",
             "altNumber": "8 651",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8652",
             "altNumber": "8 652",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8653",
             "altNumber": "8 653",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8654",
             "altNumber": "8 654",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8655",
             "altNumber": "8 655",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8656",
             "altNumber": "8 656",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8657",
             "altNumber": "8 657",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8658",
             "altNumber": "8 658",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8659",
             "altNumber": "8 659",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8660",
             "altNumber": "8 660",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8661",
             "altNumber": "8 661",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8662",
             "altNumber": "8 662",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8663",
             "altNumber": "8 663",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8664",
             "altNumber": "8 664",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8665",
             "altNumber": "8 665",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8666",
             "altNumber": "8 666",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8667",
             "altNumber": "8 667",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8668",
             "altNumber": "8 668",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8669",
             "altNumber": "8 669",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8670",
             "altNumber": "8 670",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8671",
             "altNumber": "8 671",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8672",
             "altNumber": "8 672",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8673",
             "altNumber": "8 673",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8674",
             "altNumber": "8 674",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8675",
             "altNumber": "8 675",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8676",
             "altNumber": "8 676",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8677",
             "altNumber": "8 677",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8678",
             "altNumber": "8 678",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8679",
             "altNumber": "8 679",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8680",
             "altNumber": "8 680",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8681",
             "altNumber": "8 681",
-            "trainType": "NS VIRMm1",
+            "trainType": "NS VIRMm1 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9501",
             "altNumber": "9 501",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9502",
             "altNumber": "9 502",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9503",
             "altNumber": "9 503",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9504",
             "altNumber": "9 504",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9505",
             "altNumber": "9 505",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9506",
             "altNumber": "9 506",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9507",
             "altNumber": "9 507",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9508",
             "altNumber": "9 508",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9509",
             "altNumber": "9 509",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9510",
             "altNumber": "9 510",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9511",
             "altNumber": "9 511",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9512",
             "altNumber": "9 512",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9513",
             "altNumber": "9 513",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9514",
             "altNumber": "9 514",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9515",
             "altNumber": "9 515",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9516",
             "altNumber": "9 516",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9517",
             "altNumber": "9 517",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9518",
             "altNumber": "9 518",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9519",
             "altNumber": "9 519",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9520",
             "altNumber": "9 520",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9521",
             "altNumber": "9 521",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9522",
             "altNumber": "9 522",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9523",
             "altNumber": "9 523",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9524",
             "altNumber": "9 524",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9525",
             "altNumber": "9 525",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8701",
             "altNumber": "8 701",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8702",
             "altNumber": "8 702",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8703",
             "altNumber": "8 703",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8704",
             "altNumber": "8 704",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8705",
             "altNumber": "8 705",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8706",
             "altNumber": "8 706",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8707",
             "altNumber": "8 707",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8708",
             "altNumber": "8 708",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8709",
             "altNumber": "8 709",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8710",
             "altNumber": "8 710",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8711",
             "altNumber": "8 711",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8712",
             "altNumber": "8 712",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8713",
             "altNumber": "8 713",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8714",
             "altNumber": "8 714",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8715",
             "altNumber": "8 715",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8716",
             "altNumber": "8 716",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8717",
             "altNumber": "8 717",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8718",
             "altNumber": "8 718",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8719",
             "altNumber": "8 719",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8720",
             "altNumber": "8 720",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8721",
             "altNumber": "8 721",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8722",
             "altNumber": "8 722",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8723",
             "altNumber": "8 723",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8724",
             "altNumber": "8 724",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8725",
             "altNumber": "8 725",
-            "trainType": "NS VIRMm2",
+            "trainType": "NS VIRMm2 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8726",
             "altNumber": "8 726",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8727",
             "altNumber": "8 727",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8728",
             "altNumber": "8 728",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8729",
             "altNumber": "8 729",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8730",
             "altNumber": "8 730",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8731",
             "altNumber": "8 731",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8732",
             "altNumber": "8 732",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8733",
             "altNumber": "8 733",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8734",
             "altNumber": "8 734",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8735",
             "altNumber": "8 735",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8736",
             "altNumber": "8 736",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8737",
             "altNumber": "8 737",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8738",
             "altNumber": "8 738",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8739",
             "altNumber": "8 739",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8740",
             "altNumber": "8 740",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8741",
             "altNumber": "8 741",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8742",
             "altNumber": "8 742",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8743",
             "altNumber": "8 743",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8744",
             "altNumber": "8 744",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8745",
             "altNumber": "8 745",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "8746",
             "altNumber": "8 746",
-            "trainType": "NS VIRMm3",
+            "trainType": "NS VIRMm3 VIRM-VI",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9547",
             "altNumber": "9 547",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9548",
             "altNumber": "9 548",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9549",
             "altNumber": "9 549",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9550",
             "altNumber": "9 550",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9551",
             "altNumber": "9 551",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9552",
             "altNumber": "9 552",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9553",
             "altNumber": "9 553",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9554",
             "altNumber": "9 554",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9555",
             "altNumber": "9 555",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9556",
             "altNumber": "9 556",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9557",
             "altNumber": "9 557",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9558",
             "altNumber": "9 558",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9559",
             "altNumber": "9 559",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9560",
             "altNumber": "9 560",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9561",
             "altNumber": "9 561",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9562",
             "altNumber": "9 562",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9563",
             "altNumber": "9 563",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9564",
             "altNumber": "9 564",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9565",
             "altNumber": "9 565",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9566",
             "altNumber": "9 566",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9567",
             "altNumber": "9 567",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9568",
             "altNumber": "9 568",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9569",
             "altNumber": "9 569",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9570",
             "altNumber": "9 570",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9571",
             "altNumber": "9 571",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9572",
             "altNumber": "9 572",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9573",
             "altNumber": "9 573",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9574",
             "altNumber": "9 574",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9575",
             "altNumber": "9 575",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9576",
             "altNumber": "9 576",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9577",
             "altNumber": "9 577",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9578",
             "altNumber": "9 578",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9579",
             "altNumber": "9 579",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9580",
             "altNumber": "9 580",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9581",
             "altNumber": "9 581",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9582",
             "altNumber": "9 582",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9583",
             "altNumber": "9 583",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9584",
             "altNumber": "9 584",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9585",
             "altNumber": "9 585",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9586",
             "altNumber": "9 586",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9587",
             "altNumber": "9 587",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9588",
             "altNumber": "9 588",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9589",
             "altNumber": "9 589",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9590",
             "altNumber": "9 590",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9591",
             "altNumber": "9 591",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9592",
             "altNumber": "9 592",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9593",
             "altNumber": "9 593",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9594",
             "altNumber": "9 594",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9595",
             "altNumber": "9 595",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9596",
             "altNumber": "9 596",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9597",
             "altNumber": "9 597",
-            "trainType": "NS VIRM4",
+            "trainType": "NS VIRM4 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         }
     ]
