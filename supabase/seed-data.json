@@ -89,6 +89,46 @@
             "name": "VIRM4",
             "class_name": "NS VIRM4 VIRM-IV",
             "description": "Dutch double-decker intercity train (NS VIRMm4)"
+        },
+        {
+            "name": "ICMm1 3bakken",
+            "class_name": "NS ICMm1 ICM-III",
+            "description": "Dutch intercity train with 3 carriages (NS ICMm1)"
+        },
+        {
+            "name": "ICMm2 3bakken",
+            "class_name": "NS ICMm2 ICM-III",
+            "description": "Dutch intercity train with 3 carriages (NS ICMm2)"
+        },
+        {
+            "name": "ICMm3 4bakken",
+            "class_name": "NS ICMm3 ICM-IV",
+            "description": "Dutch intercity train with 4 carriages (NS ICMm3)"
+        },
+        {
+            "name": "ICMm4 4bakken",
+            "class_name": "NS ICMm4 ICM-IV",
+            "description": "Dutch intercity train with 4 carriages (NS ICMm4)"
+        },
+        {
+            "name": "ICNG 5bakken",
+            "class_name": "NS ICNG ICNG-V",
+            "description": "Dutch intercity train with 5 carriages (NS ICNG)"
+        },
+        {
+            "name": "ICNG 8bakken",
+            "class_name": "NS ICNG ICNG-VIII",
+            "description": "Dutch intercity train with 8 carriages (NS ICNG)"
+        },
+        {
+            "name": "ICNG-B 8bakken",
+            "class_name": "NS ICNG-B",
+            "description": "Dutch/Belgian intercity train with 8 carriages (NS ICNG-B)"
+        },
+        {
+            "name": "ICNG-D 8bakken",
+            "class_name": "NS ICNG-D",
+            "description": "Dutch/German intercity train with 8 carriages (NS ICNG-D)"
         }
     ],
     "trainoperators": [
@@ -115,6 +155,18 @@
         {
             "name": "Eurostar",
             "countryCode": "GB"
+        },
+        {
+            "name": "Spoorweg Museum",
+            "countryCode": "NL"
+        },
+        {
+            "name": "Arriva Nederland",
+            "countryCode": "NL"
+        },
+        {
+            "name": "Keolis Nederland",
+            "countryCode": "NL"
         }
     ],
     "stations": [
@@ -43261,6 +43313,1482 @@
             "number": "9597",
             "altNumber": "9 597",
             "trainType": "NS VIRM4 VIRM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4011",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Spoorweg Museum"
+        },
+        {
+            "number": "4012",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4013",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4014",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4015",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4016",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4017",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4018",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4019",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4020",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4021",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4022",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4023",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4024",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4025",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4026",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4027",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4028",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4029",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4030",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4031",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4032",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4033",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4034",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4035",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4036",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4037",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4038",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4039",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4040",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4041",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4042",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4043",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4044",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4045",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4046",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4047",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4048",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4049",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4050",
+            "altNumber": "",
+            "trainType": "NS ICMm1 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4051",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4052",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4053",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4054",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4055",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4056",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4057",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4058",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4059",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4060",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4061",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4062",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4063",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4064",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4065",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4066",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4067",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4068",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4069",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4070",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4071",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4072",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4073",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4074",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4075",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4076",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4077",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4078",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4079",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4080",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4081",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4082",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4083",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4084",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4085",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4086",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4087",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4088",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4089",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4090",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4091",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4092",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4093",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4094",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4095",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4096",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4097",
+            "altNumber": "",
+            "trainType": "NS ICMm2 ICM-III",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4201",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4202",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4203",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4204",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4205",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4206",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4207",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4208",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4209",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4210",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4211",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4212",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4213",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4214",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4215",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4216",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4217",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4218",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4219",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4220",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4221",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4222",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4223",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4224",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4225",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4226",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4227",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4228",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4229",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4230",
+            "altNumber": "",
+            "trainType": "NS ICMm3 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4231",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4232",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4233",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4234",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4235",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4236",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4237",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4238",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4239",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4240",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4241",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4242",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4243",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4244",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4245",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4246",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4247",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4248",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4249",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "4250",
+            "altNumber": "",
+            "trainType": "NS ICMm4 ICM-IV",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3101",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3102",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3103",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3104",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3105",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3106",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3107",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3108",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3109",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3110",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3111",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3112",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3113",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3114",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3115",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3116",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3117",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3118",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3119",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3120",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3121",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3122",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3123",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3124",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3125",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3126",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3127",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3128",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3129",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3130",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3131",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3132",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3133",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3134",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3135",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3136",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3137",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3138",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3139",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3140",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3141",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3142",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3143",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3144",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3145",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3146",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3147",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3148",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3149",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-V",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3201",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3202",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3203",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3204",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3205",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3206",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3207",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3208",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3209",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3210",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3211",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3212",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3213",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3214",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3215",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3216",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3217",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3218",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3219",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3220",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3221",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3222",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3223",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3224",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3225",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3226",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3227",
+            "altNumber": "",
+            "trainType": "NS ICNG ICNG-VIII",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3301",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3302",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3303",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3304",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3305",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3306",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3307",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3308",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3309",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3310",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3311",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3312",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3313",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3314",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3315",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3316",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3317",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3318",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3319",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3320",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3321",
+            "altNumber": "",
+            "trainType": "NS ICNG-B",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3351",
+            "altNumber": "",
+            "trainType": "NS ICNG-D",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3352",
+            "altNumber": "",
+            "trainType": "NS ICNG-D",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3353",
+            "altNumber": "",
+            "trainType": "NS ICNG-D",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3354",
+            "altNumber": "",
+            "trainType": "NS ICNG-D",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3355",
+            "altNumber": "",
+            "trainType": "NS ICNG-D",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3356",
+            "altNumber": "",
+            "trainType": "NS ICNG-D",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3357",
+            "altNumber": "",
+            "trainType": "NS ICNG-D",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3358",
+            "altNumber": "",
+            "trainType": "NS ICNG-D",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3359",
+            "altNumber": "",
+            "trainType": "NS ICNG-D",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3360",
+            "altNumber": "",
+            "trainType": "NS ICNG-D",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3361",
+            "altNumber": "",
+            "trainType": "NS ICNG-D",
+            "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "3362",
+            "altNumber": "",
+            "trainType": "NS ICNG-D",
             "operator": "Nederlandse Spoorwegen"
         }
     ]
