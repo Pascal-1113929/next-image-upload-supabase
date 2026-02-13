@@ -1,9 +1,9 @@
 {
     "trainTypes": [
         {
-            "name": "Siemens Vectro D",
+            "name": "Siemens Vectron",
             "class_name": "BR193",
-            "description": "Siemens Vectro D high-speed locomotive (DB Class 193)"
+            "description": "Siemens Vectron high-speed locomotive (DB Class 193)"
         },
         {
             "name": "Siemens Velaro e320",
@@ -35038,13 +35038,6 @@
             "latitude": 48.194479
         },
         {
-            "name": null,
-            "countryCode": "AT",
-            "stationCode": null,
-            "longitude": 14.3151663,
-            "latitude": 47.6273616
-        },
-        {
             "name": "Standseilbahn Wurzeralm (Bergstation)",
             "countryCode": "AT",
             "stationCode": null,
@@ -35913,13 +35906,6 @@
             "latitude": 48.1973277
         },
         {
-            "name": null,
-            "countryCode": "AT",
-            "stationCode": null,
-            "longitude": 13.0509318,
-            "latitude": 46.9810598
-        },
-        {
             "name": "Ober Grafendorf",
             "countryCode": "AT",
             "stationCode": null,
@@ -36471,20 +36457,6 @@
             "stationCode": null,
             "longitude": 13.771667,
             "latitude": 47.8044722
-        },
-        {
-            "name": null,
-            "countryCode": "AT",
-            "stationCode": null,
-            "longitude": 11.3998662,
-            "latitude": 47.2468332
-        },
-        {
-            "name": null,
-            "countryCode": "AT",
-            "stationCode": null,
-            "longitude": 11.4000892,
-            "latitude": 47.2488155
         },
         {
             "name": "Linz Urfahr",
@@ -37157,13 +37129,6 @@
             "stationCode": null,
             "longitude": 16.3314176,
             "latitude": 48.173527
-        },
-        {
-            "name": null,
-            "countryCode": "AT",
-            "stationCode": null,
-            "longitude": 15.4149245,
-            "latitude": 47.0402426
         },
         {
             "name": "Tunnelbahn Gletscherexpress Bergstation",
