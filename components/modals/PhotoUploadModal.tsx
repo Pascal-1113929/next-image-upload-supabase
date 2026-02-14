@@ -21,6 +21,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
+import { Combobox, ComboboxContent, ComboboxEmpty, ComboboxItem, ComboboxInput, ComboboxList, } from "../ui/combobox";
 
 interface FormData {
     title: string;
@@ -76,6 +77,8 @@ const PhotoUploadModal = () => {
     const [suggestedStation, setSuggestedStation] = useState("");
     const [suggestedTrainType, setSuggestedTrainType] = useState("");
 
+    const [queryStation, setQueryStation] = useState("");       // for start station
+    const [queryStationEnd, setQueryStationEnd] = useState(""); // for end station (route)
 
     const { register, handleSubmit, reset, watch } = useForm<FormData>({
         defaultValues: {
@@ -88,6 +91,15 @@ const PhotoUploadModal = () => {
 
     const imageFile = watch("image");
     const trainNumber = watch("trainNumber");
+
+    const filteredStations = stations.filter((s) =>
+        s.name.toLowerCase().includes(queryStation.toLowerCase())
+    );
+
+    const filteredStationsEnd = stations.filter((s) =>
+        s.name.toLowerCase().includes(queryStationEnd.toLowerCase())
+    );
+
 
     // Load stations, train types, and operators on mount
     useEffect(() => {
@@ -177,14 +189,19 @@ const PhotoUploadModal = () => {
                 );
 
                 if (nearest) {
+                    console.log("Nearest station:", nearest);
                     if (nearest.distance <= 1.5) {
                         setLocationType("station");
                         setSelectedStation(nearest.id.toString());
                         setSelectedStationEnd("");
                         setSuggestedStation(nearest.name);
+                        setQueryStation(nearest.name); // <-- prefill the combobox input
+                        console.log("Nearest id that will be set:", nearest.id.toString());
+
 
                         toast.success(`Detected station: ${nearest.name}`, { id: "metadata" });
                     } else {
+                        console.log("No station within 1.5km, checking for routes...");
                         const { data: closestStations } = await supabaseClient.rpc(
                             "find_two_nearest_stations",
                             {
@@ -473,42 +490,81 @@ const PhotoUploadModal = () => {
                                 </span>
                             )}
                         </Label>
-                        <Select
-                            disabled={isLoading}
+
+                        <Combobox
                             value={selectedStation}
-                            onValueChange={setSelectedStation}
+                            onValueChange={(val) => {
+                                setSelectedStation(val || ""); // always string
+                                const stationName = stations.find(s => s.id.toString() === val)?.name || "";
+                                setQueryStation(stationName); // update input display
+                            }}
+                            modal={true}
                         >
-                            <SelectTrigger className="mt-1.5">
-                                <SelectValue placeholder="Select a station" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                {stations.map((station) => (
-                                    <SelectItem key={station.id} value={station.id.toString()}>
-                                        {station.name}
-                                    </SelectItem>
-                                ))}
-                            </SelectContent>
-                        </Select>
+                            <ComboboxInput
+                                placeholder="Search station..."
+                                value={queryStation}
+                                onChange={(e) => setQueryStation(e.target.value)}
+                                showClear
+                                disabled={isLoading}
+                            />
+
+                            <ComboboxContent>
+                                <ComboboxList>
+                                    {filteredStations.length > 0 ? (
+                                        filteredStations.map((station) => (
+                                            <ComboboxItem
+                                                key={station.id}
+                                                value={station.id.toString()}
+                                            >
+                                                {station.name}
+                                            </ComboboxItem>
+                                        ))
+                                    ) : (
+                                        <ComboboxEmpty>No stations found</ComboboxEmpty>
+                                    )}
+                                </ComboboxList>
+                            </ComboboxContent>
+                        </Combobox>
+
                     </div>
+
                     <div>
                         {locationType === "route" && (
                             <>
                                 <Label>End Station</Label>
-                                <Select
-                                    disabled={isLoading}
-                                    value={selectedStationEnd}
-                                    onValueChange={setSelectedStationEnd}>
-                                    <SelectTrigger className="mt-1.5">
-                                        <SelectValue placeholder="Select second station" />
-                                    </SelectTrigger>
-                                    <SelectContent>
-                                        {stations.map(s => (
-                                            <SelectItem key={s.id} value={s.id.toString()}>
-                                                {s.name}
-                                            </SelectItem>
-                                        ))}
-                                    </SelectContent>
-                                </Select>
+                                {locationType === "route" && (
+                                    <Combobox
+                                        value={selectedStationEnd}
+                                        onValueChange={(val) => {
+                                            setSelectedStationEnd(val || ""); // always string
+                                            const stationName = stations.find(s => s.id.toString() === val)?.name || "";
+                                            setQueryStationEnd(stationName); // update input display
+                                        }}
+                                        modal={true}
+                                    >
+                                        <ComboboxInput
+                                            placeholder="Search end station..."
+                                            value={queryStationEnd}
+                                            onChange={(e) => setQueryStationEnd(e.target.value)}
+                                            showClear
+                                            disabled={isLoading}
+                                        />
+
+                                        <ComboboxContent>
+                                            <ComboboxList>
+                                                {filteredStationsEnd.length > 0 ? (
+                                                    filteredStationsEnd.map((station) => (
+                                                        <ComboboxItem key={station.id} value={station.id.toString()}>
+                                                            {station.name}
+                                                        </ComboboxItem>
+                                                    ))
+                                                ) : (
+                                                    <ComboboxEmpty>No stations found</ComboboxEmpty>
+                                                )}
+                                            </ComboboxList>
+                                        </ComboboxContent>
+                                    </Combobox>
+                                )}
                             </>
                         )}
                     </div>
