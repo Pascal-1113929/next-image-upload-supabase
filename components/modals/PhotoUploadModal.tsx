@@ -63,12 +63,19 @@ const PhotoUploadModal = () => {
     const [stations, setStations] = useState<Station[]>([]);
     const [trainTypes, setTrainTypes] = useState<TrainType[]>([]);
     const [operators, setOperators] = useState<TrainOperator[]>([]);
-    const [selectedStation, setSelectedStation] = useState<string>("");
-    const [selectedTrainType, setSelectedTrainType] = useState<string>("");
-    const [selectedOperator, setSelectedOperator] = useState<string>("");
-    const [detectedDate, setDetectedDate] = useState<string>("");
-    const [suggestedStation, setSuggestedStation] = useState<string>("");
-    const [suggestedTrainType, setSuggestedTrainType] = useState<string>("");
+
+    const [selectedStation, setSelectedStation] = useState("");
+    const [selectedStationEnd, setSelectedStationEnd] = useState("");
+    const [locationType, setLocationType] = useState<"station" | "route">("station");
+
+    const [selectedTrainType, setSelectedTrainType] = useState("");
+    const [selectedOperator, setSelectedOperator] = useState("");
+    const [trainId, setTrainId] = useState<number | null>(null);
+
+    const [detectedDate, setDetectedDate] = useState("");
+    const [suggestedStation, setSuggestedStation] = useState("");
+    const [suggestedTrainType, setSuggestedTrainType] = useState("");
+
 
     const { register, handleSubmit, reset, watch } = useForm<FormData>({
         defaultValues: {
@@ -85,36 +92,26 @@ const PhotoUploadModal = () => {
     // Load stations, train types, and operators on mount
     useEffect(() => {
         const loadData = async () => {
-            // Load stations
-            const { data: stationsData, error: stationsError } = await supabaseClient
+            const { data: stationsData } = await supabaseClient
                 .from("train_stations")
                 .select("id, name")
                 .order("name");
 
-            if (!stationsError && stationsData) {
-                setStations(stationsData);
-            }
-
-            // Load train types
-            const { data: typesData, error: typesError } = await supabaseClient
+            const { data: typesData } = await supabaseClient
                 .from("train_types")
                 .select("id, name, class_name")
                 .order("name");
 
-            if (!typesError && typesData) {
-                setTrainTypes(typesData);
-            }
-
-            // Load operators
-            const { data: operatorsData, error: operatorsError } = await supabaseClient
+            const { data: operatorsData } = await supabaseClient
                 .from("train_operators")
                 .select("id, name, country_code")
                 .order("name");
 
-            if (!operatorsError && operatorsData) {
-                setOperators(operatorsData);
-            }
+            if (stationsData) setStations(stationsData);
+            if (typesData) setTrainTypes(typesData);
+            if (operatorsData) setOperators(operatorsData);
         };
+
         loadData();
     }, []);
 
@@ -129,7 +126,7 @@ const PhotoUploadModal = () => {
             try {
                 const { data, error } = await supabaseClient
                     .from("trains")
-                    .select("train_type_id")
+                    .select("train_type_id, id")
                     .eq("operator_id", parseInt(selectedOperator))
                     .eq("train_number", trainNumber)
                     .single();
@@ -139,6 +136,7 @@ const PhotoUploadModal = () => {
                     if (trainType) {
                         setSuggestedTrainType(trainType.name);
                         setSelectedTrainType(data.train_type_id.toString());
+                        setTrainId(data.id);
                         toast.success(`Train type detected: ${trainType.name}`, { duration: 3000 });
                     }
                 } else {
@@ -179,12 +177,33 @@ const PhotoUploadModal = () => {
                 );
 
                 if (nearest) {
-                    setSuggestedStation(nearest.name);
-                    setSelectedStation(nearest.id.toString());
-                    toast.success(
-                        `Detected station: ${nearest.name} (${nearest.distance}km away)`,
-                        { id: "metadata" }
-                    );
+                    if (nearest.distance <= 1.5) {
+                        setLocationType("station");
+                        setSelectedStation(nearest.id.toString());
+                        setSelectedStationEnd("");
+                        setSuggestedStation(nearest.name);
+
+                        toast.success(`Detected station: ${nearest.name}`, { id: "metadata" });
+                    } else {
+                        const { data: closestStations } = await supabaseClient.rpc(
+                            "find_two_nearest_stations",
+                            {
+                                lat: metadata.location.latitude,
+                                lng: metadata.location.longitude
+                            }
+                        );
+
+                        if (closestStations?.length === 2) {
+                            setLocationType("route");
+                            setSelectedStation(closestStations[0].id.toString());
+                            setSelectedStationEnd(closestStations[1].id.toString());
+
+                            toast.success(
+                                `Detected route: ${closestStations[0].name} → ${closestStations[1].name}`,
+                                { id: "metadata" }
+                            );
+                        }
+                    }
                 } else {
                     toast.success("Metadata extracted", { id: "metadata" });
                 }
@@ -253,13 +272,42 @@ const PhotoUploadModal = () => {
                 return;
             }
 
+            // create location row
+            let locationId: number | null = null;
+
+            if (selectedStation) {
+                const { data: locationData, error: locationError } = await supabaseClient
+                    .from("train_image_locations")
+                    .insert({
+                        user_id: user.id,
+                        location_type: locationType,
+                        station_id: parseInt(selectedStation),
+                        station_id_end:
+                            locationType === "route" && selectedStationEnd
+                                ? parseInt(selectedStationEnd)
+                                : null,
+                    })
+                    .select()
+                    .single();
+
+                if (locationError) throw locationError;
+                locationId = locationData.id;
+
+                if (locationError) {
+                    console.error("Location insert error:", locationError);
+                    toast.error("Failed to save location data: " + (locationError || "Unknown error"));
+                    return;
+                }
+            }
+
             // Insert image record
             const { error: insertError } = await supabaseClient
                 .from("train_images")
                 .insert({
                     user_id: user.id,
-                    station_id: selectedStation ? parseInt(selectedStation) : null,
+                    location_id: locationId,
                     train_type_id: selectedTrainType ? parseInt(selectedTrainType) : null,
+                    train_id: trainId,
                     title: data.title || null,
                     description: data.description || null,
                     taken_at: metadata.takenAt || new Date(),
@@ -270,11 +318,7 @@ const PhotoUploadModal = () => {
                     width_px: metadata.width || null,
                     height_px: metadata.height || null,
                     original_metadata: {
-                        camera: metadata.camera,
                         location: metadata.location,
-                        orientation: metadata.orientation,
-                        train_number: data.trainNumber || null,
-                        operator_id: selectedOperator ? parseInt(selectedOperator) : null,
                         full_metadata: metadata
                     },
                 });
@@ -291,6 +335,7 @@ const PhotoUploadModal = () => {
             setSelectedStation("");
             setSelectedTrainType("");
             setSelectedOperator("");
+            setDetectedDate("");
             uploadModal.onClose();
         } catch (error) {
             console.error(error);
@@ -410,6 +455,15 @@ const PhotoUploadModal = () => {
                 <div className="bg-neutral-800 p-4 rounded-lg border-2 border-neutral-700">
                     <h3 className="text-base font-semibold mb-3 text-white">Location</h3>
 
+                    <Label>Location Type</Label>
+                    <Select value={locationType} onValueChange={(v) => setLocationType(v as any)}>
+                        <SelectTrigger><SelectValue /></SelectTrigger>
+                        <SelectContent>
+                            <SelectItem value="station">At Station</SelectItem>
+                            <SelectItem value="route">Between Stations</SelectItem>
+                        </SelectContent>
+                    </Select>
+
                     {/* Station Select */}
                     <div>
                         <Label htmlFor="station" className="text-sm font-medium">
@@ -435,6 +489,28 @@ const PhotoUploadModal = () => {
                                 ))}
                             </SelectContent>
                         </Select>
+                    </div>
+                    <div>
+                        {locationType === "route" && (
+                            <>
+                                <Label>End Station</Label>
+                                <Select
+                                    disabled={isLoading}
+                                    value={selectedStationEnd}
+                                    onValueChange={setSelectedStationEnd}>
+                                    <SelectTrigger className="mt-1.5">
+                                        <SelectValue placeholder="Select second station" />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        {stations.map(s => (
+                                            <SelectItem key={s.id} value={s.id.toString()}>
+                                                {s.name}
+                                            </SelectItem>
+                                        ))}
+                                    </SelectContent>
+                                </Select>
+                            </>
+                        )}
                     </div>
                 </div>
 
