@@ -23,11 +23,24 @@ interface TrainImage {
     image_path: string;
     taken_at: string;
     is_private: boolean;
-    station: {
-        name: string;
-    } | null;
     created_at: string;
+    location: {
+        location_type: string | null;
+        station_id: number | null;
+        station_id_end: number | null;
+        station: {          // start station
+            id: number;
+            name: string;
+            country_code: string;
+        } | null;
+        station_end: {      // end station
+            id: number;
+            name: string;
+            country_code: string;
+        } | null;
+    } | null;
 }
+
 
 export default function PhotosPage() {
     const router = useRouter();
@@ -46,17 +59,29 @@ export default function PhotosPage() {
                 let query = supabaseClient
                     .from("train_images")
                     .select(`
-            id,
-            title,
-            description,
-            image_path,
-            taken_at,
-            is_private,
-            created_at,
-            train_stations (
-              name
-            )
-          `)
+                        id,
+                        title,
+                        description,
+                        image_path,
+                        taken_at,
+                        is_private,
+                        created_at,
+                        location:train_image_locations (
+                            location_type,
+                            station_id,
+                            station_id_end,
+                            station:train_stations!train_image_locations_station_id_fkey (
+                                id,
+                                name,
+                                country_code
+                            ),
+                            station_end:train_stations!train_image_locations_station_id_end_fkey (
+                                id,
+                                name,
+                                country_code
+                            )
+                        )
+                    `)
                     .order("created_at", { ascending: false });
 
                 // If user is logged in, show their private photos too
@@ -76,7 +101,8 @@ export default function PhotosPage() {
                 // Transform the data structure
                 const transformedData = data?.map((photo: any) => ({
                     ...photo,
-                    station: photo.train_stations,
+                    startStation: photo.location?.station || null,
+                    endStation: photo.location?.station_end || null,
                 }));
 
                 setPhotos(transformedData || []);
@@ -89,6 +115,8 @@ export default function PhotosPage() {
 
         loadPhotos();
     }, [user]);
+
+    console.log("Loaded photos:", photos);
 
     const getImageUrl = (path: string) => {
         const { data } = supabaseClient.storage
@@ -167,12 +195,25 @@ export default function PhotosPage() {
                                         {photo.title || "Untitled"}
                                     </CardTitle>
                                     <CardDescription className="space-y-1">
-                                        {photo.station && (
-                                            <div className="flex items-center gap-1">
-                                                <span>📍</span>
-                                                <span>{photo.station.name}</span>
-                                            </div>
-                                        )}
+                                        <div className="flex items-center gap-1">
+                                            <span>📍</span>
+                                            {photo.location?.location_type === "route" ? (
+                                                // route
+                                                <span>
+                                                    {photo.location.station?.name || "Unknown"}{" "}
+                                                    <span className="text-xs">({photo.location.station?.country_code || "??"})</span>
+                                                    {" - "}
+                                                    {photo.location.station_end?.name || "Unknown"}{" "}
+                                                    <span className="text-xs">({photo.location.station_end?.country_code || "??"})</span>
+                                                </span>
+                                            ) : (
+                                                // Single station
+                                                <span>
+                                                    {photo.location?.station?.name || "Unknown"}{" "}
+                                                    <span className="text-xs">({photo.location?.station?.country_code || "??"})</span>
+                                                </span>
+                                            )}
+                                        </div>
                                         <div className="flex items-center gap-1">
                                             <span>📅</span>
                                             <span>

@@ -25,9 +25,20 @@ interface TrainImageDetail {
     height_px: number | null;
     file_size_bytes: number | null;
     original_metadata: any;
-    station: {
-        name: string;
-        country_code: string | null;
+    location: {
+        location_type: string | null;
+        station_id: number | null;
+        station_id_end: number | null;
+        station: {          // start station
+            id: number;
+            name: string;
+            country_code: string;
+        } | null;
+        station_end: {      // end station
+            id: number;
+            name: string;
+            country_code: string;
+        } | null;
     } | null;
     user_id: string;
     created_at: string;
@@ -51,23 +62,34 @@ export default function PhotoDetailPage() {
                 const { data, error } = await supabaseClient
                     .from("train_images")
                     .select(`
-            id,
-            title,
-            description,
-            image_path,
-            taken_at,
-            is_private,
-            user_id,
-            width_px,
-            height_px,
-            file_size_bytes,
-            original_metadata,
-            created_at,
-            train_stations (
+          id,
+          title,
+          description,
+          image_path,
+          taken_at,
+          is_private,
+          user_id,
+          width_px,
+          height_px,
+          file_size_bytes,
+          original_metadata,
+          created_at,
+          location:train_image_locations (
+            location_type,
+            station_id,
+            station_id_end,
+            station:train_stations!train_image_locations_station_id_fkey (
+              id,
+              name,
+              country_code
+            ),
+            station_end:train_stations!train_image_locations_station_id_end_fkey (
+              id,
               name,
               country_code
             )
-          `)
+          )
+        `)
                     .eq("id", params.id)
                     .single();
 
@@ -82,12 +104,11 @@ export default function PhotoDetailPage() {
                     return;
                 }
 
-                // Transform the data structure
+                // Transform the data structure: lift stations out of location
                 const transformedData: TrainImageDetail = {
                     ...data,
-                    station: Array.isArray(data.train_stations) && data.train_stations.length > 0
-                        ? data.train_stations[0]
-                        : null,
+                    startStation: data.location?.station?.[0] || null,
+                    endStation: data.location?.station_end?.[0] || null,
                 };
 
                 setPhoto(transformedData);
@@ -100,6 +121,7 @@ export default function PhotoDetailPage() {
 
         loadPhoto();
     }, [params.id, user, router]);
+
 
     const getImageUrl = (path: string) => {
         const { data } = supabaseClient.storage
@@ -182,18 +204,37 @@ export default function PhotoDetailPage() {
                                 )}
                             </CardHeader>
                             <CardContent className="space-y-3 text-sm">
-                                {photo.station && (
-                                    <div>
-                                        <div className="font-semibold text-zinc-700 dark:text-zinc-300">
-                                            Station
-                                        </div>
-                                        <div className="text-zinc-600 dark:text-zinc-400">
-                                            📍 {photo.station.name}
-                                            {photo.station.country_code &&
-                                                ` (${photo.station.country_code})`}
-                                        </div>
+                                <div>
+                                    <div className="font-semibold text-zinc-700 dark:text-zinc-300">
+                                        Location
                                     </div>
-                                )}
+                                    <div className="text-zinc-600 dark:text-zinc-400">
+                                        📍{' '}
+                                        {photo.location?.location_type === "route" ? (
+                                            // It's a route
+                                            <>
+                                                {photo.location?.station?.name || "Unknown"}{" "}
+                                                <span className="text-xs">
+                                                    ({photo.location?.station?.country_code || "??"})
+                                                </span>{" "}
+                                                -{" "}
+                                                {photo.location?.station_end?.name || "Unknown"}{" "}
+                                                <span className="text-xs">
+                                                    ({photo.location?.station_end?.country_code || "??"})
+                                                </span>
+                                            </>
+                                        ) : (
+                                            // Single station
+                                            <>
+                                                {photo.location?.station?.name || "Unknown"}{" "}
+                                                <span className="text-xs">
+                                                    ({photo.location?.station?.country_code || "??"})
+                                                </span>
+                                            </>
+                                        )}
+                                    </div>
+                                </div>
+
 
                                 <div>
                                     <div className="font-semibold text-zinc-700 dark:text-zinc-300">
