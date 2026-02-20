@@ -363,15 +363,15 @@ const PhotoUploadModal = () => {
     };
 
     return (
-        <Modal
-            title="Upload Train Photo"
-            description="Upload your train photo with automatic metadata extraction"
-            isOpen={uploadModal.isOpen}
-            onChange={onChange}
-        >
+        // <Modal
+        //     title="Upload Train Photo"
+        //     description="Upload your train photo with automatic metadata extraction"
+        //     isOpen={uploadModal.isOpen}
+        //     onChange={onChange}
+        // >
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-4 max-h-[70vh] overflow-y-auto pr-2">
                 {/* Image Upload - Priority Field */}
-                <div className="bg-neutral-800 p-4 rounded-lg border-2 border-neutral-700">
+                <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
                     <Label htmlFor="image" className="text-base font-semibold">
                         Photo * <span className="text-xs text-neutral-400 font-normal">(Required)</span>
                     </Label>
@@ -397,8 +397,8 @@ const PhotoUploadModal = () => {
                 </div>
 
                 {/* Train Details Section */}
-                <div className="bg-neutral-800 p-4 rounded-lg border-2 border-neutral-700">
-                    <h3 className="text-base font-semibold mb-3 text-white">Train Details</h3>
+                <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
+                    <h3 className="text-base font-semibold mb-3 text-black">Train Details</h3>
 
                     {/* Train Operator */}
                     <div className="mb-3">
@@ -469,8 +469,8 @@ const PhotoUploadModal = () => {
                 </div>
 
                 {/* Location Section */}
-                <div className="bg-neutral-800 p-4 rounded-lg border-2 border-neutral-700">
-                    <h3 className="text-base font-semibold mb-3 text-white">Location</h3>
+                <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
+                    <h3 className="text-base font-semibold mb-3 text-black">Location</h3>
 
                     <Label>Location Type</Label>
                     <Select value={locationType} onValueChange={(v) => setLocationType(v as any)}>
@@ -564,8 +564,8 @@ const PhotoUploadModal = () => {
                 </div>
 
                 {/* Photo Information Section */}
-                <div className="bg-neutral-800 p-4 rounded-lg border-2 border-neutral-700">
-                    <h3 className="text-base font-semibold mb-3 text-white">Photo Information</h3>
+                <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
+                    <h3 className="text-base font-semibold mb-3 text-black">Photo Information</h3>
 
                     {/* Title */}
                     <div className="mb-3">
@@ -619,7 +619,7 @@ const PhotoUploadModal = () => {
                     {isLoading ? "Uploading..." : "Upload Photo"}
                 </Button>
             </form>
-        </Modal>
+        // </Modal>
     );
 };
 

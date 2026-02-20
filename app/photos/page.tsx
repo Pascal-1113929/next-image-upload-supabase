@@ -45,7 +45,7 @@ interface TrainImage {
 export default function PhotosPage() {
     const router = useRouter();
     const { user } = useUser();
-    const photoUploadModal = usePhotoUploadModal();
+    // const photoUploadModal = usePhotoUploadModal();
     const authModal = useAuthModal();
 
     const [photos, setPhotos] = useState<TrainImage[]>([]);
@@ -129,7 +129,8 @@ export default function PhotosPage() {
         if (!user) {
             authModal.onOpen();
         } else {
-            photoUploadModal.onOpen();
+            return router.push("/photos/upload");
+            // photoUploadModal.onOpen();
         }
     };
 

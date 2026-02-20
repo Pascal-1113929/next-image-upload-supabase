@@ -33,7 +33,7 @@ interface TrainImage {
 export default function MyPhotosPage() {
     const router = useRouter();
     const { user } = useUser();
-    const photoUploadModal = usePhotoUploadModal();
+    // const photoUploadModal = usePhotoUploadModal();
     const authModal = useAuthModal();
 
     const [photos, setPhotos] = useState<TrainImage[]>([]);
@@ -151,7 +151,7 @@ export default function MyPhotosPage() {
                             Manage your uploaded train photos
                         </p>
                     </div>
-                    <Button onClick={() => photoUploadModal.onOpen()} size="lg">
+                    <Button onClick={() => router.push("/photos/upload")} size="lg">
                         Upload Photo
                     </Button>
                 </div>
@@ -173,7 +173,7 @@ export default function MyPhotosPage() {
                         <p className="text-xl text-zinc-500 dark:text-zinc-400 mb-4">
                             You haven't uploaded any photos yet
                         </p>
-                        <Button onClick={() => photoUploadModal.onOpen()}>
+                        <Button onClick={() => router.push("/photos/upload")}>
                             Upload your first photo
                         </Button>
                     </div>
