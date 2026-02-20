@@ -493,29 +493,23 @@ const PhotoUploadModal = () => {
 
                         <Combobox
                             value={selectedStation}
-                            onValueChange={(val) => {
-                                setSelectedStation(val || ""); // always string
-                                const stationName = stations.find(s => s.id.toString() === val)?.name || "";
-                                setQueryStation(stationName); // update input display
-                            }}
-                            modal={true}
+                            onValueChange={(val) => setSelectedStation(val || "")}
                         >
                             <ComboboxInput
                                 placeholder="Search station..."
-                                value={queryStation}
+                                value={
+                                    selectedStation
+                                        ? stations.find((s) => s.id.toString() === selectedStation)?.name
+                                        : queryStation
+                                }
                                 onChange={(e) => setQueryStation(e.target.value)}
                                 showClear
-                                disabled={isLoading}
                             />
-
-                            <ComboboxContent>
-                                <ComboboxList>
+                            <ComboboxContent side="bottom" sideOffset={4} className="z-50">
+                                <ComboboxList className="max-h-60 overflow-y-auto">
                                     {filteredStations.length > 0 ? (
                                         filteredStations.map((station) => (
-                                            <ComboboxItem
-                                                key={station.id}
-                                                value={station.id.toString()}
-                                            >
+                                            <ComboboxItem key={station.id} value={station.id.toString()}>
                                                 {station.name}
                                             </ComboboxItem>
                                         ))
@@ -525,7 +519,6 @@ const PhotoUploadModal = () => {
                                 </ComboboxList>
                             </ComboboxContent>
                         </Combobox>
-
                     </div>
 
                     <div>
@@ -540,7 +533,7 @@ const PhotoUploadModal = () => {
                                             const stationName = stations.find(s => s.id.toString() === val)?.name || "";
                                             setQueryStationEnd(stationName); // update input display
                                         }}
-                                        modal={true}
+                                        modal={false}
                                     >
                                         <ComboboxInput
                                             placeholder="Search end station..."
