@@ -66,6 +66,11 @@
             "description": "Diesel-powered high-speed train (DB Class 605)"
         },
         {
+            "name": "Baureihe 423",
+            "class_name": "BR423",
+            "description": "DB Baureihe 423 S-Bahn train for regional services (DB Class 423)"
+        },
+        {
             "name": "VIRMm1 4Bakken",
             "class_name": "NS VIRMm1 VIRM-IV",
             "description": "Dutch double-decker intercity train (NS VIRMm1)"
