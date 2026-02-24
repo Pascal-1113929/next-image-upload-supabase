@@ -369,7 +369,8 @@ const PhotoUploadModal = () => {
         //     isOpen={uploadModal.isOpen}
         //     onChange={onChange}
         // >
-            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-4 max-h-[70vh] overflow-y-auto pr-2">
+            // <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-4 max-h-[70vh] overflow-y-auto pr-2">
+            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-4 w-[70vw] overflow-y-auto pr-2">
                 {/* Image Upload - Priority Field */}
                 <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
                     <Label htmlFor="image" className="text-base font-semibold">
@@ -502,7 +503,7 @@ const PhotoUploadModal = () => {
                                         ? stations.find((s) => s.id.toString() === selectedStation)?.name
                                         : queryStation
                                 }
-                                onChange={(e) => setQueryStation(e.target.value)}
+                                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setQueryStation(e.target.value)}
                                 showClear
                             />
                             <ComboboxContent side="bottom" sideOffset={4} className="z-50">
@@ -538,7 +539,7 @@ const PhotoUploadModal = () => {
                                         <ComboboxInput
                                             placeholder="Search end station..."
                                             value={queryStationEnd}
-                                            onChange={(e) => setQueryStationEnd(e.target.value)}
+                                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setQueryStationEnd(e.target.value)}
                                             showClear
                                             disabled={isLoading}
                                         />
