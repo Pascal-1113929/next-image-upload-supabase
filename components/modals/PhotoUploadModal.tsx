@@ -104,10 +104,28 @@ const PhotoUploadModal = () => {
     // Load stations, train types, and operators on mount
     useEffect(() => {
         const loadData = async () => {
-            const { data: stationsData } = await supabaseClient
-                .from("train_stations")
-                .select("id, name")
-                .order("name");
+            const pageSize = 1000;
+            let from = 0;
+            let allStations: Station[] = [];
+
+            while (true) {
+                const { data, error } = await supabaseClient
+                    .from("train_stations")
+                    .select("id, name")
+                    .order("name")
+                    .range(from, from + pageSize - 1);
+
+                if (error) {
+                    console.error("Stations fetch error:", error);
+                    break;
+                }
+
+                if (!data || data.length === 0) break;
+
+                allStations = [...allStations, ...data];
+                from += pageSize;
+            }
+            setStations(allStations);
 
             const { data: typesData } = await supabaseClient
                 .from("train_types")
@@ -119,7 +137,7 @@ const PhotoUploadModal = () => {
                 .select("id, name, country_code")
                 .order("name");
 
-            if (stationsData) setStations(stationsData);
+            if (allStations) setStations(allStations);
             if (typesData) setTrainTypes(typesData);
             if (operatorsData) setOperators(operatorsData);
         };
@@ -192,7 +210,7 @@ const PhotoUploadModal = () => {
                     console.log("Nearest station:", nearest);
                     if (nearest.distance <= 1.5) {
                         setLocationType("station");
-                        setSelectedStation(nearest.id.toString());
+                        // setSelectedStation(nearest.id.toString()); TODO: ix - correclt cousing scrolling to stop
                         setSelectedStationEnd("");
                         setSuggestedStation(nearest.name);
                         setQueryStation(nearest.name); // <-- prefill the combobox input
@@ -369,256 +387,257 @@ const PhotoUploadModal = () => {
         //     isOpen={uploadModal.isOpen}
         //     onChange={onChange}
         // >
-            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-4 max-h-[70vh] overflow-y-auto pr-2">
-                {/* Image Upload - Priority Field */}
-                <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
-                    <Label htmlFor="image" className="text-base font-semibold">
-                        Photo * <span className="text-xs text-neutral-400 font-normal">(Required)</span>
+        // <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-4 max-h-[70vh] overflow-y-auto pr-2">
+        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-4 w-[60vw] pr-2">
+            {/* Image Upload - Priority Field */}
+            <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
+                <Label htmlFor="image" className="text-base font-semibold">
+                    Photo * <span className="text-xs text-neutral-400 font-normal">(Required)</span>
+                </Label>
+                <Input
+                    id="image"
+                    type="file"
+                    accept="image/*"
+                    disabled={isLoading}
+                    {...register("image", { required: true })}
+                    onChange={(e) => {
+                        register("image").onChange(e);
+                        handleImageChange(e);
+                    }}
+                    className="mt-2 cursor-pointer"
+                />
+                {/* Detected Date */}
+                {detectedDate && (
+                    <div className="text-sm text-green-400 mt-2 flex items-center gap-2">
+                        <span className="text-lg">📅</span>
+                        <span>Detected date: {new Date(detectedDate).toLocaleString()}</span>
+                    </div>
+                )}
+            </div>
+
+            {/* Train Details Section */}
+            <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
+                <h3 className="text-base font-semibold mb-3 text-black">Train Details</h3>
+
+                {/* Train Operator */}
+                <div className="mb-3">
+                    <Label htmlFor="operator" className="text-sm font-medium">
+                        Train Operator
                     </Label>
-                    <Input
-                        id="image"
-                        type="file"
-                        accept="image/*"
+                    <Select
                         disabled={isLoading}
-                        {...register("image", { required: true })}
-                        onChange={(e) => {
-                            register("image").onChange(e);
-                            handleImageChange(e);
-                        }}
-                        className="mt-2 cursor-pointer"
-                    />
-                    {/* Detected Date */}
-                    {detectedDate && (
-                        <div className="text-sm text-green-400 mt-2 flex items-center gap-2">
-                            <span className="text-lg">📅</span>
-                            <span>Detected date: {new Date(detectedDate).toLocaleString()}</span>
-                        </div>
-                    )}
-                </div>
-
-                {/* Train Details Section */}
-                <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
-                    <h3 className="text-base font-semibold mb-3 text-black">Train Details</h3>
-
-                    {/* Train Operator */}
-                    <div className="mb-3">
-                        <Label htmlFor="operator" className="text-sm font-medium">
-                            Train Operator
-                        </Label>
-                        <Select
-                            disabled={isLoading}
-                            value={selectedOperator}
-                            onValueChange={setSelectedOperator}
-                        >
-                            <SelectTrigger className="mt-1.5">
-                                <SelectValue placeholder="Select operator" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                {operators.map((operator) => (
-                                    <SelectItem key={operator.id} value={operator.id.toString()}>
-                                        {operator.name} ({operator.country_code})
-                                    </SelectItem>
-                                ))}
-                            </SelectContent>
-                        </Select>
-                    </div>
-
-                    {/* Train Number */}
-                    <div className="mb-3">
-                        <Label htmlFor="trainNumber" className="text-sm font-medium">
-                            Train Number
-                        </Label>
-                        <Input
-                            id="trainNumber"
-                            placeholder="e.g., 8001, ICE 123"
-                            disabled={isLoading}
-                            {...register("trainNumber")}
-                            className="mt-1.5"
-                        />
-                        <p className="text-xs text-neutral-400 mt-1">
-                            Enter operator first for auto-detection of train type
-                        </p>
-                    </div>
-
-                    {/* Train Type */}
-                    <div>
-                        <Label htmlFor="trainType" className="text-sm font-medium">
-                            Train Type {suggestedTrainType && (
-                                <span className="text-green-400 text-xs">
-                                    ✓ Auto-detected: {suggestedTrainType}
-                                </span>
-                            )}
-                        </Label>
-                        <Select
-                            disabled={isLoading}
-                            value={selectedTrainType}
-                            onValueChange={setSelectedTrainType}
-                        >
-                            <SelectTrigger className="mt-1.5">
-                                <SelectValue placeholder="Select train type" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                {trainTypes.map((type) => (
-                                    <SelectItem key={type.id} value={type.id.toString()}>
-                                        {type.name} ({type.class_name})
-                                    </SelectItem>
-                                ))}
-                            </SelectContent>
-                        </Select>
-                    </div>
-                </div>
-
-                {/* Location Section */}
-                <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
-                    <h3 className="text-base font-semibold mb-3 text-black">Location</h3>
-
-                    <Label>Location Type</Label>
-                    <Select value={locationType} onValueChange={(v) => setLocationType(v as any)}>
-                        <SelectTrigger><SelectValue /></SelectTrigger>
+                        value={selectedOperator}
+                        onValueChange={setSelectedOperator}
+                    >
+                        <SelectTrigger className="mt-1.5">
+                            <SelectValue placeholder="Select operator" />
+                        </SelectTrigger>
                         <SelectContent>
-                            <SelectItem value="station">At Station</SelectItem>
-                            <SelectItem value="route">Between Stations</SelectItem>
+                            {operators.map((operator) => (
+                                <SelectItem key={operator.id} value={operator.id.toString()}>
+                                    {operator.name} ({operator.country_code})
+                                </SelectItem>
+                            ))}
                         </SelectContent>
                     </Select>
+                </div>
 
-                    {/* Station Select */}
-                    <div>
-                        <Label htmlFor="station" className="text-sm font-medium">
-                            Station {suggestedStation && (
-                                <span className="text-green-400 text-xs">
-                                    📍 GPS-detected: {suggestedStation}
-                                </span>
-                            )}
-                        </Label>
+                {/* Train Number */}
+                <div className="mb-3">
+                    <Label htmlFor="trainNumber" className="text-sm font-medium">
+                        Train Number
+                    </Label>
+                    <Input
+                        id="trainNumber"
+                        placeholder="e.g., 8001, ICE 123"
+                        disabled={isLoading}
+                        {...register("trainNumber")}
+                        className="mt-1.5"
+                    />
+                    <p className="text-xs text-neutral-400 mt-1">
+                        Enter operator first for auto-detection of train type
+                    </p>
+                </div>
 
-                        <Combobox
-                            value={selectedStation}
-                            onValueChange={(val) => setSelectedStation(val || "")}
-                        >
-                            <ComboboxInput
-                                placeholder="Search station..."
-                                value={
-                                    selectedStation
-                                        ? stations.find((s) => s.id.toString() === selectedStation)?.name
-                                        : queryStation
-                                }
-                                onChange={(e) => setQueryStation(e.target.value)}
-                                showClear
-                            />
-                            <ComboboxContent side="bottom" sideOffset={4} className="z-50">
-                                <ComboboxList className="max-h-60 overflow-y-auto">
-                                    {filteredStations.length > 0 ? (
-                                        filteredStations.map((station) => (
-                                            <ComboboxItem key={station.id} value={station.id.toString()}>
-                                                {station.name}
-                                            </ComboboxItem>
-                                        ))
-                                    ) : (
-                                        <ComboboxEmpty>No stations found</ComboboxEmpty>
-                                    )}
-                                </ComboboxList>
-                            </ComboboxContent>
-                        </Combobox>
-                    </div>
-
-                    <div>
-                        {locationType === "route" && (
-                            <>
-                                <Label>End Station</Label>
-                                {locationType === "route" && (
-                                    <Combobox
-                                        value={selectedStationEnd}
-                                        onValueChange={(val) => {
-                                            setSelectedStationEnd(val || ""); // always string
-                                            const stationName = stations.find(s => s.id.toString() === val)?.name || "";
-                                            setQueryStationEnd(stationName); // update input display
-                                        }}
-                                        modal={false}
-                                    >
-                                        <ComboboxInput
-                                            placeholder="Search end station..."
-                                            value={queryStationEnd}
-                                            onChange={(e) => setQueryStationEnd(e.target.value)}
-                                            showClear
-                                            disabled={isLoading}
-                                        />
-
-                                        <ComboboxContent>
-                                            <ComboboxList>
-                                                {filteredStationsEnd.length > 0 ? (
-                                                    filteredStationsEnd.map((station) => (
-                                                        <ComboboxItem key={station.id} value={station.id.toString()}>
-                                                            {station.name}
-                                                        </ComboboxItem>
-                                                    ))
-                                                ) : (
-                                                    <ComboboxEmpty>No stations found</ComboboxEmpty>
-                                                )}
-                                            </ComboboxList>
-                                        </ComboboxContent>
-                                    </Combobox>
-                                )}
-                            </>
+                {/* Train Type */}
+                <div>
+                    <Label htmlFor="trainType" className="text-sm font-medium">
+                        Train Type {suggestedTrainType && (
+                            <span className="text-green-400 text-xs">
+                                ✓ Auto-detected: {suggestedTrainType}
+                            </span>
                         )}
-                    </div>
+                    </Label>
+                    <Select
+                        disabled={isLoading}
+                        value={selectedTrainType}
+                        onValueChange={setSelectedTrainType}
+                    >
+                        <SelectTrigger className="mt-1.5">
+                            <SelectValue placeholder="Select train type" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            {trainTypes.map((type) => (
+                                <SelectItem key={type.id} value={type.id.toString()}>
+                                    {type.name} ({type.class_name})
+                                </SelectItem>
+                            ))}
+                        </SelectContent>
+                    </Select>
+                </div>
+            </div>
+
+            {/* Location Section */}
+            <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
+                <h3 className="text-base font-semibold mb-3 text-black">Location</h3>
+
+                <Label>Location Type</Label>
+                <Select value={locationType} onValueChange={(v) => setLocationType(v as any)}>
+                    <SelectTrigger><SelectValue /></SelectTrigger>
+                    <SelectContent>
+                        <SelectItem value="station">At Station</SelectItem>
+                        <SelectItem value="route">Between Stations</SelectItem>
+                    </SelectContent>
+                </Select>
+
+                {/* Station Select */}
+                <div>
+                    <Label htmlFor="station" className="text-sm font-medium">
+                        Station {suggestedStation && (
+                            <span className="text-green-400 text-xs">
+                                📍 GPS-detected: {suggestedStation}
+                            </span>
+                        )}
+                    </Label>
+
+                    <Combobox
+                        value={selectedStation}
+                        onValueChange={(val) => setSelectedStation(val || "")}
+                    >
+                        <ComboboxInput
+                            placeholder="Search station..."
+                            value={
+                                selectedStation
+                                    ? stations.find((s) => s.id.toString() === selectedStation)?.name
+                                    : queryStation
+                            }
+                            onChange={(e) => setQueryStation(e.target.value)}
+                            showClear
+                        />
+                        <ComboboxContent side="bottom" sideOffset={4} className="z-50">
+                            <ComboboxList className="max-h-60 overflow-y-auto">
+                                {filteredStations.length > 0 ? (
+                                    filteredStations.map((station) => (
+                                        <ComboboxItem key={station.id} value={station.id.toString()}>
+                                            {station.name}
+                                        </ComboboxItem>
+                                    ))
+                                ) : (
+                                    <ComboboxEmpty>No stations found</ComboboxEmpty>
+                                )}
+                            </ComboboxList>
+                        </ComboboxContent>
+                    </Combobox>
                 </div>
 
-                {/* Photo Information Section */}
-                <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
-                    <h3 className="text-base font-semibold mb-3 text-black">Photo Information</h3>
+                <div>
+                    {locationType === "route" && (
+                        <>
+                            <Label>End Station</Label>
+                            {locationType === "route" && (
+                                <Combobox
+                                    value={selectedStationEnd}
+                                    onValueChange={(val) => {
+                                        setSelectedStationEnd(val || ""); // always string
+                                        const stationName = stations.find(s => s.id.toString() === val)?.name || "";
+                                        setQueryStationEnd(stationName); // update input display
+                                    }}
+                                    modal={false}
+                                >
+                                    <ComboboxInput
+                                        placeholder="Search end station..."
+                                        value={queryStationEnd}
+                                        onChange={(e) => setQueryStationEnd(e.target.value)}
+                                        showClear
+                                        disabled={isLoading}
+                                    />
 
-                    {/* Title */}
-                    <div className="mb-3">
-                        <Label htmlFor="title" className="text-sm font-medium">
-                            Title
-                        </Label>
-                        <Input
-                            id="title"
-                            placeholder="e.g., ICE 3 at Frankfurt Hbf"
-                            disabled={isLoading}
-                            {...register("title")}
-                            className="mt-1.5"
-                        />
-                    </div>
+                                    <ComboboxContent>
+                                        <ComboboxList>
+                                            {filteredStationsEnd.length > 0 ? (
+                                                filteredStationsEnd.map((station) => (
+                                                    <ComboboxItem key={station.id} value={station.id.toString()}>
+                                                        {station.name}
+                                                    </ComboboxItem>
+                                                ))
+                                            ) : (
+                                                <ComboboxEmpty>No stations found</ComboboxEmpty>
+                                            )}
+                                        </ComboboxList>
+                                    </ComboboxContent>
+                                </Combobox>
+                            )}
+                        </>
+                    )}
+                </div>
+            </div>
 
-                    {/* Description */}
-                    <div className="mb-3">
-                        <Label htmlFor="description" className="text-sm font-medium">
-                            Description
-                        </Label>
-                        <Input
-                            id="description"
-                            placeholder="Optional description"
-                            disabled={isLoading}
-                            {...register("description")}
-                            className="mt-1.5"
-                        />
-                    </div>
+            {/* Photo Information Section */}
+            <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
+                <h3 className="text-base font-semibold mb-3 text-black">Photo Information</h3>
 
-                    {/* Private checkbox */}
-                    <div className="flex items-center gap-2">
-                        <input
-                            id="isPrivate"
-                            type="checkbox"
-                            disabled={isLoading}
-                            {...register("isPrivate")}
-                            className="w-4 h-4 rounded cursor-pointer"
-                        />
-                        <Label htmlFor="isPrivate" className="cursor-pointer text-sm">
-                            Make this photo private
-                        </Label>
-                    </div>
+                {/* Title */}
+                <div className="mb-3">
+                    <Label htmlFor="title" className="text-sm font-medium">
+                        Title
+                    </Label>
+                    <Input
+                        id="title"
+                        placeholder="e.g., ICE 3 at Frankfurt Hbf"
+                        disabled={isLoading}
+                        {...register("title")}
+                        className="mt-1.5"
+                    />
                 </div>
 
-                {/* Submit Button */}
-                <Button
-                    type="submit"
-                    disabled={isLoading}
-                    className="w-full h-12 text-base font-semibold bg-blue-600 hover:bg-blue-700"
-                >
-                    {isLoading ? "Uploading..." : "Upload Photo"}
-                </Button>
-            </form>
+                {/* Description */}
+                <div className="mb-3">
+                    <Label htmlFor="description" className="text-sm font-medium">
+                        Description
+                    </Label>
+                    <Input
+                        id="description"
+                        placeholder="Optional description"
+                        disabled={isLoading}
+                        {...register("description")}
+                        className="mt-1.5"
+                    />
+                </div>
+
+                {/* Private checkbox */}
+                <div className="flex items-center gap-2">
+                    <input
+                        id="isPrivate"
+                        type="checkbox"
+                        disabled={isLoading}
+                        {...register("isPrivate")}
+                        className="w-4 h-4 rounded cursor-pointer"
+                    />
+                    <Label htmlFor="isPrivate" className="cursor-pointer text-sm">
+                        Make this photo private
+                    </Label>
+                </div>
+            </div>
+
+            {/* Submit Button */}
+            <Button
+                type="submit"
+                disabled={isLoading}
+                className="w-full h-12 text-base font-semibold bg-blue-600 hover:bg-blue-700"
+            >
+                {isLoading ? "Uploading..." : "Upload Photo"}
+            </Button>
+        </form>
         // </Modal>
     );
 };
