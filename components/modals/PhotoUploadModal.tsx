@@ -21,7 +21,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
-import { Combobox, ComboboxContent, ComboboxEmpty, ComboboxItem, ComboboxInput, ComboboxList, } from "../ui/combobox";
+import { Combobox, ComboboxContent, ComboboxEmpty, ComboboxItem, ComboboxInput, ComboboxList, } from "../ui/combobox";  
 
 interface FormData {
     title: string;
@@ -99,7 +99,6 @@ const PhotoUploadModal = () => {
     const filteredStationsEnd = stations.filter((s) =>
         s.name.toLowerCase().includes(queryStationEnd.toLowerCase())
     );
-
 
     // Load stations, train types, and operators on mount
     useEffect(() => {
@@ -210,12 +209,11 @@ const PhotoUploadModal = () => {
                     console.log("Nearest station:", nearest);
                     if (nearest.distance <= 1.5) {
                         setLocationType("station");
-                        // setSelectedStation(nearest.id.toString()); TODO: ix - correclt cousing scrolling to stop
+                        setSelectedStation(nearest.id.toString());
                         setSelectedStationEnd("");
                         setSuggestedStation(nearest.name);
                         setQueryStation(nearest.name); // <-- prefill the combobox input
                         console.log("Nearest id that will be set:", nearest.id.toString());
-
 
                         toast.success(`Detected station: ${nearest.name}`, { id: "metadata" });
                     } else {
@@ -270,7 +268,12 @@ const PhotoUploadModal = () => {
 
             const imageFile = data.image?.[0];
 
-            if (!imageFile || !user) {
+            if (!user) {
+                toast.error("You must be logged in to upload a photo");
+                return;
+            }
+
+            if (!imageFile) {
                 toast.error("Please select an image");
                 return;
             }
@@ -381,13 +384,6 @@ const PhotoUploadModal = () => {
     };
 
     return (
-        // <Modal
-        //     title="Upload Train Photo"
-        //     description="Upload your train photo with automatic metadata extraction"
-        //     isOpen={uploadModal.isOpen}
-        //     onChange={onChange}
-        // >
-        // <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-4 max-h-[70vh] overflow-y-auto pr-2">
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-4 w-[60vw] pr-2">
             {/* Image Upload - Priority Field */}
             <div className="bg-neutral-100 p-4 rounded-lg border-2 border-neutral-700">
@@ -513,14 +509,11 @@ const PhotoUploadModal = () => {
                     <Combobox
                         value={selectedStation}
                         onValueChange={(val) => setSelectedStation(val || "")}
+                        modal={false}
                     >
                         <ComboboxInput
                             placeholder="Search station..."
-                            value={
-                                selectedStation
-                                    ? stations.find((s) => s.id.toString() === selectedStation)?.name
-                                    : queryStation
-                            }
+                            value={queryStation}
                             onChange={(e) => setQueryStation(e.target.value)}
                             showClear
                         />
@@ -638,7 +631,6 @@ const PhotoUploadModal = () => {
                 {isLoading ? "Uploading..." : "Upload Photo"}
             </Button>
         </form>
-        // </Modal>
     );
 };
 
