@@ -111,6 +111,11 @@
             "description": "DB BR 426.1 Stadler Flirt regional train used by multiple opperators (DB Class 426.1)"
         },
         {
+            "name": "Standler Flirt BR429.0",
+            "class_name": "BR429.0",
+            "description": "DB BR 429.0 Stadler Flirt regional train used by multiple opperators (DB Class 429.0)"
+        },
+        {
             "name": "Standler Flirt3 BR1492",
             "class_name": "BR1492",
             "description": "DB BR 1492 Stadler Flirt3 regional train used by multiple opperators (DB Class 1492)"
@@ -52683,6 +52688,90 @@
             "number": "ET 4.25",
             "altNumber": "1429 035",
             "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.01",
+            "altNumber": "429 006",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.02",
+            "altNumber": "429 007",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.03",
+            "altNumber": "429 008",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.04",
+            "altNumber": "429 009",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.05",
+            "altNumber": "429 010",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.06",
+            "altNumber": "429 011",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.07",
+            "altNumber": "429 012",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.08",
+            "altNumber": "429 013",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.09",
+            "altNumber": "429 014",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.10",
+            "altNumber": "429 015",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.11",
+            "altNumber": "429 016",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.12",
+            "altNumber": "429 017",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.13",
+            "altNumber": "429 018",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.14",
+            "altNumber": "429 019",
+            "trainType": "BR429.0",
             "operator": "Eurobahn"
         }
     ]
