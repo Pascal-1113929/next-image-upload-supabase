@@ -11,7 +11,7 @@ export default function HomePage() {
   const router = useRouter();
   const { user } = useUser();
   const authModal = useAuthModal();
-  const photoUploadModal = usePhotoUploadModal();
+  // const photoUploadModal = usePhotoUploadModal();
 
   const handleGetStarted = () => {
     if (user) {
@@ -23,7 +23,7 @@ export default function HomePage() {
 
   const handleUpload = () => {
     if (user) {
-      photoUploadModal.onOpen();
+      router.push("/photos/upload");
     } else {
       authModal.onOpen();
     }
