@@ -21,7 +21,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
-import { Combobox, ComboboxContent, ComboboxEmpty, ComboboxItem, ComboboxInput, ComboboxList, } from "../ui/combobox";  
+import { Combobox, ComboboxContent, ComboboxEmpty, ComboboxItem, ComboboxInput, ComboboxList, } from "../ui/combobox";
 
 interface FormData {
     title: string;
@@ -260,6 +260,18 @@ const PhotoUploadModal = () => {
             setSuggestedTrainType("");
             uploadModal.onClose();
         }
+    };
+
+    const handleStationChange = (val: string | null) => {
+        setSelectedStation(val || "");
+        const stationName = stations.find(s => s.id.toString() === val)?.name || "";
+        setQueryStation(stationName); // update input display
+    };
+
+    const handleEndStationChange = (val: string | null) => {
+        setSelectedStationEnd(val || "");
+        const stationName = stations.find(s => s.id.toString() === val)?.name || "";
+        setQueryStationEnd(stationName); // update input display
     };
 
     const onSubmit = async (data: FormData) => {
@@ -508,7 +520,7 @@ const PhotoUploadModal = () => {
 
                     <Combobox
                         value={selectedStation}
-                        onValueChange={(val) => setSelectedStation(val || "")}
+                        onValueChange={handleStationChange}
                         modal={false}
                     >
                         <ComboboxInput
@@ -540,11 +552,7 @@ const PhotoUploadModal = () => {
                             {locationType === "route" && (
                                 <Combobox
                                     value={selectedStationEnd}
-                                    onValueChange={(val) => {
-                                        setSelectedStationEnd(val || ""); // always string
-                                        const stationName = stations.find(s => s.id.toString() === val)?.name || "";
-                                        setQueryStationEnd(stationName); // update input display
-                                    }}
+                                    onValueChange={handleEndStationChange}
                                     modal={false}
                                 >
                                     <ComboboxInput
