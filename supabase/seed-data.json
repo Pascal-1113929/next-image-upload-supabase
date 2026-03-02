@@ -52773,6 +52773,30 @@
             "altNumber": "429 019",
             "trainType": "BR429.0",
             "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 6.01",
+            "altNumber": "428 125",
+            "trainType": "BR428",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 6.02",
+            "altNumber": "428 126",
+            "trainType": "BR428",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 6.03",
+            "altNumber": "428 127",
+            "trainType": "BR428",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 6.04",
+            "altNumber": "428 128",
+            "trainType": "BR428",
+            "operator": "Eurobahn"
         }
     ]
 }

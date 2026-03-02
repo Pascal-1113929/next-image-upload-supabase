@@ -93,14 +93,30 @@ export async function findNearestStation(
 ): Promise<{ id: number; name: string; distance: number } | null> {
     try {
         // Get all stations from database
-        const { data: stations, error } = await supabaseClient
-            .from('train_stations')
-            .select('id, name, latitude, longitude');
+        const pageSize = 1000;
+        let stations: any[] = [];
+        let from = 0;
 
-        if (error) {
-            console.error('Error fetching stations:', error);
-            return null;
+        while (true) {
+            const { data, error } = await supabaseClient
+                .from('train_stations')
+                .select('id, name, latitude, longitude')
+                .range(from, from + pageSize - 1);
+
+            if (error) {
+                console.error('Error fetching stations:', error);
+                break;
+            }
+
+            if (!data || data.length === 0) break;
+
+            stations = stations.concat(data);
+
+            if (data.length < pageSize) break; // last page
+            from += pageSize;
         }
+
+        console.log(`Total stations fetched: ${stations.length}`);
 
         if (!stations || stations.length === 0) {
             return null;
