@@ -236,6 +236,10 @@
             "countryCode": "DE"
         },
         {
+            "name": "DB Cargo",
+            "countryCode": "DE"
+        },
+        {
             "name": "VIAS GmbH",
             "countryCode": "DE"
         },
@@ -282,6 +286,10 @@
         {
             "name": "SBB Cargo",
             "countryCode": "CH"
+        },
+        {
+            "name": "Eurobahn",
+            "countryCode": "DE"
         }
     ],
     "stations": [
@@ -40720,6 +40728,66 @@
     ],
     "trains": [
         {
+            "number": "193 013",
+            "altNumber": "6193 013",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 014",
+            "altNumber": "6193 014",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 015",
+            "altNumber": "6193 015",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 035",
+            "altNumber": "",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 036",
+            "altNumber": "",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 037",
+            "altNumber": "",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 038",
+            "altNumber": "",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 039",
+            "altNumber": "",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 040",
+            "altNumber": "",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 016",
+            "altNumber": "6193 016",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
             "number": "193 440",
             "altNumber": "",
             "trainType": "BR193",
@@ -52532,6 +52600,90 @@
             "altNumber": "2429 007",
             "trainType": "BR2429",
             "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 4.01",
+            "altNumber": "2429 011",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.02",
+            "altNumber": "2429 012",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.03",
+            "altNumber": "2429 013",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.04",
+            "altNumber": "2429 014",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.05",
+            "altNumber": "2429 015",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.06",
+            "altNumber": "2429 016",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.07",
+            "altNumber": "2429 017",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.08",
+            "altNumber": "2429 018",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.21",
+            "altNumber": "1429 031",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.21",
+            "altNumber": "1429 031",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.22",
+            "altNumber": "1429 032",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.23",
+            "altNumber": "1429 033",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.24",
+            "altNumber": "1429 034",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.25",
+            "altNumber": "1429 035",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
         }
     ]
 }
