@@ -111,6 +111,16 @@
             "description": "DB BR 426.1 Stadler Flirt regional train used by multiple opperators (DB Class 426.1)"
         },
         {
+            "name": "Standler Flirt3 BR1492",
+            "class_name": "BR1492",
+            "description": "DB BR 1492 Stadler Flirt3 regional train used by multiple opperators (DB Class 1492)"
+        },
+        {
+            "name": "Standler Flirt3 BR2492",
+            "class_name": "BR2492",
+            "description": "DB BR 2492 Stadler Flirt3 regional train used by multiple opperators (DB Class 2492)"
+        },
+        {
             "name": "VIRMm1 4Bakken",
             "class_name": "NS VIRMm1 VIRM-IV",
             "description": "Dutch double-decker intercity train (NS VIRMm1)"
@@ -52395,6 +52405,132 @@
             "number": "221108",
             "altNumber": "426 107",
             "trainType": "BR426.1",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2201",
+            "altNumber": "1429 008",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2202",
+            "altNumber": "1429 009",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2203",
+            "altNumber": "1429 010",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2204",
+            "altNumber": "1429 011",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2205",
+            "altNumber": "1429 012",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2206",
+            "altNumber": "1429 013",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2207",
+            "altNumber": "1429 014",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2208",
+            "altNumber": "1429 015",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2209",
+            "altNumber": "1429 016",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2210",
+            "altNumber": "1429 017",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2211",
+            "altNumber": "1429 018",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2212",
+            "altNumber": "1429 019",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2213",
+            "altNumber": "1429 020",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2214",
+            "altNumber": "1429 021",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2301",
+            "altNumber": "2429 001",
+            "trainType": "BR2429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2302",
+            "altNumber": "2429 002",
+            "trainType": "BR2429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2303",
+            "altNumber": "2429 003",
+            "trainType": "BR2429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2304",
+            "altNumber": "2429 004",
+            "trainType": "BR2429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2305",
+            "altNumber": "2429 005",
+            "trainType": "BR2429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2306",
+            "altNumber": "2429 006",
+            "trainType": "BR2429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2307",
+            "altNumber": "2429 007",
+            "trainType": "BR2429",
             "operator": "VIAS GmbH"
         }
     ]
