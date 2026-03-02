@@ -15,6 +15,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
+import { PhotoCard } from "./components/PhotoCard";
 
 interface TrainImage {
     id: number;
@@ -45,7 +46,7 @@ interface TrainImage {
 export default function PhotosPage() {
     const router = useRouter();
     const { user } = useUser();
-    const photoUploadModal = usePhotoUploadModal();
+    // const photoUploadModal = usePhotoUploadModal();
     const authModal = useAuthModal();
 
     const [photos, setPhotos] = useState<TrainImage[]>([]);
@@ -59,32 +60,48 @@ export default function PhotosPage() {
                 let query = supabaseClient
                     .from("train_images")
                     .select(`
-                        id,
-                        title,
-                        description,
-                        image_path,
-                        taken_at,
-                        is_private,
-                        created_at,
-                        location:train_image_locations (
-                            location_type,
-                            station_id,
-                            station_id_end,
-                            station:train_stations!train_image_locations_station_id_fkey (
-                                id,
-                                name,
-                                country_code
-                            ),
-                            station_end:train_stations!train_image_locations_station_id_end_fkey (
-                                id,
-                                name,
-                                country_code
-                            )
-                        )
-                    `)
+          id,
+          title,
+          description,
+          image_path,
+          taken_at,
+          is_private,
+          created_at,
+
+          train:trains!train_images_train_id_fkey (
+            id,
+            train_number,
+            alt_number,
+            type:train_types (
+              id,
+              name,
+              class_name
+            ),
+            operator:train_operators (
+              id,
+              name,
+              country_code
+            )
+          ),
+
+          location:train_image_locations (
+            location_type,
+            station_id,
+            station_id_end,
+            station:train_stations!train_image_locations_station_id_fkey (
+              id,
+              name,
+              country_code
+            ),
+            station_end:train_stations!train_image_locations_station_id_end_fkey (
+              id,
+              name,
+              country_code
+            )
+          )
+        `)
                     .order("created_at", { ascending: false });
 
-                // If user is logged in, show their private photos too
                 if (user) {
                     query = query.or(`is_private.eq.false,user_id.eq.${user.id}`);
                 } else {
@@ -98,11 +115,11 @@ export default function PhotosPage() {
                     return;
                 }
 
-                // Transform the data structure
                 const transformedData = data?.map((photo: any) => ({
                     ...photo,
                     startStation: photo.location?.station || null,
                     endStation: photo.location?.station_end || null,
+                    train: photo.train || null,
                 }));
 
                 setPhotos(transformedData || []);
@@ -129,7 +146,8 @@ export default function PhotosPage() {
         if (!user) {
             authModal.onOpen();
         } else {
-            photoUploadModal.onOpen();
+            return router.push("/photos/upload");
+            // photoUploadModal.onOpen();
         }
     };
 
@@ -172,64 +190,11 @@ export default function PhotosPage() {
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {photos.map((photo) => (
-                            <Card
+                            <PhotoCard
                                 key={photo.id}
-                                className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
-                                onClick={() => router.push(`/photos/${photo.id}`)}
-                            >
-                                <div className="relative aspect-video bg-zinc-200 dark:bg-zinc-800">
-                                    <Image
-                                        src={getImageUrl(photo.image_path)}
-                                        alt={photo.title || "Train photo"}
-                                        fill
-                                        className="object-cover"
-                                    />
-                                    {photo.is_private && (
-                                        <div className="absolute top-2 right-2 bg-black/50 text-white px-2 py-1 rounded text-xs">
-                                            Private
-                                        </div>
-                                    )}
-                                </div>
-                                <CardHeader>
-                                    <CardTitle className="line-clamp-1">
-                                        {photo.title || "Untitled"}
-                                    </CardTitle>
-                                    <CardDescription className="space-y-1">
-                                        <div className="flex items-center gap-1">
-                                            <span>📍</span>
-                                            {photo.location?.location_type === "route" ? (
-                                                // route
-                                                <span>
-                                                    {photo.location.station?.name || "Unknown"}{" "}
-                                                    <span className="text-xs">({photo.location.station?.country_code || "??"})</span>
-                                                    {" - "}
-                                                    {photo.location.station_end?.name || "Unknown"}{" "}
-                                                    <span className="text-xs">({photo.location.station_end?.country_code || "??"})</span>
-                                                </span>
-                                            ) : (
-                                                // Single station
-                                                <span>
-                                                    {photo.location?.station?.name || "Unknown"}{" "}
-                                                    <span className="text-xs">({photo.location?.station?.country_code || "??"})</span>
-                                                </span>
-                                            )}
-                                        </div>
-                                        <div className="flex items-center gap-1">
-                                            <span>📅</span>
-                                            <span>
-                                                {new Date(photo.taken_at).toLocaleDateString()}
-                                            </span>
-                                        </div>
-                                    </CardDescription>
-                                </CardHeader>
-                                {photo.description && (
-                                    <CardContent>
-                                        <p className="text-sm text-zinc-600 dark:text-zinc-400 line-clamp-2">
-                                            {photo.description}
-                                        </p>
-                                    </CardContent>
-                                )}
-                            </Card>
+                                photo={photo}
+                                getImageUrl={getImageUrl}
+                            />
                         ))}
                     </div>
                 )}
