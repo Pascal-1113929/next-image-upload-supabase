@@ -116,14 +116,14 @@
             "description": "DB BR 429.0 Stadler Flirt regional train used by multiple opperators (DB Class 429.0)"
         },
         {
-            "name": "Standler Flirt3 BR1492",
-            "class_name": "BR1492",
-            "description": "DB BR 1492 Stadler Flirt3 regional train used by multiple opperators (DB Class 1492)"
+            "name": "Standler Flirt3 BR1429",
+            "class_name": "BR1429",
+            "description": "DB BR 1429 Stadler Flirt3 regional train used by multiple opperators (DB Class 1429)"
         },
         {
-            "name": "Standler Flirt3 BR2492",
-            "class_name": "BR2492",
-            "description": "DB BR 2492 Stadler Flirt3 regional train used by multiple opperators (DB Class 2492)"
+            "name": "Standler Flirt3 BR2429",
+            "class_name": "BR2429",
+            "description": "DB BR 2429 Stadler Flirt3 regional train used by multiple opperators (DB Class 2429)"
         },
         {
             "name": "VIRMm1 4Bakken",
