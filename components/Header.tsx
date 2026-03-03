@@ -50,7 +50,7 @@ export default function Header() {
                             <>
                                 <Button
                                     variant="default"
-                                    onClick={() => photoUploadModal.onOpen()}
+                                    onClick={() => router.push("/photos/upload")}
                                 >
                                     Upload Photo
                                 </Button>
