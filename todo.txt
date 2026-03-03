@@ -1,0 +1,2 @@
+fix type select to limit when opperator selected
+make type selector a combobox

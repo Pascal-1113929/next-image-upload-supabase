@@ -66,6 +66,66 @@
             "description": "Diesel-powered high-speed train (DB Class 605)"
         },
         {
+            "name": "Baureihe 422",
+            "class_name": "BR422",
+            "description": "DB Baureihe 422 S-Bahn train for regional services (DB Class 422)"
+        },
+        {
+            "name": "Baureihe 423",
+            "class_name": "BR423",
+            "description": "DB Baureihe 423 S-Bahn train for regional services (DB Class 423)"
+        },
+        {
+            "name": "Baureihe 424",
+            "class_name": "BR424",
+            "description": "DB Baureihe 424 S-Bahn train for regional services (DB Class 424)"
+        },
+        {
+            "name": "Baureihe 425",
+            "class_name": "BR425",
+            "description": "DB Baureihe 425 S-Bahn train for regional services (DB Class 425)"
+        },
+        {
+            "name": "Baureihe 426",
+            "class_name": "BR426",
+            "description": "DB Baureihe 426 S-Bahn train for regional services (DB Class 426)"
+        },
+        {
+            "name": "Baureihe 430",
+            "class_name": "BR430",
+            "description": "DB Baureihe 430 S-Bahn train for regional services (DB Class 430)"
+        },
+        {
+            "name": "Standler Flirt BR428",
+            "class_name": "BR428",
+            "description": "DB BR 428 Stadler Flirt regional train used by multiple opperators (DB Class 428)"
+        },
+        {
+            "name": "Standler Flirt BR427",
+            "class_name": "BR427",
+            "description": "DB BR 427 Stadler Flirt regional train used by multiple opperators (DB Class 427)"
+        },
+        {
+            "name": "Standler Flirt BR426.1",
+            "class_name": "BR426.1",
+            "description": "DB BR 426.1 Stadler Flirt regional train used by multiple opperators (DB Class 426.1)"
+        },
+        {
+            "name": "Standler Flirt BR429.0",
+            "class_name": "BR429.0",
+            "description": "DB BR 429.0 Stadler Flirt regional train used by multiple opperators (DB Class 429.0)"
+        },
+        {
+            "name": "Standler Flirt3 BR1429",
+            "class_name": "BR1429",
+            "description": "DB BR 1429 Stadler Flirt3 regional train used by multiple opperators (DB Class 1429)"
+        },
+        {
+            "name": "Standler Flirt3 BR2429",
+            "class_name": "BR2429",
+            "description": "DB BR 2429 Stadler Flirt3 regional train used by multiple opperators (DB Class 2429)"
+        },
+        {
             "name": "VIRMm1 4Bakken",
             "class_name": "NS VIRMm1 VIRM-IV",
             "description": "Dutch double-decker intercity train (NS VIRMm1)"
@@ -181,6 +241,14 @@
             "countryCode": "DE"
         },
         {
+            "name": "DB Cargo",
+            "countryCode": "DE"
+        },
+        {
+            "name": "VIAS GmbH",
+            "countryCode": "DE"
+        },
+        {
             "name": "NS International",
             "countryCode": "NL"
         },
@@ -223,6 +291,10 @@
         {
             "name": "SBB Cargo",
             "countryCode": "CH"
+        },
+        {
+            "name": "Eurobahn",
+            "countryCode": "DE"
         }
     ],
     "stations": [
@@ -40661,6 +40733,66 @@
     ],
     "trains": [
         {
+            "number": "193 013",
+            "altNumber": "6193 013",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 014",
+            "altNumber": "6193 014",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 015",
+            "altNumber": "6193 015",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 035",
+            "altNumber": "",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 036",
+            "altNumber": "",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 037",
+            "altNumber": "",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 038",
+            "altNumber": "",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 039",
+            "altNumber": "",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 040",
+            "altNumber": "",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
+            "number": "193 016",
+            "altNumber": "6193 016",
+            "trainType": "BR193",
+            "operator": "DB Cargo"
+        },
+        {
             "number": "193 440",
             "altNumber": "",
             "trainType": "BR193",
@@ -41814,37 +41946,37 @@
         },
         {
             "number": "9429",
-            "altNumber": "9 429",
+            "altNumber": "",
             "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9430",
-            "altNumber": "9 430",
+            "altNumber": "",
             "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9431",
-            "altNumber": "9 431",
+            "altNumber": "",
             "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9432",
-            "altNumber": "9 432",
+            "altNumber": "",
             "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9433",
-            "altNumber": "9 433",
+            "altNumber": "",
             "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
         {
             "number": "9434",
-            "altNumber": "9 434",
+            "altNumber": "",
             "trainType": "NS VIRMm1 VIRM-IV",
             "operator": "Nederlandse Spoorwegen"
         },
@@ -46365,6 +46497,6306 @@
             "altNumber": "",
             "trainType": "NS SNG SNG-4",
             "operator": "Nederlandse Spoorwegen"
+        },
+        {
+            "number": "422 001",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 002",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 003",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 004",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 005",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 006",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 007",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 008",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 009",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 010",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 011",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 012",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 013",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 014",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 015",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 016",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 017",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 018",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 019",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 020",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 021",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 022",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 023",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 024",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 025",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 026",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 027",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 028",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 029",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 030",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 031",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 032",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 033",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 034",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 035",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 036",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 037",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 038",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 039",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 040",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 041",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 042",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 043",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 044",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 045",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 046",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 047",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 048",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 049",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 050",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 051",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 052",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 053",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 054",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 055",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 056",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 057",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 058",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 059",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 060",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 061",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 062",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 063",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 064",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 065",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 066",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 067",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 068",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 069",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 070",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 071",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 072",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 073",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 074",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 075",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 076",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 077",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 078",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 079",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 080",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 081",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 082",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 083",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "422 084",
+            "altNumber": "",
+            "trainType": "BR422",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 001",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 002",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 003",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 004",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 005",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 006",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 007",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 008",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 009",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 010",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 011",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 012",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 013",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 014",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 015",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 016",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 017",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 018",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 019",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 020",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 021",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 022",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 023",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 024",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 025",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 026",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 027",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 028",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 029",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 030",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 031",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 032",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 033",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 034",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 035",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 036",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 037",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 038",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 039",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 040",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 041",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 042",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 043",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 044",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 045",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 046",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 047",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 048",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 049",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 050",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 051",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 052",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 053",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 054",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 055",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 056",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 057",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 058",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 059",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 060",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 061",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 062",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 063",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 064",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 065",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 066",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 067",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 068",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 069",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 070",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 071",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 072",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 073",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 074",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 075",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 076",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 077",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 078",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 079",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 080",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 081",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 082",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 083",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 084",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 085",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 086",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 087",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 088",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 089",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 090",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 091",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 092",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 093",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 094",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 095",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 096",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 097",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 098",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 099",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 100",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 101",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 102",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 103",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 104",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 105",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 106",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 107",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 108",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 109",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 110",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 111",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 112",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 113",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 114",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 115",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 116",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 117",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 118",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 119",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 120",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 121",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 122",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 123",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 124",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 125",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 126",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 127",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 128",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 129",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 130",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 131",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 132",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 133",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 134",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 135",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 136",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 137",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 138",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 139",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 140",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 141",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 142",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 143",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 144",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 145",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 146",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 147",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 148",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 149",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 150",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 151",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 152",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 153",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 154",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 155",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 156",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 157",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 158",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 159",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 160",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 161",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 162",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 163",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 164",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 165",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 166",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 167",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 168",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 169",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 170",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 171",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 172",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 173",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 174",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 175",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 176",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 177",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 178",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 179",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 180",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 181",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 182",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 183",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 184",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 185",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 186",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 187",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 188",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 189",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 190",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 191",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 192",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 193",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 194",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 195",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 196",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 197",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 198",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 199",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 200",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 201",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 202",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 203",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 204",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 205",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 206",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 207",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 208",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 209",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 210",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 211",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 212",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 213",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 214",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 215",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 216",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 217",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 218",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 219",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 220",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 221",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 222",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 223",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 224",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 225",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 226",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 227",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 228",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 229",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 230",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 231",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 232",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 233",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 234",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 235",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 236",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 237",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 238",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 239",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 240",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 241",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 242",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 243",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 244",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 245",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 246",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 247",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 248",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 249",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 250",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 251",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 252",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 253",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 254",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 255",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 256",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 257",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 258",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 259",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 260",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 261",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 262",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 263",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 264",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 265",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 266",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 267",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 268",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 269",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 270",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 271",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 272",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 273",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 274",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 275",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 276",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 277",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 278",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 279",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 280",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 281",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 282",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 283",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 284",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 285",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 286",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 287",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 288",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 289",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 290",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 291",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 292",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 293",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 294",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 295",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 296",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 297",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 298",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 299",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 300",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 301",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 302",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 303",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 304",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 305",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 306",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 307",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 308",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 309",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 310",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 311",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 312",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 313",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 314",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 315",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 316",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 317",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 318",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 319",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 320",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 321",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 322",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 323",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 324",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 325",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 326",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 327",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 328",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 329",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 330",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 331",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 332",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 333",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 334",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 335",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 336",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 337",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 338",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 339",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 340",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 341",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 342",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 343",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 344",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 345",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 346",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 347",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 348",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 349",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 350",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 351",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 352",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 353",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 354",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 355",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 356",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 357",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 358",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 359",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 360",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 361",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 362",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 363",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 364",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 365",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 366",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 367",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 368",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 369",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 370",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 371",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 372",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 373",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 374",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 375",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 376",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 377",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 378",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 379",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 380",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 381",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 382",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 383",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 384",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 385",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 386",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 387",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 388",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 389",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 390",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 391",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 392",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 393",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 394",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 395",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 396",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 397",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 398",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 399",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 400",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 401",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 402",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 403",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 404",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 405",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 406",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 407",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 408",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 409",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 410",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 411",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 412",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 413",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 414",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 415",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 416",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 417",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 418",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 419",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 420",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 421",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 422",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 423",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 424",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 425",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 426",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 427",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 428",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 429",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 430",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 431",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 432",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 433",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 434",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 435",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 436",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 437",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 438",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 439",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 440",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 441",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 442",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 443",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 444",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 445",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 446",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 447",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 448",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 449",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 450",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 451",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 452",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 453",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 454",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 455",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 456",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 457",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 458",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 459",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 460",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 461",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "423 462",
+            "altNumber": "",
+            "trainType": "BR423",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 001",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 002",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 003",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 004",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 005",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 006",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 007",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 008",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 009",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 010",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 011",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 012",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 013",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 014",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 015",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 016",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 017",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 018",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 019",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 020",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 021",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 022",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 023",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 024",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 025",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 026",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 027",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 028",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 029",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 030",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 031",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 032",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 033",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 034",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 035",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 036",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 037",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 038",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 039",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "424 040",
+            "altNumber": "",
+            "trainType": "BR424",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 001",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 002",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 003",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 004",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 005",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 006",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 007",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 008",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 009",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 010",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 011",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 012",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 013",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 014",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 015",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 016",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 017",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 018",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 019",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 020",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 021",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 022",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 023",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 024",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 025",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 026",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 027",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 028",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 029",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 030",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 031",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 032",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 033",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 034",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 035",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 036",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 037",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 038",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 039",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 040",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 041",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 042",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 043",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 044",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 045",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 046",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 047",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 048",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 049",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 050",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 051",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 052",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 053",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 054",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 055",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 056",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 057",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 058",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 059",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 060",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 061",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 062",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 063",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 064",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 065",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 066",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 067",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 068",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 069",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 070",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 071",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 072",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 073",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 074",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 075",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 076",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 077",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 078",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 079",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 080",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 081",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 082",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 083",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 084",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 085",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 086",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 087",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 088",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 089",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 090",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 091",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 092",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 093",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 094",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 095",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 096",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 097",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 098",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 099",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 100",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 101",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 102",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 103",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 104",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 105",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 106",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 107",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 108",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 109",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 110",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 111",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 112",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 113",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 114",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 115",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 116",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 117",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 118",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 119",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 120",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 121",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 122",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 123",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 124",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 125",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 126",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 127",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 128",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 129",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 130",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 131",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 132",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 133",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 134",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 135",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 136",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 137",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 138",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 139",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 140",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 141",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 142",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 143",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 144",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 145",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 146",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 147",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 148",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 149",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 150",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 151",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 152",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 153",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 154",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 155",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 156",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 201",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 202",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 203",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 204",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 205",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 206",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 207",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 208",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 209",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 210",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 211",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 212",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 213",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 214",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 215",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 216",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 217",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 218",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 219",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 220",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 221",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 222",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 223",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 224",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 225",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 226",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 227",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 228",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 229",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 230",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 231",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 232",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 233",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 234",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 235",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 236",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 237",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 238",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 239",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 240",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 301",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 302",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 303",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 304",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 305",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 306",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 307",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 308",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 309",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 310",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 311",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 312",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 313",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 314",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 315",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 316",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 317",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 318",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 319",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 320",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 250",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 251",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 252",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 253",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 254",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 255",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 256",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 257",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 258",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 259",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 260",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 261",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 262",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 263",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 264",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 265",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 266",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 267",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 268",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 269",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 271",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 272",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 273",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 274",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 275",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 276",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 277",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 278",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 279",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 280",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 281",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 282",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "425 283",
+            "altNumber": "",
+            "trainType": "BR425",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 001",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 002",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 003",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 004",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 005",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 006",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 007",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 008",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 009",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 010",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 011",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 012",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 013",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 014",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 015",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 016",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 017",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 018",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 019",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 020",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 021",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 022",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 023",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 024",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 025",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 026",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 027",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 028",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 029",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 030",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 031",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 032",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 033",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 034",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 035",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 036",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 037",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 038",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 039",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 040",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 041",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 042",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "426 043",
+            "altNumber": "",
+            "trainType": "BR426",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 001",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 002",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 003",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 004",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 005",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 006",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 007",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 008",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 009",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 010",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 011",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 012",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 013",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 014",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 015",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 016",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 017",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 018",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 019",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 020",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 021",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 022",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 023",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 024",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 025",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 026",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 027",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 028",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 029",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 030",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 031",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 032",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 033",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 034",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 035",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 036",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 037",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 038",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 039",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 040",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 041",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 042",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 043",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 044",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 045",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 046",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 047",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 048",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 049",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 050",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 051",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 052",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 053",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 054",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 055",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 056",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 057",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 058",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 059",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 060",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 061",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 062",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 063",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 064",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 065",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 066",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 067",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 068",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 069",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 070",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 071",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 072",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 073",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 074",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 075",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 076",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 077",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 078",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 079",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 080",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 081",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 082",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "430 083",
+            "altNumber": "",
+            "trainType": "BR430",
+            "operator": "DB Regio"
+        },
+        {
+            "number": "ET 401",
+            "altNumber": "428 135",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 402",
+            "altNumber": "428 136",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 403",
+            "altNumber": "428 137",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 404",
+            "altNumber": "428 138",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 405",
+            "altNumber": "428 139",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 406",
+            "altNumber": "428 140",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 407",
+            "altNumber": "428 141",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 408",
+            "altNumber": "428 142",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 409",
+            "altNumber": "428 143",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 410",
+            "altNumber": "428 144",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 411",
+            "altNumber": "428 145",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 412",
+            "altNumber": "428 146",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 413",
+            "altNumber": "428 147",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 414",
+            "altNumber": "428 148",
+            "trainType": "BR428",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 301",
+            "altNumber": "427 149",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 302",
+            "altNumber": "427 150",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 303",
+            "altNumber": "427 151",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 304",
+            "altNumber": "427 152",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 305",
+            "altNumber": "427 153",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "231101",
+            "altNumber": "427 100",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "231102",
+            "altNumber": "427 101",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "231103",
+            "altNumber": "427 102",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "231104",
+            "altNumber": "427 103",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "231105",
+            "altNumber": "427 104",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "231106",
+            "altNumber": "427 105",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "231107",
+            "altNumber": "427 106",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "231108",
+            "altNumber": "427 107",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "231109",
+            "altNumber": "427 108",
+            "trainType": "BR427",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "221101",
+            "altNumber": "426 100",
+            "trainType": "BR426.1",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "221102",
+            "altNumber": "426 101",
+            "trainType": "BR426.1",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "221103",
+            "altNumber": "426 102",
+            "trainType": "BR426.1",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "221104",
+            "altNumber": "426 103",
+            "trainType": "BR426.1",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "221105",
+            "altNumber": "426 104",
+            "trainType": "BR426.1",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "221106",
+            "altNumber": "426 105",
+            "trainType": "BR426.1",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "221107",
+            "altNumber": "426 106",
+            "trainType": "BR426.1",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "221108",
+            "altNumber": "426 107",
+            "trainType": "BR426.1",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2201",
+            "altNumber": "1429 008",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2202",
+            "altNumber": "1429 009",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2203",
+            "altNumber": "1429 010",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2204",
+            "altNumber": "1429 011",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2205",
+            "altNumber": "1429 012",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2206",
+            "altNumber": "1429 013",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2207",
+            "altNumber": "1429 014",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2208",
+            "altNumber": "1429 015",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2209",
+            "altNumber": "1429 016",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2210",
+            "altNumber": "1429 017",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2211",
+            "altNumber": "1429 018",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2212",
+            "altNumber": "1429 019",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2213",
+            "altNumber": "1429 020",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2214",
+            "altNumber": "1429 021",
+            "trainType": "BR1429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2301",
+            "altNumber": "2429 001",
+            "trainType": "BR2429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2302",
+            "altNumber": "2429 002",
+            "trainType": "BR2429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2303",
+            "altNumber": "2429 003",
+            "trainType": "BR2429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2304",
+            "altNumber": "2429 004",
+            "trainType": "BR2429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2305",
+            "altNumber": "2429 005",
+            "trainType": "BR2429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2306",
+            "altNumber": "2429 006",
+            "trainType": "BR2429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 25 2307",
+            "altNumber": "2429 007",
+            "trainType": "BR2429",
+            "operator": "VIAS GmbH"
+        },
+        {
+            "number": "ET 4.01",
+            "altNumber": "2429 011",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.02",
+            "altNumber": "2429 012",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.03",
+            "altNumber": "2429 013",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.04",
+            "altNumber": "2429 014",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.05",
+            "altNumber": "2429 015",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.06",
+            "altNumber": "2429 016",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.07",
+            "altNumber": "2429 017",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.08",
+            "altNumber": "2429 018",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.21",
+            "altNumber": "1429 031",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.21",
+            "altNumber": "1429 031",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.22",
+            "altNumber": "1429 032",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.23",
+            "altNumber": "1429 033",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.24",
+            "altNumber": "1429 034",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 4.25",
+            "altNumber": "1429 035",
+            "trainType": "BR2429",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.01",
+            "altNumber": "429 006",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.02",
+            "altNumber": "429 007",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.03",
+            "altNumber": "429 008",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.04",
+            "altNumber": "429 009",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.05",
+            "altNumber": "429 010",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.06",
+            "altNumber": "429 011",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.07",
+            "altNumber": "429 012",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.08",
+            "altNumber": "429 013",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.09",
+            "altNumber": "429 014",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.10",
+            "altNumber": "429 015",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.11",
+            "altNumber": "429 016",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.12",
+            "altNumber": "429 017",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.13",
+            "altNumber": "429 018",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 7.14",
+            "altNumber": "429 019",
+            "trainType": "BR429.0",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 6.01",
+            "altNumber": "428 125",
+            "trainType": "BR428",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 6.02",
+            "altNumber": "428 126",
+            "trainType": "BR428",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 6.03",
+            "altNumber": "428 127",
+            "trainType": "BR428",
+            "operator": "Eurobahn"
+        },
+        {
+            "number": "ET 6.04",
+            "altNumber": "428 128",
+            "trainType": "BR428",
+            "operator": "Eurobahn"
         }
     ]
 }
