@@ -169,7 +169,7 @@ export default function OperatorPage() {
                             <CardHeader>
                                 <CardTitle>
                                     <Link
-                                        href={`/trains/${type.class_name}`}
+                                        href={`/trains/operators/${operator.name.replace(/\s+/g, "-")}/${type.class_name}`}
                                         className="text-blue-600 hover:underline"
                                     >
                                         {type.name}

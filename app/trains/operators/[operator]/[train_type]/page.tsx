@@ -124,7 +124,6 @@ export default function TrainsOverviewPage() {
                 <th className="p-4 border">Alt-Nr</th>
                 <th className="p-4 border">Class</th>
                 <th className="p-4 border">Foto's</th>
-                <th className="p-4 border"></th>
               </tr>
             </thead>
 
@@ -160,15 +159,6 @@ export default function TrainsOverviewPage() {
                     <td className="p-4 align-top">{train.alt_number}</td>
                     <td className="p-4 align-top">{trainType.class_name}</td>
                     <td className="p-4 align-top">{publicImages.length}</td>
-
-                    <td className="p-4 align-top text-right">
-                      <Link
-                        href={`/train/${train.id}`}
-                        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-                      >
-                        Meer info
-                      </Link>
-                    </td>
                   </tr>
                 );
               })}
