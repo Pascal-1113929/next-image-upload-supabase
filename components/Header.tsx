@@ -54,12 +54,6 @@ export default function Header() {
                                 >
                                     Upload Photo
                                 </Button>
-                                <Button
-                                    variant="ghost"
-                                    onClick={() => router.push("/my-photos")}
-                                >
-                                    My Photos
-                                </Button>
                                 <Button variant="outline" onClick={handleLogout}>
                                     Logout
                                 </Button>

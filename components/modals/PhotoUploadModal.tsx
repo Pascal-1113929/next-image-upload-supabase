@@ -80,6 +80,8 @@ const PhotoUploadModal = () => {
     const [queryStation, setQueryStation] = useState("");       // for start station
     const [queryStationEnd, setQueryStationEnd] = useState(""); // for end station (route)
 
+    const [manualDate, setManualDate] = useState("");
+
     const { register, handleSubmit, reset, watch } = useForm<FormData>({
         defaultValues: {
             title: "",
@@ -290,6 +292,11 @@ const PhotoUploadModal = () => {
                 return;
             }
 
+            if (!detectedDate && !manualDate) {
+                toast.error("Please select the date when the photo was taken");
+                return;
+            }
+
             // Verify session is valid before proceeding
             const { data: { session }, error: sessionError } = await supabaseClient.auth.getSession();
 
@@ -415,10 +422,27 @@ const PhotoUploadModal = () => {
                     className="mt-2 cursor-pointer"
                 />
                 {/* Detected Date */}
-                {detectedDate && (
+                {detectedDate ? (
                     <div className="text-sm text-green-400 mt-2 flex items-center gap-2">
                         <span className="text-lg">📅</span>
-                        <span>Detected date: {new Date(detectedDate).toLocaleString()}</span>
+                        <span>Detected date: {new Date(detectedDate).toLocaleDateString()}</span>
+                    </div>
+                ) : (
+                    <div className="mt-3">
+                        <Label htmlFor="manualDate" className="text-sm font-medium">
+                            Photo Date *
+                        </Label>
+                        <Input
+                            id="manualDate"
+                            type="date"
+                            value={manualDate}
+                            onChange={(e) => setManualDate(e.target.value)}
+                            disabled={isLoading}
+                            className="mt-1.5"
+                        />
+                        <p className="text-xs text-neutral-400 mt-1">
+                            No date found in image metadata.
+                        </p>
                     </div>
                 )}
             </div>

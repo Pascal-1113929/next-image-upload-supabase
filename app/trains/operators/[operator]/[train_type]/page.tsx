@@ -140,7 +140,7 @@ export default function TrainsOverviewPage() {
                     : null;
 
                 return (
-                  <tr key={train.id} className="border-t cursor-pointer" onClick={() => {router.push(`/train/${operator.slug + `_` + `${train.id}`}`)}}>
+                  <tr key={train.id} className="border-t cursor-pointer" onClick={() => {router.push(`/trains/train/${operator.slug + `_` + `${train.id}`}`)}}>
                     <td className="p-4 align-top">
                       <div className="font-semibold text-blue-600">
                         {train.train_number}
