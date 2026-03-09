@@ -78,7 +78,49 @@ const TrainPage = () => {
         // Fetch train images
         let query = supabaseClient
           .from("train_images")
-          .select("id, image_path, title, description, created_at, is_private")
+          .select(
+            `
+          id,
+          title,
+          description,
+          image_path,
+          taken_at,
+          is_private,
+          created_at,
+
+          train:trains!train_images_train_id_fkey (
+            id,
+            train_number,
+            alt_number,
+            type:train_types (
+              id,
+              name,
+              class_name
+            ),
+            operator:train_operators (
+              id,
+              name,
+              country_code
+            )
+          ),
+
+          location:train_image_locations (
+            location_type,
+            station_id,
+            station_id_end,
+            station:train_stations!train_image_locations_station_id_fkey (
+              id,
+              name,
+              country_code
+            ),
+            station_end:train_stations!train_image_locations_station_id_end_fkey (
+              id,
+              name,
+              country_code
+            )
+          )
+        `
+          )
           .eq("train_id", trainData.id)
           .order("created_at", { ascending: false });
 
