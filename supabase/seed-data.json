@@ -234,66 +234,82 @@
     "trainoperators": [
         {
             "name": "DB Fernverkehr",
+            "slug": "dbfernverkehr",
             "countryCode": "DE"
         },
         {
             "name": "DB Regio",
+            "slug": "dbregio",
             "countryCode": "DE"
         },
         {
             "name": "DB Cargo",
+            "slug": "dbcargo",
             "countryCode": "DE"
         },
         {
             "name": "VIAS GmbH",
+            "slug": "vias",
             "countryCode": "DE"
         },
         {
             "name": "NS International",
+            "slug": "nsinternational",
             "countryCode": "NL"
         },
         {
             "name": "Nederlandse Spoorwegen",
+            "slug": "ns",
             "countryCode": "NL"
         },
         {
             "name": "SNCF",
+            "slug": "sncf",
             "countryCode": "FR"
         },
         {
             "name": "Eurostar",
+            "slug": "eurostar",
             "countryCode": "GB"
         },
         {
             "name": "Spoorweg Museum",
+            "slug": "spoorwegmuseum",
             "countryCode": "NL"
         },
         {
             "name": "Arriva Nederland",
+            "slug": "arrivanederland",
             "countryCode": "NL"
         },
         {
             "name": "Keolis Nederland",
+            "slug": "keolisnederland",
             "countryCode": "NL"
         },
         {
             "name": "Qbuzz",
+            "slug": "qbuzz",
             "countryCode": "NL"
         },
         {
             "name": "ÖBB",
+            "slug": "obb",
             "countryCode": "AT"
         },
         {
             "name": "SBB CFF FFS",
+            "slug": "sbb",
             "countryCode": "CH"
         },
         {
             "name": "SBB Cargo",
+            "slug": "sbbcargo",
             "countryCode": "CH"
         },
         {
             "name": "Eurobahn",
+            "slug": "eurobahn",
             "countryCode": "DE"
         }
     ],

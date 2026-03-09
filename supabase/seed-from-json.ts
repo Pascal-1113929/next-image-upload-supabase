@@ -20,6 +20,7 @@ interface TrainType {
 
 interface TrainOperator {
     name: string
+    slug: string
     countryCode: string
 }
 
@@ -78,6 +79,7 @@ async function seedDatabase() {
                 .from('train_operators')
                 .insert({
                     name: operator.name,
+                    slug: operator.slug,
                     country_code: operator.countryCode,
                 })
                 .select()

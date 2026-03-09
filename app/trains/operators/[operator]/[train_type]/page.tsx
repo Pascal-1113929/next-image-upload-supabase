@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { supabaseClient } from "@/lib/supabase";
@@ -19,6 +19,7 @@ interface Train {
 
 interface Operator {
   id: number;
+  slug: string;
   name: string;
 }
 
@@ -30,6 +31,7 @@ interface TrainType {
 
 export default function TrainsOverviewPage() {
   const params = useParams();
+  const router = useRouter();
   const operatorSlug = params.operator as string;
   const trainTypeSlug = params.train_type as string;
 
@@ -138,7 +140,7 @@ export default function TrainsOverviewPage() {
                     : null;
 
                 return (
-                  <tr key={train.id} className="border-t">
+                  <tr key={train.id} className="border-t cursor-pointer" onClick={() => {router.push(`/train/${operator.slug + `_` + `${train.id}`}`)}}>
                     <td className="p-4 align-top">
                       <div className="font-semibold text-blue-600">
                         {train.train_number}
