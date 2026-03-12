@@ -1,6 +1,16 @@
 {
     "trainTypes": [
         {
+            "name": "Alsthom 1600/1800",
+            "class_name": "1600/1800",
+            "description": "The Alsthom 1600/1800 is a series of Dutch electric locomotives built by Alsthom between 1981 and 1983 for the Nederlandse Spoorwegen. Based on the French BB 7200 design, these locomotives were used for both passenger and freight services and are known for their reliability and distinctive boxy design."
+        },
+        {
+            "name": "Alsthom 1700",
+            "class_name": "1700",
+            "description": "The Alsthom 1700 is a series of Dutch electric locomotives built by Alsthom between 1991 and 1994 for Nederlandse Spoorwegen. Based on the earlier 1600/1800 series, these locomotives were primarily used for passenger services such as Intercity and international trains, and later also for charter and freight operations."
+        },
+        {
             "name": "Siemens Vectron",
             "class_name": "BR193",
             "description": "Siemens Vectron high-speed locomotive (DB Class 193)"
@@ -64,6 +74,11 @@
             "name": "ICE TD",
             "class_name": "BR605",
             "description": "Diesel-powered high-speed train (DB Class 605)"
+        },
+        {
+            "name": "Baureihe 101",
+            "class_name": "BR101",
+            "description": "The DB Baureihe 101 is a class of German electric locomotives built between 1996 and 1999 for high-speed InterCity and EuroCity passenger services."
         },
         {
             "name": "Baureihe 422",
@@ -229,6 +244,21 @@
             "name": "SNG 4Bakken",
             "class_name": "NS SNG SNG-4",
             "description": "Dutch Sprinter train with 4 carriages (NS SNG)"
+        },
+        {
+            "name": "Stadler FLIRT3",
+            "class_name": "NS FLIRT-TAG",
+            "description": "Dutch Sprinter train with 2 carriages (NS FLIRT-TAG)"
+        },
+        {
+            "name": "Stadler FLIRT3 3bakken",
+            "class_name": "NS FLIRT-III",
+            "description": "Dutch Sprinter train with 2 carriages (NS FLIRT-III)"
+        },
+        {
+            "name": "Stadler FLIRT3 4bakken",
+            "class_name": "NS FLIRT-Iv",
+            "description": "Dutch Sprinter train with 2 carriages (NS FLIRT-III)"
         }
     ],
     "trainoperators": [
@@ -311,6 +341,16 @@
             "name": "Eurobahn",
             "slug": "eurobahn",
             "countryCode": "DE"
+        },
+        {
+            "name": "Rotterdam Rail Feeding",
+            "slug": "rotterdamrailfeeding",
+            "countryCode": "NL"
+        },
+        {
+            "name": "Train Charter Services",
+            "slug": "traincharterservices",
+            "countryCode": "NL"
         }
     ],
     "stations": [
@@ -40749,6 +40789,72 @@
     ],
     "trains": [
         {
+            "number": "103001",
+            "altNumber": "",
+            "operator": "Train Charter Services",
+            "trainType": "BR101"
+        },
+        {
+            "number": "103002",
+            "altNumber": "",
+            "operator": "Train Charter Services",
+            "trainType": "BR101"
+        },
+        {
+            "number": "103003",
+            "altNumber": "",
+            "operator": "Train Charter Services",
+            "trainType": "BR101"
+        },
+        {
+            "number": "103004",
+            "altNumber": "",
+            "operator": "Train Charter Services",
+            "trainType": "BR101"
+        },
+        {
+            "number": "101001",
+            "altNumber": "",
+            "operator": "Train Charter Services",
+            "trainType": "1700"
+        },
+        {
+            "number": "101002",
+            "altNumber": "",
+            "operator": "Train Charter Services",
+            "trainType": "1700"
+        },
+        {
+            "number": "101003",
+            "altNumber": "",
+            "operator": "Train Charter Services",
+            "trainType": "1700"
+        },
+        {
+            "number": "101004",
+            "altNumber": "",
+            "operator": "Train Charter Services",
+            "trainType": "1700"
+        },
+        {
+            "number": "102001",
+            "altNumber": "",
+            "operator": "Train Charter Service",
+            "trainType": "1600/1800"
+        },
+        {
+            "number": "4401",
+            "altNumber": "",
+            "operator": "Rotterdam Rail Feeding",
+            "trainType": "1600/1800"
+        },
+        {
+            "number": "4402",
+            "altNumber": "",
+            "operator": "Rotterdam Rail Feeding",
+            "trainType": "1600/1800"
+        },
+        {
             "number": "193 013",
             "altNumber": "6193 013",
             "trainType": "BR193",
@@ -40816,6 +40922,12 @@
         },
         {
             "number": "193 441",
+            "altNumber": "",
+            "trainType": "BR193",
+            "operator": "DB Fernverkehr"
+        },
+        {
+            "number": "193 567",
             "altNumber": "",
             "trainType": "BR193",
             "operator": "DB Fernverkehr"
