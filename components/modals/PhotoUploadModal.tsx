@@ -113,9 +113,10 @@ const PhotoUploadModal = () => {
     useEffect(() => {
         const loadData = async () => {
             const pageSize = 1000;
+
+            // --- Load all stations ---
             let from = 0;
             let allStations: Station[] = [];
-
             while (true) {
                 const { data, error } = await supabaseClient
                     .from("train_stations")
@@ -131,24 +132,37 @@ const PhotoUploadModal = () => {
             }
             setStations(allStations);
 
+            // --- Load all train types ---
             const { data: typesData } = await supabaseClient
                 .from("train_types")
                 .select("id, name, class_name")
                 .order("name");
+            if (typesData) setTrainTypes(typesData);
 
+            // --- Load all operators ---
             const { data: operatorsData } = await supabaseClient
                 .from("train_operators")
                 .select("id, name, country_code")
                 .order("name");
-
-            const { data: trainsData } = await supabaseClient
-                .from("trains")
-                .select("id, train_number, train_type_id, operator_id")
-                .order("train_number");
-
-            if (typesData) setTrainTypes(typesData);
             if (operatorsData) setOperators(operatorsData);
-            if (trainsData) setTrains(trainsData);
+
+            // --- Load all trains with pagination ---
+            from = 0;
+            let allTrains: Train[] = [];
+            while (true) {
+                const { data, error } = await supabaseClient
+                    .from("trains")
+                    .select("id, train_number, train_type_id, operator_id")
+                    .order("train_number")
+                    .range(from, from + pageSize - 1);
+
+                if (error) break;
+                if (!data || data.length === 0) break;
+
+                allTrains = [...allTrains, ...data];
+                from += pageSize;
+            }
+            setTrains(allTrains);
         };
 
         loadData();
