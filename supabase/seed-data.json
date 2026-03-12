@@ -41249,20 +41249,6 @@
             "latitude": 50.6972783
         },
         {
-            "name": null,
-            "countryCode": "BE",
-            "stationCode": null,
-            "longitude": 4.9038214,
-            "latitude": 51.1998988
-        },
-        {
-            "name": null,
-            "countryCode": "BE",
-            "stationCode": null,
-            "longitude": 4.9104438,
-            "latitude": 51.2007176
-        },
-        {
             "name": "Wervik",
             "countryCode": "BE",
             "stationCode": "8896396",
@@ -41592,25 +41578,11 @@
             "latitude": 51.0355237
         },
         {
-            "name": null,
-            "countryCode": "BE",
-            "stationCode": null,
-            "longitude": 4.1805314,
-            "latitude": 50.4775758
-        },
-        {
             "name": "Frameries",
             "countryCode": "BE",
             "stationCode": "8881570",
             "longitude": 3.9064436,
             "latitude": 50.4057561
-        },
-        {
-            "name": null,
-            "countryCode": "BE",
-            "stationCode": null,
-            "longitude": 3.6544453,
-            "latitude": 51.0473276
         },
         {
             "name": "Kapellen",
@@ -58203,20 +58175,6 @@
             "latitude": 46.8318035
         },
         {
-            "name": null,
-            "countryCode": "CH",
-            "stationCode": null,
-            "longitude": 9.011145,
-            "latitude": 46.8484833
-        },
-        {
-            "name": null,
-            "countryCode": "CH",
-            "stationCode": null,
-            "longitude": 8.988448,
-            "latitude": 46.877483
-        },
-        {
             "name": "Vennes",
             "countryCode": "CH",
             "stationCode": "8592128",
@@ -58601,13 +58559,7 @@
             "longitude": 8.846216,
             "latitude": 47.547794
         },
-        {
-            "name": null,
-            "countryCode": "CH",
-            "stationCode": null,
-            "longitude": 7.319964,
-            "latitude": 47.1124549
-        },
+
         {
             "name": "Biel Mett/Bienne Mâche",
             "countryCode": "CH",
@@ -58621,20 +58573,6 @@
             "stationCode": "8501384",
             "longitude": 6.9215129,
             "latitude": 46.4393239
-        },
-        {
-            "name": null,
-            "countryCode": "CH",
-            "stationCode": null,
-            "longitude": 8.3153685,
-            "latitude": 47.4582767
-        },
-        {
-            "name": null,
-            "countryCode": "CH",
-            "stationCode": null,
-            "longitude": 8.3151184,
-            "latitude": 47.4582017
         },
         {
             "name": "Walterswil-Striegel",
@@ -59435,32 +59373,11 @@
             "latitude": 47.0434392
         },
         {
-            "name": null,
-            "countryCode": "CH",
-            "stationCode": null,
-            "longitude": 9.01443,
-            "latitude": 46.8525513
-        },
-        {
-            "name": null,
-            "countryCode": "CH",
-            "stationCode": null,
-            "longitude": 9.012828,
-            "latitude": 46.846448
-        },
-        {
             "name": "Davos Kongress/Eisstadion",
             "countryCode": "CH",
             "stationCode": null,
             "longitude": 9.833651,
             "latitude": 46.7993086
-        },
-        {
-            "name": null,
-            "countryCode": "CH",
-            "stationCode": null,
-            "longitude": 9.2531431,
-            "latitude": 47.4112574
         },
         {
             "name": "Chur West",
@@ -59613,7 +59530,7 @@
         {
             "number": "102001",
             "altNumber": "",
-            "operator": "Train Charter Service",
+            "operator": "Train Charter Services",
             "trainType": "1600/1800"
         },
         {
