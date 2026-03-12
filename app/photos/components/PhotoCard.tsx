@@ -4,23 +4,11 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
-type DbStation = {
-    id: number;
-    name: string;
-    country_code: string;
-} | null;
+type DbStation = { id: number; name: string; country_code: string } | null;
 
-type DbTrainType = {
-    id: number;
-    name: string;
-    class_name: string;
-} | null;
+type DbTrainType = { id: number; name: string; class_name: string } | null;
 
-type DbOperator = {
-    id: number;
-    name: string;
-    country_code: string | null;
-} | null;
+type DbOperator = { id: number; name: string; country_code: string | null } | null;
 
 type DbTrain = {
     id: number;
@@ -31,7 +19,7 @@ type DbTrain = {
 } | null;
 
 type Location = {
-    location_type: string | null; // ← FIX
+    location_type: string | null;
     station_id: number | null;
     station_id_end: number | null;
     station?: DbStation;
@@ -46,7 +34,7 @@ export type Photo = {
     is_private?: boolean;
     taken_at: string | number | Date;
     location?: Location;
-    train?: DbTrain;
+    trains?: DbTrain[];
 };
 
 type PhotoCardProps = {
@@ -65,11 +53,8 @@ export function PhotoCard({ photo, getImageUrl }: PhotoCardProps) {
             const s2 = photo.location.station_end;
             return (
                 <span>
-                    {s1?.name || "Unknown"}{" "}
-                    <span className="text-xs">({s1?.country_code || "??"})</span>
-                    {" - "}
-                    {s2?.name || "Unknown"}{" "}
-                    <span className="text-xs">({s2?.country_code || "??"})</span>
+                    {s1?.name || "Unknown"} <span className="text-xs">({s1?.country_code || "??"})</span> {" - "} 
+                    {s2?.name || "Unknown"} <span className="text-xs">({s2?.country_code || "??"})</span>
                 </span>
             );
         }
@@ -77,8 +62,7 @@ export function PhotoCard({ photo, getImageUrl }: PhotoCardProps) {
         const s = photo.location.station;
         return (
             <span>
-                {s?.name || "Unknown"}{" "}
-                <span className="text-xs">({s?.country_code || "??"})</span>
+                {s?.name || "Unknown"} <span className="text-xs">({s?.country_code || "??"})</span>
             </span>
         );
     };
@@ -86,21 +70,15 @@ export function PhotoCard({ photo, getImageUrl }: PhotoCardProps) {
     function formatTrainLabel(train: DbTrain) {
         if (!train) return "—";
 
-        // Map full operator name → short label
         const OPERATOR_SHORT: Record<string, string> = {
             "Nederlandse Spoorwegen": "NS",
             "SNCF": "SNCF",
             "VIAS GmbH": "VIAS",
         };
 
-        const operator = OPERATOR_SHORT[train.operator.name] ?? train.operator.name ?? "—";
-
-        // Pick trainType
+        const operator = OPERATOR_SHORT[train.operator?.name || ""] ?? train.operator?.name ?? "—";
         const type = train.type?.name ?? "";
-
-        // Use main number
         const number = train.train_number + (train.alt_number ? ` - ${train.alt_number}` : "");
-
         return `${operator} ${type} • ${number}`.trim();
     }
 
@@ -124,27 +102,27 @@ export function PhotoCard({ photo, getImageUrl }: PhotoCardProps) {
             </div>
 
             <CardHeader>
-                <CardTitle className="line-clamp-1">
-                    {photo.title || "Untitled"}
-                </CardTitle>
-
+                <CardTitle className="line-clamp-1">{photo.title || "Untitled"}</CardTitle>
                 <CardDescription className="space-y-1">
                     <div className="flex items-center gap-1">
                         <span>📍</span>
                         {renderLocation()}
                     </div>
-
                     <div className="flex items-center gap-1">
                         <span>📅</span>
                         <span>{new Date(photo.taken_at).toLocaleDateString()}</span>
                     </div>
+                    {photo.trains && photo.trains.length > 0 && (
+                        <div className="flex flex-col gap-1 mt-1">
+                            {photo.trains.map((t) => (
+                                <span key={t?.id} className="flex items-center gap-1">
+                                    <span>🚆</span>
+                                    <span className="font-medium">{formatTrainLabel(t)}</span>
+                                </span>
+                            ))}
+                        </div>
+                    )}
                 </CardDescription>
-                {photo.train && (
-                    <div className="flex items-center gap-1">
-                        <span>🚆</span>
-                        <span className="font-medium">{formatTrainLabel(photo.train)}</span>
-                    </div>
-                )}
             </CardHeader>
 
             {photo.description && (

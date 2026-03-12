@@ -14,6 +14,14 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 
+interface Train {
+    id: number;
+    train_number: string;
+    alt_number: string | null;
+    type?: { id: number; name: string; class_name: string } | null;
+    operator?: { id: number; name: string; country_code: string } | null;
+}
+
 interface TrainImageDetail {
     id: number;
     title: string | null;
@@ -29,19 +37,12 @@ interface TrainImageDetail {
         location_type: string | null;
         station_id: number | null;
         station_id_end: number | null;
-        station: {          // start station
-            id: number;
-            name: string;
-            country_code: string;
-        } | null;
-        station_end: {      // end station
-            id: number;
-            name: string;
-            country_code: string;
-        } | null;
+        station: { id: number; name: string; country_code: string } | null;
+        station_end: { id: number; name: string; country_code: string } | null;
     } | null;
     user_id: string;
     created_at: string;
+    trains?: Train[];
 }
 
 export default function PhotoDetailPage() {
@@ -62,53 +63,47 @@ export default function PhotoDetailPage() {
                 const { data, error } = await supabaseClient
                     .from("train_images")
                     .select(`
-          id,
-          title,
-          description,
-          image_path,
-          taken_at,
-          is_private,
-          user_id,
-          width_px,
-          height_px,
-          file_size_bytes,
-          original_metadata,
-          created_at,
-          location:train_image_locations (
-            location_type,
-            station_id,
-            station_id_end,
-            station:train_stations!train_image_locations_station_id_fkey (
-              id,
-              name,
-              country_code
-            ),
-            station_end:train_stations!train_image_locations_station_id_end_fkey (
-              id,
-              name,
-              country_code
-            )
-          )
-        `)
+                        *,
+                        trains:train_image_trains (
+                            train:trains (
+                                id,
+                                train_number,
+                                alt_number,
+                                type:train_types (id, name, class_name),
+                                operator:train_operators (id, name, country_code)
+                            )
+                        ),
+                        location:train_image_locations (
+                            location_type,
+                            station_id,
+                            station_id_end,
+                            station:train_stations!train_image_locations_station_id_fkey (
+                                id,
+                                name,
+                                country_code
+                            ),
+                            station_end:train_stations!train_image_locations_station_id_end_fkey (
+                                id,
+                                name,
+                                country_code
+                            )
+                        )
+                    `)
                     .eq("id", params.id)
                     .single();
 
-                if (error) {
-                    console.error("Error loading photo:", error);
-                    return;
-                }
+                if (error) throw error;
 
-                // Check if user has permission to view
+                // Check permissions
                 if (data.is_private && (!user || data.user_id !== user.id)) {
                     router.push("/photos");
                     return;
                 }
 
-                // Transform the data structure: lift stations out of location
+                // Flatten trains array
                 const transformedData: TrainImageDetail = {
                     ...data,
-                    startStation: data.location?.station?.[0] || null,
-                    endStation: data.location?.station_end?.[0] || null,
+                    trains: data.trains?.map((t: any) => t.train) || [],
                 };
 
                 setPhoto(transformedData);
@@ -122,7 +117,6 @@ export default function PhotoDetailPage() {
         loadPhoto();
     }, [params.id, user, router]);
 
-
     const getImageUrl = (path: string) => {
         const { data } = supabaseClient.storage
             .from("train-images")
@@ -134,6 +128,22 @@ export default function PhotoDetailPage() {
         if (!bytes) return "Unknown";
         const mb = bytes / 1024 / 1024;
         return `${mb.toFixed(2)} MB`;
+    };
+
+    const formatTrainLabel = (train: Train) => {
+        if (!train) return "—";
+
+        const OPERATOR_SHORT: Record<string, string> = {
+            "Nederlandse Spoorwegen": "NS",
+            SNCF: "SNCF",
+            "VIAS GmbH": "VIAS",
+        };
+
+        const operator = OPERATOR_SHORT[train.operator?.name || ""] ?? train.operator?.name ?? "—";
+        const type = train.type?.name ?? "";
+        const number = train.train_number + (train.alt_number ? ` - ${train.alt_number}` : "");
+
+        return `${operator} ${type} • ${number}`.trim();
     };
 
     if (loading) {
@@ -156,9 +166,7 @@ export default function PhotoDetailPage() {
             <div className="min-h-screen bg-zinc-50 dark:bg-black py-8 px-4">
                 <div className="max-w-5xl mx-auto text-center">
                     <h1 className="text-2xl font-bold mb-4">Photo not found</h1>
-                    <Button onClick={() => router.push("/photos")}>
-                        Back to Gallery
-                    </Button>
+                    <Button onClick={() => router.push("/photos")}>Back to Gallery</Button>
                 </div>
             </div>
         );
@@ -211,7 +219,6 @@ export default function PhotoDetailPage() {
                                     <div className="text-zinc-600 dark:text-zinc-400">
                                         📍{' '}
                                         {photo.location?.location_type === "route" ? (
-                                            // It's a route
                                             <>
                                                 {photo.location?.station?.name || "Unknown"}{" "}
                                                 <span className="text-xs">
@@ -224,7 +231,6 @@ export default function PhotoDetailPage() {
                                                 </span>
                                             </>
                                         ) : (
-                                            // Single station
                                             <>
                                                 {photo.location?.station?.name || "Unknown"}{" "}
                                                 <span className="text-xs">
@@ -234,7 +240,6 @@ export default function PhotoDetailPage() {
                                         )}
                                     </div>
                                 </div>
-
 
                                 <div>
                                     <div className="font-semibold text-zinc-700 dark:text-zinc-300">
@@ -253,6 +258,25 @@ export default function PhotoDetailPage() {
                                         {new Date(photo.created_at).toLocaleDateString()}
                                     </div>
                                 </div>
+
+                                {/* Trains Section */}
+                                {photo.trains && photo.trains.length > 0 && (
+                                    <div>
+                                        <div className="font-semibold text-zinc-700 dark:text-zinc-300 mb-1">
+                                            Trains
+                                        </div>
+                                        <div className="flex flex-col gap-1">
+                                            {photo.trains.map((train) => (
+                                                <span
+                                                    key={train.id}
+                                                    className="text-zinc-600 dark:text-zinc-400 flex items-center gap-1"
+                                                >
+                                                    🚆 {formatTrainLabel(train)}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
                             </CardContent>
                         </Card>
 
