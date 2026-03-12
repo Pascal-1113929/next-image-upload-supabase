@@ -39,15 +39,11 @@ export default function OperatorPage() {
         const loadData = async () => {
             setLoading(true);
 
-            const formattedName = operatorParam.replace(/-/g, " ");
-
-            console.log("Loading data for operator:", formattedName);
-
             // 1️⃣ Get operator
             const { data: operatorData } = await supabaseClient
                 .from("train_operators")
                 .select("id, name, country_code")
-                .eq("name", formattedName)
+                .eq("slug", operatorParam)
                 .single();
 
             if (!operatorData) {

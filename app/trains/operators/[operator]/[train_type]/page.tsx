@@ -44,14 +44,11 @@ export default function TrainsOverviewPage() {
     const loadData = async () => {
       setLoading(true);
 
-      // Convert slug to DB name
-      const operatorName = operatorSlug.replace(/-/g, " ");
-
       // Fetch operator
       const { data: operatorData } = await supabaseClient
         .from("train_operators")
         .select("*")
-        .ilike("name", operatorName)
+        .ilike("slug", operatorSlug)
         .single();
 
       if (!operatorData) {

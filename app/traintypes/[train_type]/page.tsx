@@ -16,11 +16,13 @@ interface TrainType {
   id: number;
   name: string;
   class_name: string;
+  description: string;
 }
 
 interface OperatorCard {
   id: number;
   name: string;
+  slug: string;
   country_code: string | null;
   photo_count: number;
   random_image_path?: string;
@@ -60,6 +62,7 @@ export default function TrainTypePage() {
           operator:train_operators (
             id,
             name,
+            slug,
             country_code
           ),
           images:train_images ( id )
@@ -161,7 +164,7 @@ export default function TrainTypePage() {
               <CardHeader>
                 <CardTitle>
                   <Link
-                    href={`/trains/operators/${operator.name.replace(/\s+/g, "-")}/${trainType.class_name}`}
+                    href={`/trains/operators/${operator.slug}/${trainType.class_name}`}
                     className="text-blue-600 hover:underline"
                   >
                     {operator.name}
