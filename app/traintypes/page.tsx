@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { supabaseClient } from "@/lib/supabase";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { slugify } from "@/lib/slug";
 
 interface TrainTypeCard {
     id: number;
@@ -119,7 +120,7 @@ export default function AllTrainTypesPage() {
                             <CardHeader>
                                 <CardTitle>
                                     <Link
-                                        href={`/traintypes/${type.class_name}`}
+                                        href={`/traintypes/${slugify(type.class_name)}`}
                                         className="text-blue-600 hover:underline"
                                     >
                                         {type.name}
