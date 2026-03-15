@@ -4,12 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { supabaseClient } from "@/lib/supabase";
-import {
-    Card,
-    CardHeader,
-    CardTitle,
-    CardContent,
-} from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 interface OperatorCard {
     id: number;
@@ -27,35 +22,73 @@ export default function AllOperatorsPage() {
         const loadData = async () => {
             setLoading(true);
 
-            // 1️⃣ Fetch all operators
-            const { data: ops, error } = await supabaseClient
+            // 1️⃣ Fetch operators
+            const { data: ops, error: opsError } = await supabaseClient
                 .from("train_operators")
-                .select("id, name, slug");
+                .select("id, name, slug")
+                .order("name");
 
-            if (error || !ops) {
-                console.error("Error fetching operators:", error);
+            if (opsError || !ops) {
+                console.error(opsError);
                 setLoading(false);
                 return;
             }
 
+            // 2️⃣ Fetch train-image relations
+            const { data: relations, error: relError } = await supabaseClient
+                .from("train_image_trains")
+                .select(`
+                    train_image_id,
+                    train:trains (
+                        operator_id
+                    ),
+                    image:train_images (
+                        image_path
+                    )
+                `);
+
+            if (relError || !relations) {
+                console.error(relError);
+                setLoading(false);
+                return;
+            }
+
+            // 3️⃣ Build operator map
             const operatorMap = new Map<number, OperatorCard>();
 
-            // 2️⃣ Fetch photos belonging to trains of that operator
-            for (const op of ops) {
-                const { data: images } = await supabaseClient
-                    .from("train_images")
-                    .select("image_path, trains!inner(operator_id)")
-                    .eq("trains.operator_id", op.id);
-
+            ops.forEach(op => {
                 operatorMap.set(op.id, {
                     ...op,
-                    photo_count: images?.length || 0,
-                    random_image_path:
-                        images && images.length > 0
-                            ? images[Math.floor(Math.random() * images.length)].image_path
-                            : undefined,
+                    photo_count: 0
                 });
-            }
+            });
+
+            const imagesPerOperator: Record<number, string[]> = {};
+
+            relations.forEach((r: any) => {
+                const operatorId = r.train?.operator_id;
+                const imagePath = r.image?.image_path;
+
+                if (!operatorId || !imagePath) return;
+
+                if (!imagesPerOperator[operatorId]) {
+                    imagesPerOperator[operatorId] = [];
+                }
+
+                imagesPerOperator[operatorId].push(imagePath);
+            });
+
+            // 4️⃣ Fill counts + random images
+            Object.entries(imagesPerOperator).forEach(([opId, images]) => {
+                const id = Number(opId);
+                const operator = operatorMap.get(id);
+
+                if (!operator) return;
+
+                operator.photo_count = images.length;
+                operator.random_image_path =
+                    images[Math.floor(Math.random() * images.length)];
+            });
 
             setOperators(Array.from(operatorMap.values()));
             setLoading(false);
@@ -68,6 +101,7 @@ export default function AllOperatorsPage() {
         const { data } = supabaseClient.storage
             .from("train-images")
             .getPublicUrl(path);
+
         return data.publicUrl;
     };
 
@@ -76,18 +110,18 @@ export default function AllOperatorsPage() {
 
     return (
         <div className="min-h-screen bg-zinc-50 dark:bg-black py-8 px-4">
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-6xl mx-auto">
                 <h1 className="text-4xl font-bold text-black dark:text-white mb-8">
                     Train Operators
                 </h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {operators.map((op) => (
+                    {operators.map(op => (
                         <Card key={op.id} className="overflow-hidden">
                             <CardHeader>
                                 <CardTitle>
                                     <Link
-                                        href={`/operators/${op.slug}`}
+                                        href={`/trains/operators/${op.slug}`}
                                         className="text-blue-600 hover:underline"
                                     >
                                         {op.name}

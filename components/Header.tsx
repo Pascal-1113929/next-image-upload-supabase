@@ -41,6 +41,18 @@ export default function Header() {
                     <nav className="flex items-center gap-4">
                         <Button
                             variant="ghost"
+                            onClick={() => router.push("/traintypes")}
+                        >
+                            Train Types
+                        </Button>
+                        <Button
+                            variant="ghost"
+                            onClick={() => router.push("/trains/operators")}
+                        >
+                            Train Operators
+                        </Button>
+                        <Button
+                            variant="ghost"
                             onClick={() => router.push("/photos")}
                         >
                             Gallery

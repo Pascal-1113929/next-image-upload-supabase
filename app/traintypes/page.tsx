@@ -4,12 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { supabaseClient } from "@/lib/supabase";
-import {
-    Card,
-    CardHeader,
-    CardTitle,
-    CardContent,
-} from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 interface TrainTypeCard {
     id: number;
@@ -27,34 +22,71 @@ export default function AllTrainTypesPage() {
         const loadData = async () => {
             setLoading(true);
 
-            // 1️⃣ Fetch all train types
-            const { data: types, error } = await supabaseClient
+            // 1️⃣ Fetch train types
+            const { data: types, error: typesError } = await supabaseClient
                 .from("train_types")
-                .select("id, name, class_name");
+                .select("id, name, class_name")
+                .order("name");
 
-            if (error || !types) {
-                console.error("Error fetching train types:", error);
+            if (typesError || !types) {
+                console.error(typesError);
                 setLoading(false);
                 return;
             }
 
+            // 2️⃣ Fetch image relations
+            const { data: relations, error: relError } = await supabaseClient
+                .from("train_image_trains")
+                .select(`
+                    train_image_id,
+                    train:trains (
+                        train_type_id
+                    ),
+                    image:train_images (
+                        image_path
+                    )
+                `);
+
+            if (relError || !relations) {
+                console.error(relError);
+                setLoading(false);
+                return;
+            }
+
+            // 3️⃣ Build map of train types
             const typeMap = new Map<number, TrainTypeCard>();
 
-            // 2️⃣ Count photos per type
-            for (const type of types) {
-                const { data: images } = await supabaseClient
-                    .from("train_images")
-                    .select("image_path")
-                    .eq("train_type_id", type.id);
-
+            types.forEach(type => {
                 typeMap.set(type.id, {
                     ...type,
-                    photo_count: images?.length || 0,
-                    random_image_path: images && images.length > 0
-                        ? images[Math.floor(Math.random() * images.length)].image_path
-                        : undefined,
+                    photo_count: 0
                 });
-            }
+            });
+
+            // 4️⃣ Aggregate counts
+            const imagesPerType: Record<number, string[]> = {};
+
+            relations.forEach((r: any) => {
+                const typeId = r.train?.train_type_id;
+                const imagePath = r.image?.image_path;
+
+                if (!typeId || !imagePath) return;
+
+                if (!imagesPerType[typeId]) imagesPerType[typeId] = [];
+                imagesPerType[typeId].push(imagePath);
+            });
+
+            // 5️⃣ Populate counts + random image
+            Object.entries(imagesPerType).forEach(([typeId, images]) => {
+                const id = Number(typeId);
+                const type = typeMap.get(id);
+
+                if (!type) return;
+
+                type.photo_count = images.length;
+                type.random_image_path =
+                    images[Math.floor(Math.random() * images.length)];
+            });
 
             setTrainTypes(Array.from(typeMap.values()));
             setLoading(false);
@@ -67,6 +99,7 @@ export default function AllTrainTypesPage() {
         const { data } = supabaseClient.storage
             .from("train-images")
             .getPublicUrl(path);
+
         return data.publicUrl;
     };
 
@@ -75,13 +108,13 @@ export default function AllTrainTypesPage() {
 
     return (
         <div className="min-h-screen bg-zinc-50 dark:bg-black py-8 px-4">
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-6xl mx-auto">
                 <h1 className="text-4xl font-bold text-black dark:text-white mb-8">
                     All Train Types
                 </h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {trainTypes.map((type) => (
+                    {trainTypes.map(type => (
                         <Card key={type.id} className="overflow-hidden">
                             <CardHeader>
                                 <CardTitle>
