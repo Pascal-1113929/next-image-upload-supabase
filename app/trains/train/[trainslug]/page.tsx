@@ -3,7 +3,7 @@
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { supabaseClient } from "@/lib/supabase";
-import { PhotoCard } from "@/app/photos/components/PhotoCard";
+import { TrainPhotoCard } from "./components/TrainPhotoCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader } from "@/components/ui/card";
 import { useUser } from "@/hooks/useUser";
@@ -14,6 +14,7 @@ interface TrainImage {
   image_path: string;
   title: string | null;
   description: string | null;
+  location: string;
   taken_at?: string;
   is_private?: boolean;
   created_at?: string;
@@ -75,68 +76,61 @@ const TrainPage = () => {
           return;
         }
 
-        // Fetch train images
-        let query = supabaseClient
-          .from("train_images")
-          .select(
-            `
-          id,
-          title,
-          description,
-          image_path,
-          taken_at,
-          is_private,
-          created_at,
+        const { data: trainImageList, error: trainImageListError } = await supabaseClient
+          .from("train_image_trains")
+          .select(`
+    image:train_images (
+      id,
+      image_path,
+      title,
+      description,
+      taken_at,
+      is_private,
+      created_at,
+      location:train_image_locations (
+          location_type,
+          station:train_stations!train_image_locations_station_id_fkey (name),
+          station_end:train_stations!train_image_locations_station_id_end_fkey (name)
+        )
+    )
+  `)
+          .eq("train_id", trainId)
 
-          train:trains!train_images_train_id_fkey (
-            id,
-            train_number,
-            alt_number,
-            type:train_types (
-              id,
-              name,
-              class_name
-            ),
-            operator:train_operators (
-              id,
-              name,
-              country_code
-            )
-          ),
-
-          location:train_image_locations (
-            location_type,
-            station_id,
-            station_id_end,
-            station:train_stations!train_image_locations_station_id_fkey (
-              id,
-              name,
-              country_code
-            ),
-            station_end:train_stations!train_image_locations_station_id_end_fkey (
-              id,
-              name,
-              country_code
-            )
-          )
-        `
-          )
-          .eq("train_id", trainData.id)
-          .order("created_at", { ascending: false });
-
-        if (user) {
-          query = query.or(`is_private.eq.false,user_id.eq.${user.id}`);
-        } else {
-          query = query.eq("is_private", false);
-        }
-
-        const { data: trainImages, error: imagesError } = await query;
-
-        if (imagesError) {
+        if (trainImageListError) {
           setError("Failed to fetch images");
           setLoading(false);
           return;
         }
+
+        const trainImages: TrainImage[] = (trainImageList || []).map((rel: any) => {
+          const img = rel.image;
+
+          console.log(img)
+          // Compute the location string
+          let locationStr = "";
+          if (img.location) {
+            if (img.location.location_type === "station") {
+              locationStr = img.location.station?.name || "";
+            } else if (img.location.location_type === "route") {
+              const start = img.location.station?.name || "";
+              const end = img.location.station_end?.name || "";
+              locationStr = `${start} - ${end}`;
+            }
+          }
+
+          return {
+            id: img.id,
+            image_path: img.image_path,
+            title: img.title,
+            description: img.description,
+            taken_at: img.taken_at,
+            is_private: img.is_private,
+            created_at: img.created_at,
+            location: locationStr
+          };
+        });
+
+        console.log(trainImages)
 
         setPhotos(trainImages || []);
       } catch {
@@ -190,7 +184,7 @@ const TrainPage = () => {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {photos.map((photo) => (
-              <PhotoCard key={photo.id} photo={photo} getImageUrl={getImageUrl} />
+              <TrainPhotoCard key={photo.id} photo={photo} getImageUrl={getImageUrl} />
             ))}
           </div>
         )}
