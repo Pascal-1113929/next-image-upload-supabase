@@ -72,23 +72,41 @@ export default function TrainsOverviewPage() {
       }
       setTrainType(typeData);
 
-      // Fetch trains
-      const { data: trainData } = await supabaseClient
+      const { data: trainData, error } = await supabaseClient
         .from("trains")
         .select(`
-          id,
-          train_number,
-          alt_number,
-          images:train_images (
-            id,
-            image_path,
-            is_private
-          )
-        `)
+    id,
+    train_number,
+    alt_number,
+    images:train_image_trains (
+      image:train_images (
+        id,
+        image_path,
+        is_private
+      )
+    )
+  `)
         .eq("operator_id", operatorData.id)
         .eq("train_type_id", typeData.id);
 
-      setTrains(trainData || []);
+      if (error) {
+        console.error(error);
+        return [];
+      }
+
+      // Remap nested join table to clean Train[]
+      const trains: Train[] = (trainData || []).map((train: any) => ({
+        id: train.id,
+        train_number: train.train_number,
+        alt_number: train.alt_number || undefined,
+        images: train.images?.map((rel: any) => ({
+          id: rel.image.id,
+          image_path: rel.image.image_path,
+          is_private: rel.image.is_private,
+        })),
+      }));
+
+      setTrains(trains || []);
       setLoading(false);
     };
 
@@ -103,7 +121,7 @@ export default function TrainsOverviewPage() {
   };
 
   if (loading) return <div className="p-8">Loading...</div>;
-  if (!operator || !trainType) return <div className="p-8">Not found</div>; 
+  if (!operator || !trainType) return <div className="p-8">Not found</div>;
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-black py-8 px-4">
@@ -139,7 +157,7 @@ export default function TrainsOverviewPage() {
                     : null;
 
                 return (
-                  <tr key={train.id} className="border-t cursor-pointer" onClick={() => {router.push(`/trains/train/${operator.slug + `_` + `${train.id}`}`)}}>
+                  <tr key={train.id} className="border-t cursor-pointer" onClick={() => { router.push(`/trains/train/${operator.slug + `_` + `${train.id}`}`) }}>
                     <td className="p-4 align-top">
                       <div className="font-semibold text-blue-600">
                         {train.train_number}
