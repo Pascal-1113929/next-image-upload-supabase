@@ -5,6 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { supabaseClient } from "@/lib/supabase";
+import { unslugify } from "@/lib/slug";
 
 interface Train {
   id: number;
@@ -34,6 +35,7 @@ export default function TrainsOverviewPage() {
   const router = useRouter();
   const operatorSlug = params.operator as string;
   const trainTypeSlug = params.train_type as string;
+  const trainTypeName = unslugify(trainTypeSlug)
 
   const [operator, setOperator] = useState<Operator | null>(null);
   const [trainType, setTrainType] = useState<TrainType | null>(null);
@@ -61,7 +63,7 @@ export default function TrainsOverviewPage() {
       const { data: typeData } = await supabaseClient
         .from("train_types")
         .select("*")
-        .eq("class_name", trainTypeSlug)
+        .eq("class_name", trainTypeName)
         .single();
 
       if (!typeData) {

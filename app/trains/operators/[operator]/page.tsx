@@ -11,12 +11,13 @@ import {
     CardTitle,
     CardContent,
 } from "@/components/ui/card";
+import { slugify } from "@/lib/slug";
 
 interface Operator {
     id: number;
     name: string;
+    slug: string;
     country_code: string | null;
-    description?: string | null;
 }
 
 interface TrainTypeCard {
@@ -39,84 +40,97 @@ export default function OperatorPage() {
         const loadData = async () => {
             setLoading(true);
 
-            // 1️⃣ Get operator
-            const { data: operatorData } = await supabaseClient
-                .from("train_operators")
-                .select("id, name, country_code")
-                .eq("slug", operatorParam)
-                .single();
+            try {
+                // 1️⃣ Get operator by slug
+                const { data: operatorData, error: opError } = await supabaseClient
+                    .from("train_operators")
+                    .select("id, name, country_code, slug")
+                    .eq("slug", operatorParam)
+                    .single();
 
-            if (!operatorData) {
-                setLoading(false);
-                return;
-            }
-
-            setOperator(operatorData);
-
-            // 2️⃣ Get trains of this operator
-            const { data: trains } = await supabaseClient
-                .from("trains")
-                .select(`
-          id,
-          train_type:train_types (
-            id,
-            name,
-            class_name
-          ),
-          images:train_images ( id )
-        `)
-                .eq("operator_id", operatorData.id);
-
-            if (!trains) {
-                setLoading(false);
-                return;
-            }
-
-            const typeMap = new Map<number, TrainTypeCard>();
-
-            trains.forEach((train: any) => {
-                const type = train.train_type;
-                if (!type) return;
-
-                const count = train.images?.length || 0;
-
-                if (!typeMap.has(type.id)) {
-                    typeMap.set(type.id, {
-                        ...type,
-                        photo_count: count,
-                    });
-                } else {
-                    typeMap.get(type.id)!.photo_count += count;
+                if (opError || !operatorData) {
+                    console.error("Operator fetch error:", opError);
+                    setLoading(false);
+                    return;
                 }
-            });
 
-            const typeArray = Array.from(typeMap.values());
+                setOperator(operatorData);
 
-            // 3️⃣ Fetch ONE random image per train type
-            for (const type of typeArray) {
-                const { data: image } = await supabaseClient
-                    .from("train_images")
-                    .select("image_path")
-                    .eq("train_type_id", type.id)
-                    .in(
-                        "train_id",
-                        (
-                            await supabaseClient
-                                .from("trains")
-                                .select("id")
-                                .eq("operator_id", operatorData.id)
-                                .eq("train_type_id", type.id)
-                        ).data?.map((t: any) => t.id) || []
-                    )
-                    .limit(1);
+                // 2️⃣ Get all trains for this operator + their train types
+                const { data: trains, error: trainsError } = await supabaseClient
+                    .from("trains")
+                    .select(`
+                id,
+                train_type:train_types (
+                    id,
+                    name,
+                    class_name
+                )
+            `)
+                    .eq("operator_id", operatorData.id);
 
-                if (image && image.length > 0) {
-                    type.random_image_path = image[0].image_path;
+                if (trainsError || !trains || trains.length === 0) {
+                    setTrainTypes([]);
+                    setLoading(false);
+                    return;
                 }
-            }
 
-            setTrainTypes(typeArray);
-            setLoading(false);
+                // 3️⃣ Build unique train type map & group trains by type
+                const typeMap = new Map<number, TrainTypeCard>();
+                const trainsByType: Record<number, number[]> = {};
+
+                trains.forEach((train: any) => {
+                    const type = train.train_type;
+                    if (!type) return;
+
+                    if (!typeMap.has(type.id)) {
+                        typeMap.set(type.id, {
+                            id: type.id,
+                            name: type.name,
+                            class_name: type.class_name,
+                            photo_count: 0,
+                            random_image_path: undefined
+                        });
+                    }
+
+                    if (!trainsByType[type.id]) trainsByType[type.id] = [];
+                    trainsByType[type.id].push(train.id);
+                });
+
+                const typeArray = Array.from(typeMap.values());
+
+                // 4️⃣ For each train type, fetch all images of its trains and pick a random one
+                for (const type of typeArray) {
+                    const trainIds = trainsByType[type.id];
+                    if (!trainIds || trainIds.length === 0) continue;
+
+                    const { data: relations, error: relError } = await supabaseClient
+                        .from("train_image_trains")
+                        .select(`image:train_images(image_path)`)
+                        .in("train_id", trainIds);
+
+                    if (relError || !relations || relations.length === 0) continue;
+
+                    const imagePaths = relations
+                        .map((r: any) => r.image?.image_path)
+                        .filter(Boolean);
+
+                    if (imagePaths.length === 0) continue;
+
+                    // Set photo count
+                    type.photo_count = imagePaths.length;
+
+                    // Pick random image
+                    type.random_image_path =
+                        imagePaths[Math.floor(Math.random() * imagePaths.length)];
+                }
+
+                setTrainTypes(typeArray);
+            } catch (err) {
+                console.error("Unexpected error loading data:", err);
+            } finally {
+                setLoading(false);
+            }
         };
 
         loadData();
@@ -146,12 +160,6 @@ export default function OperatorPage() {
                             Country: {operator.country_code}
                         </p>
                     )}
-
-                    {operator.description && (
-                        <p className="mt-4 text-zinc-600 dark:text-zinc-400">
-                            {operator.description}
-                        </p>
-                    )}
                 </div>
 
                 {/* Train Types */}
@@ -165,7 +173,7 @@ export default function OperatorPage() {
                             <CardHeader>
                                 <CardTitle>
                                     <Link
-                                        href={`/trains/operators/${operator.name.replace(/\s+/g, "-")}/${type.class_name}`}
+                                        href={`/trains/operators/${operator.slug}/${slugify(type.class_name)}`}
                                         className="text-blue-600 hover:underline"
                                     >
                                         {type.name}
