@@ -20,6 +20,19 @@ interface TrainImage {
   created_at?: string;
 }
 
+interface TrainType {
+  id: number;
+  name: string;
+  class_name: string;
+}
+
+interface Train {
+  id: number;
+  train_number: string;
+  alt_number?: string | null;
+  type?: TrainType | null;
+}
+
 const TrainPage = () => {
   const params = useParams();
   const router = useRouter();
@@ -32,6 +45,7 @@ const TrainPage = () => {
   const [photos, setPhotos] = useState<TrainImage[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [train, setTrain] = useState<Train>()
 
   const getImageUrl = (path: string) => {
     const { data } = supabaseClient.storage
@@ -66,15 +80,18 @@ const TrainPage = () => {
         // Validate train exists
         const { data: trainData, error: trainError } = await supabaseClient
           .from("trains")
-          .select("id")
+          .select(`*, type:train_types(*)`)
           .eq("id", trainId)
           .single();
 
         if (trainError || !trainData) {
           setError("Train not found");
+          setTrain(trainData)
           setLoading(false);
           return;
         }
+
+        setTrain(trainData)
 
         const { data: trainImageList, error: trainImageListError } = await supabaseClient
           .from("train_image_trains")
@@ -92,7 +109,14 @@ const TrainPage = () => {
           station:train_stations!train_image_locations_station_id_fkey (name),
           station_end:train_stations!train_image_locations_station_id_end_fkey (name)
         )
-    )
+    ),
+    train:trains (
+              id,
+              train_number,
+              alt_number,
+              type:train_types (id, name, class_name),
+              operator:train_operators (id, name, country_code)
+            )
   `)
           .eq("train_id", trainId)
 
@@ -104,8 +128,6 @@ const TrainPage = () => {
 
         const trainImages: TrainImage[] = (trainImageList || []).map((rel: any) => {
           const img = rel.image;
-
-          console.log(img)
           // Compute the location string
           let locationStr = "";
           if (img.location) {
@@ -118,6 +140,15 @@ const TrainPage = () => {
             }
           }
 
+          // Map associated trains
+          const trains = (rel.train ? [rel.train] : []).map((t: any) => ({
+            id: t.id,
+            train_number: t.train_number,
+            alt_number: t.alt_number,
+            type: t.type,
+            operator: t.operator,
+          }));
+
           return {
             id: img.id,
             image_path: img.image_path,
@@ -126,11 +157,10 @@ const TrainPage = () => {
             taken_at: img.taken_at,
             is_private: img.is_private,
             created_at: img.created_at,
-            location: locationStr
+            location: locationStr,
+            trains
           };
         });
-
-        console.log(trainImages)
 
         setPhotos(trainImages || []);
       } catch {
@@ -149,7 +179,7 @@ const TrainPage = () => {
         <div className="flex justify-between items-center mb-8">
           <div>
             <h1 className="text-4xl font-bold text-black dark:text-white mb-2">
-              Train {trainSlug}
+              Train {!train ? trainSlug : (<span>{train.train_number} - {train.type?.name}</span>)}
             </h1>
             <p className="text-zinc-600 dark:text-zinc-400">
               Browse photos for this specific train

@@ -8,6 +8,7 @@ import { useAuthModal } from "@/hooks/useAuthModal";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PhotoCard } from "./components/PhotoCard";
+import { TrainPhotoCard } from "../trains/train/[trainslug]/components/TrainPhotoCard";
 
 interface TrainImage {
     id: number;
@@ -149,7 +150,7 @@ export default function PhotosPage() {
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {photos.map((photo) => (
-                            <PhotoCard
+                            <TrainPhotoCard
                                 key={photo.id}
                                 photo={photo}
                                 getImageUrl={getImageUrl}
