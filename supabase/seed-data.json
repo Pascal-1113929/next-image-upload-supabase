@@ -4338,13 +4338,6 @@
             "latitude": 52.5251
         },
         {
-            "name": "München Hauptbahnhof",
-            "countryCode": "DE",
-            "stationCode": "MUC",
-            "longitude": 11.5586,
-            "latitude": 48.1402
-        },
-        {
             "name": "Frankfurt (Main) Hauptbahnhof",
             "countryCode": "DE",
             "stationCode": "FRA",
@@ -14285,13 +14278,6 @@
             "latitude": 50.0623795
         },
         {
-            "name": "Hauptbahnhof (tief)",
-            "countryCode": "DE",
-            "stationCode": "HAU",
-            "longitude": 8.6623337,
-            "latitude": 50.1071727
-        },
-        {
             "name": "Ledermuseum",
             "countryCode": "DE",
             "stationCode": "LED",
@@ -14570,13 +14556,6 @@
             "stationCode": "MAR",
             "longitude": 8.8547223,
             "latitude": 51.4627272
-        },
-        {
-            "name": "Hauptbahnhof",
-            "countryCode": "DE",
-            "stationCode": "HAU",
-            "longitude": 8.6637933,
-            "latitude": 50.1077355
         },
         {
             "name": "Solingen Mitte",
@@ -23875,18 +23854,11 @@
             "latitude": 52.3526245
         },
         {
-            "name": "Hauptbahnhof",
+            "name": "München Hauptbahnhof",
             "countryCode": "DE",
             "stationCode": "HAU",
             "longitude": 11.5599751,
             "latitude": 48.1392934
-        },
-        {
-            "name": "Hauptbahnhof",
-            "countryCode": "DE",
-            "stationCode": "HAU",
-            "longitude": 11.5610962,
-            "latitude": 48.1401455
         },
         {
             "name": "Planckstraße",
@@ -26029,13 +26001,6 @@
             "stationCode": "U P",
             "longitude": 13.3782147,
             "latitude": 52.5091586
-        },
-        {
-            "name": "Hauptbahnhof",
-            "countryCode": "DE",
-            "stationCode": "HAU",
-            "longitude": 13.3701242,
-            "latitude": 52.5252819
         },
         {
             "name": "Britz-Süd",
@@ -32973,13 +32938,6 @@
             "stationCode": "BAD",
             "longitude": 13.5484166,
             "latitude": 52.4664864
-        },
-        {
-            "name": "Hauptbahnhof",
-            "countryCode": "DE",
-            "stationCode": "HAU",
-            "longitude": 13.5433115,
-            "latitude": 52.4579993
         },
         {
             "name": "Vetschau / Wětošow",
