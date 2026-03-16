@@ -348,6 +348,11 @@
             "countryCode": "NL"
         },
         {
+            "name": "Railexperts",
+            "slug": "railexperts",
+            "countryCode": "NL"
+        },
+        {
             "name": "Train Charter Services",
             "slug": "traincharterservices",
             "countryCode": "NL"
@@ -59501,6 +59506,30 @@
             "number": "4402",
             "altNumber": "",
             "operator": "Rotterdam Rail Feeding",
+            "trainType": "1600/1800"
+        },
+        {
+            "number": "9901",
+            "altNumber": "",
+            "operator": "Railexperts",
+            "trainType": "1600/1800"
+        },
+        {
+            "number": "9902",
+            "altNumber": "",
+            "operator": "Railexperts",
+            "trainType": "1600/1800"
+        },
+        {
+            "number": "9903",
+            "altNumber": "",
+            "operator": "Railexperts",
+            "trainType": "1600/1800"
+        },
+        {
+            "number": "1656",
+            "altNumber": "",
+            "operator": "Spoorweg Museum",
             "trainType": "1600/1800"
         },
         {
