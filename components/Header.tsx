@@ -41,6 +41,18 @@ export default function Header() {
                     <nav className="flex items-center gap-4">
                         <Button
                             variant="ghost"
+                            onClick={() => router.push("/traintypes")}
+                        >
+                            Train Types
+                        </Button>
+                        <Button
+                            variant="ghost"
+                            onClick={() => router.push("/trains/operators")}
+                        >
+                            Train Operators
+                        </Button>
+                        <Button
+                            variant="ghost"
                             onClick={() => router.push("/photos")}
                         >
                             Gallery
@@ -50,15 +62,9 @@ export default function Header() {
                             <>
                                 <Button
                                     variant="default"
-                                    onClick={() => photoUploadModal.onOpen()}
+                                    onClick={() => router.push("/photos/upload")}
                                 >
                                     Upload Photo
-                                </Button>
-                                <Button
-                                    variant="ghost"
-                                    onClick={() => router.push("/my-photos")}
-                                >
-                                    My Photos
                                 </Button>
                                 <Button variant="outline" onClick={handleLogout}>
                                     Logout

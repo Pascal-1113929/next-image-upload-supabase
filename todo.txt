@@ -1,2 +1,4 @@
 fix type select to limit when opperator selected
 make type selector a combobox
+
+pagina voor trein met de foto's van de trein: https://treinposities.nl/voertuig/ns_icng_3321/foto

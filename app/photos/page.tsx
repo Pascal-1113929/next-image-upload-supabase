@@ -2,19 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 import { useUser } from "@/hooks/useUser";
 import { supabaseClient } from "@/lib/supabase";
-import { usePhotoUploadModal } from "@/hooks/usePhotoUploadModal";
 import { useAuthModal } from "@/hooks/useAuthModal";
 import { Button } from "@/components/ui/button";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { PhotoCard } from "./components/PhotoCard";
 
 interface TrainImage {
@@ -29,24 +21,21 @@ interface TrainImage {
         location_type: string | null;
         station_id: number | null;
         station_id_end: number | null;
-        station: {          // start station
-            id: number;
-            name: string;
-            country_code: string;
-        } | null;
-        station_end: {      // end station
-            id: number;
-            name: string;
-            country_code: string;
-        } | null;
+        station?: { id: number; name: string; country_code: string } | null;
+        station_end?: { id: number; name: string; country_code: string } | null;
     } | null;
+    trains: {
+        id: number;
+        train_number: string;
+        alt_number: string | null;
+        type?: { id: number; name: string; class_name: string } | null;
+        operator?: { id: number; name: string; country_code: string } | null;
+    }[];
 }
-
 
 export default function PhotosPage() {
     const router = useRouter();
     const { user } = useUser();
-    // const photoUploadModal = usePhotoUploadModal();
     const authModal = useAuthModal();
 
     const [photos, setPhotos] = useState<TrainImage[]>([]);
@@ -60,46 +49,32 @@ export default function PhotosPage() {
                 let query = supabaseClient
                     .from("train_images")
                     .select(`
-          id,
-          title,
-          description,
-          image_path,
-          taken_at,
-          is_private,
-          created_at,
-
-          train:trains!train_images_train_id_fkey (
-            id,
-            train_number,
-            alt_number,
-            type:train_types (
-              id,
-              name,
-              class_name
-            ),
-            operator:train_operators (
-              id,
-              name,
-              country_code
-            )
-          ),
-
-          location:train_image_locations (
-            location_type,
-            station_id,
-            station_id_end,
-            station:train_stations!train_image_locations_station_id_fkey (
-              id,
-              name,
-              country_code
-            ),
-            station_end:train_stations!train_image_locations_station_id_end_fkey (
-              id,
-              name,
-              country_code
-            )
-          )
-        `)
+                        *,
+                        trains:train_image_trains (
+                            train:trains (
+                                id,
+                                train_number,
+                                alt_number,
+                                type:train_types (id, name, class_name),
+                                operator:train_operators (id, name, country_code)
+                            )
+                        ),
+                        location:train_image_locations (
+                            location_type,
+                            station_id,
+                            station_id_end,
+                            station:train_stations!train_image_locations_station_id_fkey (
+                                id,
+                                name,
+                                country_code
+                            ),
+                            station_end:train_stations!train_image_locations_station_id_end_fkey (
+                                id,
+                                name,
+                                country_code
+                            )
+                        )
+                    `)
                     .order("created_at", { ascending: false });
 
                 if (user) {
@@ -109,22 +84,18 @@ export default function PhotosPage() {
                 }
 
                 const { data, error } = await query;
-
-                if (error) {
-                    console.error("Error loading photos:", error);
-                    return;
-                }
+                if (error) throw error;
 
                 const transformedData = data?.map((photo: any) => ({
                     ...photo,
-                    startStation: photo.location?.station || null,
-                    endStation: photo.location?.station_end || null,
-                    train: photo.train || null,
+                    trains: photo.trains?.map((t: any) => t.train) || [],
                 }));
+
+                console.log(transformedData)
 
                 setPhotos(transformedData || []);
             } catch (error) {
-                console.error("Error:", error);
+                console.error("Error loading photos:", error);
             } finally {
                 setLoading(false);
             }
@@ -133,22 +104,14 @@ export default function PhotosPage() {
         loadPhotos();
     }, [user]);
 
-    console.log("Loaded photos:", photos);
-
     const getImageUrl = (path: string) => {
-        const { data } = supabaseClient.storage
-            .from("train-images")
-            .getPublicUrl(path);
+        const { data } = supabaseClient.storage.from("train-images").getPublicUrl(path);
         return data.publicUrl;
     };
 
     const handleUploadClick = () => {
-        if (!user) {
-            authModal.onOpen();
-        } else {
-            return router.push("/photos/upload");
-            // photoUploadModal.onOpen();
-        }
+        if (!user) return authModal.onOpen();
+        return router.push("/photos/upload");
     };
 
     return (
@@ -173,10 +136,6 @@ export default function PhotosPage() {
                         {[...Array(6)].map((_, i) => (
                             <Card key={i} className="animate-pulse">
                                 <div className="aspect-video bg-zinc-200 dark:bg-zinc-800" />
-                                <CardHeader>
-                                    <div className="h-6 bg-zinc-200 dark:bg-zinc-800 rounded" />
-                                    <div className="h-4 bg-zinc-200 dark:bg-zinc-800 rounded w-2/3" />
-                                </CardHeader>
                             </Card>
                         ))}
                     </div>

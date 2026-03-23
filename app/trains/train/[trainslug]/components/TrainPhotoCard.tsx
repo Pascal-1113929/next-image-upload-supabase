@@ -42,30 +42,8 @@ type PhotoCardProps = {
     getImageUrl: (path: string) => string;
 };
 
-export function PhotoCard({ photo, getImageUrl }: PhotoCardProps) {
+export function TrainPhotoCard({ photo, getImageUrl }: PhotoCardProps) {
     const router = useRouter();
-
-    const renderLocation = () => {
-        if (!photo.location) return "Unknown";
-
-        if (photo.location.location_type === "route") {
-            const s1 = photo.location.station;
-            const s2 = photo.location.station_end;
-            return (
-                <span>
-                    {s1?.name || "Unknown"} <span className="text-xs">({s1?.country_code || "??"})</span> {" - "} 
-                    {s2?.name || "Unknown"} <span className="text-xs">({s2?.country_code || "??"})</span>
-                </span>
-            );
-        }
-
-        const s = photo.location.station;
-        return (
-            <span>
-                {s?.name || "Unknown"} <span className="text-xs">({s?.country_code || "??"})</span>
-            </span>
-        );
-    };
 
     function formatTrainLabel(train: DbTrain) {
         if (!train) return "—";
@@ -106,7 +84,7 @@ export function PhotoCard({ photo, getImageUrl }: PhotoCardProps) {
                 <CardDescription className="space-y-1">
                     <div className="flex items-center gap-1">
                         <span>📍</span>
-                        {renderLocation()}
+                        {photo.location}
                     </div>
                     <div className="flex items-center gap-1">
                         <span>📅</span>
