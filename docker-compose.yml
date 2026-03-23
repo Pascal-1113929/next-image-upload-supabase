@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  nextjs:
+    build: .
+    container_name: nextjs_app
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.local
+    volumes:
+      - .:/app
+    depends_on:
+      - supabase
+    command: pnpm dev
+
+  supabase:
+    image: node:20-alpine
+    container_name: supabase_local
+    working_dir: /supabase
+    volumes:
+      - ./supabase:/supabase
+    ports:
+      - "54321:54321" # Postgres
+      - "8000:8000"   # Supabase API
+      - "54322:54322" # Realtime
+    environment:
+      SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
+      SUPABASE_SERVICE_ROLE_KEY: ${SUPABASE_SERVICE_ROLE_KEY}
+      POSTGRES_PASSWORD: example
+    command: sh /supabase-entrypoint.sh
