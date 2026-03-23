@@ -42,15 +42,7 @@ cd next-image-upload-supabase
 cp env.example .env.local
 ```
 
-3. **Edit `.env.local`** with your Supabase keys:
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=http://localhost:8000
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
-SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
-NEXT_PUBLIC_STORAGE_ACCESS_KEY=your_public_storage_key
-STORAGE_SECRET_KEY=your_storage_secret_key
-```
+3. **Edit `.env.local`** with your Supabase keys
 
 ---
 
