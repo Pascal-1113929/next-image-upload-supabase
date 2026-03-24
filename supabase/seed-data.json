@@ -11,6 +11,51 @@
             "description": "The Alsthom 1700 is a series of Dutch electric locomotives built by Alsthom between 1991 and 1994 for Nederlandse Spoorwegen. Based on the earlier 1600/1800 series, these locomotives were primarily used for passenger services such as Intercity and international trains, and later also for charter and freight operations."
         },
         {
+            "name": "Alsthom 1300",
+            "class_name": "1300",
+            "description": "The Alsthom 1300 is a series of Dutch electric locomotives built between 1948 and 1952 by Alsthom for the Nederlandse Spoorwegen. Based on French locomotive designs, these locomotives were primarily used for both passenger and freight services. They were among the first modern electric locomotives in the Netherlands after World War II and were known for their reliability and solid performance during the early electrification of the Dutch railway network."
+        },
+        {
+            "name": "Alsthom 1300",
+            "class_name": "1300",
+            "description": "The Alsthom 1300 is a series of Dutch electric locomotives built between 1948 and 1952 by Alsthom for the Nederlandse Spoorwegen. Based on French locomotive designs, these locomotives were primarily used for both passenger and freight services. They were among the first modern electric locomotives in the Netherlands after World War II and were known for their reliability and solid performance during the early electrification of the Dutch railway network."
+        },
+        {
+            "name": "Werkspoor 1200",
+            "class_name": "1200",
+            "description": "The Werkspoor 1200 is a series of Dutch electric locomotives built between 1951 and 1953 by Werkspoor in cooperation with Baldwin and Westinghouse for the Nederlandse Spoorwegen. Inspired by American locomotive design, these engines were used for both passenger and freight services and became known for their robust construction, distinctive nose design, and long service life, remaining in operation for several decades."
+        },
+        {
+            "name": "Class EM2 NS 1500",
+            "class_name": "1500",
+            "description": "The Class EM2 NS 1500 is a series of electric locomotives originally built between 1953 and 1954 by Gorton Works for British Railways as Class EM2 (later Class 77). In 1969, six of these locomotives were sold to the Nederlandse Spoorwegen, where they were designated as the 1500 series. They were primarily used for heavy freight and later passenger services, known for their powerful performance, distinctive British design, and relatively short but notable service in the Netherlands until their withdrawal in the 1980s."
+        },
+        {
+            "name": "Alsthom 1100",
+            "class_name": "1100",
+            "description": "The Alsthom 1100 is a series of Dutch electric locomotives built between 1948 and 1950 by Alsthom for the Nederlandse Spoorwegen. Based on French post-war electric locomotive designs, the 1100 series was primarily used for passenger services, with occasional freight duties. These locomotives played an important role in the early electrification of the Dutch railway network and were known for their distinctive rounded front ends and reliable performance, remaining in service for several decades before being withdrawn in the 1990s."
+        },
+        {
+            "name": "NS 3700",
+            "class_name": "3700",
+            "description": "The NS 3700 is a series of Dutch steam locomotives built between 1910 and 1928 by Beyer, Peacock & Company, Werkspoor, and Henschel for the Nederlandse Spoorwegen. Designed for express passenger services, these 4-6-0 locomotives were known for their power, speed, and elegant design. The 3700 series became iconic in the Netherlands, serving reliably on mainline express routes until their retirement in the 1950s and 1960s, with several preserved examples remaining in museums and heritage railways."
+        },
+        {
+            "name": "Motorpost Plan mP",
+            "class_name": "mP",
+            "description": "The Motorpost Plan mP is a series of self-propelled postal railcars used by the Nederlandse Spoorwegen. Introduced in the mid-20th century, these units were designed specifically for transporting mail efficiently on regional and mainline routes. Known for their compact design and versatility, the mP railcars could operate independently without a locomotive and played a crucial role in modernizing the Dutch postal railway services."
+        },
+        {
+            "name": "Mat '46",
+            "class_name": "Mat '46",
+            "description": "The Mat '46 is a series of Dutch electric multiple units (EMUs) built between 1946 and 1949 by Werkspoor for the Nederlandse Spoorwegen. Designed for post-war passenger transport, these trains were intended for medium-distance services and were among the first modern EMUs in the Netherlands. They featured a robust construction, a distinctive streamlined front, and were used extensively until the 1980s, serving as a reliable backbone of Dutch regional rail services."
+        },
+        {
+            "name": "Mat '64",
+            "class_name": "Mat '64",
+            "description": "The Mat '64, also known as Plan V, is a series of Dutch electric multiple units (EMUs) built between 1966 and 1976 by Werkspoor and Talbot for the Nederlandse Spoorwegen. Designed for both intercity and local services, these trains featured a modular design, comfortable seating, and modern electric systems for their time. They were widely used across the Netherlands for several decades and became an iconic part of Dutch passenger rail transport until their gradual retirement in the early 2000s."
+        },
+        {
             "name": "Siemens Vectron",
             "class_name": "BR193",
             "description": "Siemens Vectron high-speed locomotive (DB Class 193)"
@@ -58522,7 +58567,6 @@
             "longitude": 8.846216,
             "latitude": 47.547794
         },
-
         {
             "name": "Biel Mett/Bienne Mâche",
             "countryCode": "CH",
@@ -59531,6 +59575,66 @@
             "altNumber": "",
             "operator": "Spoorweg Museum",
             "trainType": "1600/1800"
+        },
+        {
+            "number": "1768",
+            "altNumber": "",
+            "operator": "Spoorweg Museum",
+            "trainType": "1700"
+        },
+        {
+            "number": "1201",
+            "altNumber": "",
+            "operator": "Spoorweg Museum",
+            "trainType": "1200"
+        },
+        {
+            "number": "1312",
+            "altNumber": "",
+            "operator": "Spoorweg Museum",
+            "trainType": "1300"
+        },
+        {
+            "number": "1501",
+            "altNumber": "",
+            "operator": "Spoorweg Museum",
+            "trainType": "1500"
+        },
+        {
+            "number": "1107",
+            "altNumber": "",
+            "operator": "Spoorweg Museum",
+            "trainType": "1100"
+        },
+        {
+            "number": "1125",
+            "altNumber": "",
+            "operator": "Spoorweg Museum",
+            "trainType": "1100"
+        },
+        {
+            "number": "3737",
+            "altNumber": "",
+            "operator": "Spoorweg Museum",
+            "trainType": "3700"
+        },
+        {
+            "number": "3031",
+            "altNumber": "",
+            "operator": "Spoorweg Museum",
+            "trainType": "mP"
+        },
+        {
+            "number": "273",
+            "altNumber": "",
+            "operator": "Spoorweg Museum",
+            "trainType": "Mat '46"
+        },
+        {
+            "number": "876",
+            "altNumber": "",
+            "operator": "Spoorweg Museum",
+            "trainType": "Mat '64"
         },
         {
             "number": "193 013",
