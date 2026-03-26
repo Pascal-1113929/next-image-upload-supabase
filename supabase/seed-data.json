@@ -309,6 +309,16 @@
             "name": "Stadler Giruno",
             "class_name": "RABe 501",
             "description": "Swiss high-speed EMU with 11 carriages"
+        },
+        {
+            "name": "New Pendolino - RABe 503",
+            "class_name": "RABe 503",
+            "description": "Swiss-Italian high-speed tilting train for cross-border services"
+        },
+        {
+            "name": "New Pendolino - ETR 610",
+            "class_name": "ETR 610",
+            "description": "Italian high-speed tilting train operated on international routes with Switzerland"
         }
     ],
     "trainoperators": [
@@ -381,6 +391,11 @@
             "name": "SBB CFF FFS",
             "slug": "sbb",
             "countryCode": "CH"
+        },
+        {
+            "name": "Trenitalia",
+            "slug": "trenitalia",
+            "countryCode": "IT"
         },
         {
             "name": "SBB Cargo",
@@ -71950,6 +71965,162 @@
             "number": "501 041",
             "altNumber": "",
             "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "503 011",
+            "altNumber": "",
+            "trainType": "RABe 503",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "503 012",
+            "altNumber": "",
+            "trainType": "RABe 503",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "503 013",
+            "altNumber": "",
+            "trainType": "RABe 503",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "503 014",
+            "altNumber": "",
+            "trainType": "RABe 503",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "503 015",
+            "altNumber": "",
+            "trainType": "RABe 503",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "503 016",
+            "altNumber": "",
+            "trainType": "RABe 503",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "503 017",
+            "altNumber": "",
+            "trainType": "RABe 503",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "503 018",
+            "altNumber": "",
+            "trainType": "RABe 503",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "503 019",
+            "altNumber": "",
+            "trainType": "RABe 503",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "503 020",
+            "altNumber": "",
+            "trainType": "RABe 503",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "503 021",
+            "altNumber": "",
+            "trainType": "RABe 503",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "503 022",
+            "altNumber": "",
+            "trainType": "RABe 503",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "610 101",
+            "altNumber": "",
+            "trainType": "ETR 610",
+            "operator": "Trenitalia"
+        },
+        {
+            "number": "610 102",
+            "altNumber": "",
+            "trainType": "ETR 610",
+            "operator": "Trenitalia"
+        },
+        {
+            "number": "610 103",
+            "altNumber": "",
+            "trainType": "ETR 610",
+            "operator": "Trenitalia"
+        },
+        {
+            "number": "610 104",
+            "altNumber": "",
+            "trainType": "ETR 610",
+            "operator": "Trenitalia"
+        },
+        {
+            "number": "610 105",
+            "altNumber": "",
+            "trainType": "ETR 610",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "610 106",
+            "altNumber": "",
+            "trainType": "ETR 610",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "610 107",
+            "altNumber": "",
+            "trainType": "ETR 610",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "610 108",
+            "altNumber": "",
+            "trainType": "ETR 610",
+            "operator": "Trenitalia"
+        },
+        {
+            "number": "610 109",
+            "altNumber": "",
+            "trainType": "ETR 610",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "610 110",
+            "altNumber": "",
+            "trainType": "ETR 610",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "610 111",
+            "altNumber": "",
+            "trainType": "ETR 610",
+            "operator": "Trenitalia"
+        },
+        {
+            "number": "610 112",
+            "altNumber": "",
+            "trainType": "ETR 610",
+            "operator": "Trenitalia"
+        },
+        {
+            "number": "610 113",
+            "altNumber": "",
+            "trainType": "ETR 610",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "610 114",
+            "altNumber": "",
+            "trainType": "ETR 610",
             "operator": "SBB CFF FFS"
         }
     ]
