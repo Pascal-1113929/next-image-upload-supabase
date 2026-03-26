@@ -16,11 +16,6 @@
             "description": "The Alsthom 1300 is a series of Dutch electric locomotives built between 1948 and 1952 by Alsthom for the Nederlandse Spoorwegen. Based on French locomotive designs, these locomotives were primarily used for both passenger and freight services. They were among the first modern electric locomotives in the Netherlands after World War II and were known for their reliability and solid performance during the early electrification of the Dutch railway network."
         },
         {
-            "name": "Alsthom 1300",
-            "class_name": "1300",
-            "description": "The Alsthom 1300 is a series of Dutch electric locomotives built between 1948 and 1952 by Alsthom for the Nederlandse Spoorwegen. Based on French locomotive designs, these locomotives were primarily used for both passenger and freight services. They were among the first modern electric locomotives in the Netherlands after World War II and were known for their reliability and solid performance during the early electrification of the Dutch railway network."
-        },
-        {
             "name": "Werkspoor 1200",
             "class_name": "1200",
             "description": "The Werkspoor 1200 is a series of Dutch electric locomotives built between 1951 and 1953 by Werkspoor in cooperation with Baldwin and Westinghouse for the Nederlandse Spoorwegen. Inspired by American locomotive design, these engines were used for both passenger and freight services and became known for their robust construction, distinctive nose design, and long service life, remaining in operation for several decades."
@@ -156,32 +151,32 @@
             "description": "DB Baureihe 430 S-Bahn train for regional services (DB Class 430)"
         },
         {
-            "name": "Standler Flirt BR428",
+            "name": "Stadler Flirt BR428",
             "class_name": "BR428",
             "description": "DB BR 428 Stadler Flirt regional train used by multiple opperators (DB Class 428)"
         },
         {
-            "name": "Standler Flirt BR427",
+            "name": "Stadler Flirt BR427",
             "class_name": "BR427",
             "description": "DB BR 427 Stadler Flirt regional train used by multiple opperators (DB Class 427)"
         },
         {
-            "name": "Standler Flirt BR426.1",
+            "name": "Stadler Flirt BR426.1",
             "class_name": "BR426.1",
             "description": "DB BR 426.1 Stadler Flirt regional train used by multiple opperators (DB Class 426.1)"
         },
         {
-            "name": "Standler Flirt BR429.0",
+            "name": "Stadler Flirt BR429.0",
             "class_name": "BR429.0",
             "description": "DB BR 429.0 Stadler Flirt regional train used by multiple opperators (DB Class 429.0)"
         },
         {
-            "name": "Standler Flirt3 BR1429",
+            "name": "Stadler Flirt3 BR1429",
             "class_name": "BR1429",
             "description": "DB BR 1429 Stadler Flirt3 regional train used by multiple opperators (DB Class 1429)"
         },
         {
-            "name": "Standler Flirt3 BR2429",
+            "name": "Stadler Flirt3 BR2429",
             "class_name": "BR2429",
             "description": "DB BR 2429 Stadler Flirt3 regional train used by multiple opperators (DB Class 2429)"
         },
