@@ -304,6 +304,11 @@
             "name": "Stadler FLIRT3 4bakken",
             "class_name": "NS FLIRT-Iv",
             "description": "Dutch Sprinter train with 2 carriages (NS FLIRT-III)"
+        },
+        {
+            "name": "Stadler Giruno",
+            "class_name": "RABe 501",
+            "description": "Swiss high-speed EMU with 11 carriages"
         }
     ],
     "trainoperators": [
@@ -71700,6 +71705,252 @@
             "altNumber": "428 128",
             "trainType": "BR428",
             "operator": "Eurobahn"
+        },
+        {
+            "number": "501 001",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 002",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 003",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 004",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 005",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 006",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 007",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 008",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 009",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 010",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 011",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 012",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 013",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 014",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 015",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 016",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 017",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 018",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 019",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 020",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 021",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 022",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 023",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 024",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 025",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 026",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 027",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 028",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 029",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 030",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 031",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 032",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 033",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 034",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 035",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 036",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 037",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 038",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 039",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 040",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
+        },
+        {
+            "number": "501 041",
+            "altNumber": "",
+            "trainType": "RABe 501",
+            "operator": "SBB CFF FFS"
         }
     ]
 }
